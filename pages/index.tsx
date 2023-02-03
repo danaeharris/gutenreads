@@ -244,9 +244,9 @@ export default function Home() {
           <Image
             src={logo}
             alt="GutenReads logo"
-            className="w-full sm:w-[297px]"
+            className="w-[150px] md:w-[297px]"
           />
-          <p className="leading-normal text-xl mt-6 font-ppwriter">
+          <p className="leading-normal text-xl mt-4 md:mt-6 font-ppwriter">
             A clean, beautiful interface for reading public-domain Project
             Gutenberg books.
           </p>
@@ -274,13 +274,13 @@ export default function Home() {
             <h5 className="text-xl pb-4 font-normal">
               A few recommendations . . .
             </h5>
-            <div>
+            <div className="sm:-mx-4">
               {books
                 .sort((a, b) => (a.title > b.title ? 1 : -1))
                 .map((book, index) => (
                   <div
                     key={book.id}
-                    className={`flex flex-row items-start justify-start  ${
+                    className={`flex flex-col md:flex-row items-start justify-start  ${
                       index == 0 ? `bg-gray-100 border border-gray-200` : null
                     } p-4 mb-4`}
                   >
@@ -293,8 +293,8 @@ export default function Home() {
                         className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
                       />
                     ) : null}
-                    <div className="px-6">
-                      <h3 className="text-3xl">{book.title}</h3>
+                    <div className="pt-6 md:px-6 md:pt-0">
+                      <h3 className="text-2xl md:text-3xl">{book.title}</h3>
                       <p className="text-md ">by {book.authors[0].name}</p>
                       {book.subjects ? (
                         <div className="flex flex-row flex-wrap items-center justify-start mt-4 -mx-2">
