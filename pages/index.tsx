@@ -239,8 +239,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="h-screen bg-white">
-        <div className="container p-4 md:p-6 lg:py-20">
+      <main className="min-h-screen bg-white">
+        <div className="container py-4 md:py-6 lg:py-20">
           <Image
             src={logo}
             alt="GutenReads logo"
@@ -275,30 +275,59 @@ export default function Home() {
               A few recommendations . . .
             </h5>
             <div>
-              {books.map((book) => (
-                <div
-                  key={book.id}
-                  className="flex flex-row items-start justify-start bg-gray-100 border border-gray-200 p-4 mb-4"
-                >
-                  {book.formats && book.formats["image/jpeg"] ? (
-                    <Image
-                      src={book.formats["image/jpeg"]}
-                      alt={`${book.title} cover art`}
-                      height={150}
-                      width={100}
-                      className="w-auto mr-6"
-                    />
-                  ) : null}
-                  <div>
-                    <h3 className="text-3xl">{book.title}</h3>
-                    <p className="text-md ">by {book.authors[0].name}</p>
+              {books
+                .sort((a, b) => (a.title > b.title ? 1 : -1))
+                .map((book, index) => (
+                  <div
+                    key={book.id}
+                    className={`flex flex-row items-start justify-start  ${
+                      index == 0 ? `bg-gray-100 border border-gray-200` : null
+                    } p-4 mb-4`}
+                  >
+                    {book.formats && book.formats["image/jpeg"] ? (
+                      <Image
+                        src={book.formats["image/jpeg"]}
+                        alt={`${book.title} cover art`}
+                        width={100}
+                        height={150}
+                        className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
+                      />
+                    ) : null}
+                    <div className="px-6">
+                      <h3 className="text-3xl">{book.title}</h3>
+                      <p className="text-md ">by {book.authors[0].name}</p>
+                      {book.subjects ? (
+                        <div className="flex flex-row flex-wrap items-center justify-start mt-4 -mx-2">
+                          {book.subjects.map((subject) => {
+                            let tag = subject.split(" -- ")[0];
+                            return (
+                              <p
+                                className="text-sm bg-gray-200 border border-gray-300 pt-1 pb-2 px-4 my-2 mx-2 rounded-lg"
+                                key={tag}
+                              >
+                                {tag}
+                              </p>
+                            );
+                          })}
+                        </div>
+                      ) : null}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
       </main>
+      <footer className="bg-gray-100">
+        <div className="container pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-10 lg:pb-20">
+          <div>
+            <p className="font-ppwriter">
+              This website is a personal project built with Next.js and powered
+              by the Gutendex API.
+            </p>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
