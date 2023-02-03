@@ -7,45 +7,45 @@
 
 @font-face {
   font-family: "PP Writer";
-  src: url("/fonts/PPWriter-Regular.woff2") format("woff2"),
-    url("/fonts/PPWriter-Regular.woff") format("woff");
+  src: url("/fonts/Writer/PPWriter-Regular.woff2") format("woff2"),
+    url("/fonts/Writer/PPWriter-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "PP Writer";
-  src: url("/fonts/PPWriter-Bold.woff2") format("woff2"),
-    url("/fonts/PPWriter-Bold.woff") format("woff");
+  src: url("/fonts/Writer/PPWriter-Bold.woff2") format("woff2"),
+    url("/fonts/Writer/PPWriter-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "PP Writer";
-  src: url("/fonts/PPWriter-RegularItalic.woff2") format("woff2"),
-    url("/fonts/PPWriter-RegularItalic.woff") format("woff");
+  src: url("/fonts/Writer/PPWriter-RegularItalic.woff2") format("woff2"),
+    url("/fonts/Writer/PPWriter-RegularItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "PP Writer";
-  src: url("/fonts/PPWriter-BoldItalic.woff2") format("woff2"),
-    url("/fonts/PPWriter-BoldItalic.woff") format("woff");
+  src: url("/fonts/Writer/PPWriter-BoldItalic.woff2") format("woff2"),
+    url("/fonts/Writer/PPWriter-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: "PP Writer Book";
-  src: url("/fonts/PPWriter-BookText.woff2") format("woff2"),
-    url("/fonts/PPWriter-BookText.woff") format("woff");
+  src: url("/fonts/Writer/PPWriter-BookText.woff2") format("woff2"),
+    url("/fonts/Writer/PPWriter-BookText.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PP Writer Book";
-  src: url("/fonts/PPWriter-BookItalic.woff2") format("woff2"),
-    url("/fonts/PPWriter-BookItalic.woff") format("woff");
+  src: url("/fonts/Writer/PPWriter-BookItalic.woff2") format("woff2"),
+    url("/fonts/Writer/PPWriter-BookItalic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
