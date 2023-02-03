@@ -4,13 +4,23 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-
-    // Or if using `src` directory:
-    // "./src/**/*.{js,ts,jsx,tsx}",
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        ppwriter: ["PP Writer", "sans-serif"],
+        ppbook: ["PP Writer Book", "sans-serif"],
+      },
+      colors: {
+        gray: {
+          100: "#F8F8F8",
+          200: "#E9E9E9",
+          300: "#EDEDED",
+        },
+      },
+    },
     container: {
       center: true,
     },
