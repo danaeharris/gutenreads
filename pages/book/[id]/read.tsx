@@ -32,15 +32,15 @@ export default function ReaderView() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container py-4 md:py-6 lg:py-20">
+      <div className="container py-4 md:py-6 lg:py-20 flex flex-col items-center justify-start">
         <Image
-          src={logo}
-          alt="GutenReads logo"
+          src={book.formats["image/jpeg"]}
+          alt={`${book.title} cover art`}
+          width={100}
+          height={150}
           className="w-[150px] md:w-[297px]"
         />
-        <p className="leading-normal text-xl mt-4 md:mt-6 font-ppwriter">
-          Time to do a READ!!!!
-        </p>
+
         <div className="flex flex-row items-baseline justify-start mt-4 mb-8 font-ppwriter italic">
           <span>Made with </span>
           <svg
@@ -61,13 +61,11 @@ export default function ReaderView() {
           </svg>
           <span>by Danae Harris</span>
         </div>
-        <div className="py-4">
-          {/* create an iframe */}
-          <div
-            dangerouslySetInnerHTML={{ __html: bookHtml }}
-            className={styles.reader}
-          ></div>
-        </div>
+        {/* Normally we wouldn't do this, but we pulled these books from Project Gutenberg, so we know they're safe */}
+        <div
+          dangerouslySetInnerHTML={{ __html: bookHtml }}
+          className={styles.reader}
+        ></div>
       </div>
     </>
   );

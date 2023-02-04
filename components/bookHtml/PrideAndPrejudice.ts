@@ -1,1215 +1,14 @@
 const PrideAndPrejudiceHtml = `
-<section class="pg-boilerplate pgheader" id="pg-header" lang="en">
-  <h2 style="text-align: center; font-size: 1.2em; font-weight: bold">
-    The Project Gutenberg eBook of <span lang="en">Pride and Prejudice</span>,
-    by Jane Austen
-  </h2>
-  <div style="display: block; margin: 1em 0">
-    This ebook is for the use of anyone anywhere in the United States and most
-    other parts of the world at no cost and with almost no restrictions
-    whatsoever. You may copy it, give it away or re-use it under the terms of
-    the Project Gutenberg License included with this ebook or online at
-    <a class="reference external" href="https://www.gutenberg.org"
-      >www.gutenberg.org</a
-    >. If you are not located in the United States, you’ll have to check the
-    laws of the country where you are located before using this eBook.
-  </div>
-
-  <div class="container" id="pg-machine-header">
-    <p
-      style="
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-        text-indent: -2em;
-      "
-    >
-      <strong>Title</strong>: Pride and Prejudice
-    </p>
-
-    <p
-      style="
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-        text-indent: -2em;
-      "
-    >
-      <strong>Author</strong>: Jane Austen
-    </p>
-
-    <p
-      style="
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-        text-indent: -2em;
-      "
-    >
-      <strong>Release Date</strong>: June 1, 1998
-    </p>
-    <p
-      style="
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-        text-indent: -2em;
-      "
-    >
-      <strong>Language</strong>: English
-    </p>
-
-    <p
-      style="
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        margin-left: 2em;
-        text-indent: -2em;
-      "
-    >
-      <strong>Credits</strong>: Chuck Greif and the Online Distributed
-      Proofreading Team at http://www.pgdp.net (This file was produced from
-      images available at The Internet Archive)
-    </p>
-  </div>
-  <div class="vspace" style="height: 2em"><br /></div>
-  <div style="text-align: center">
-    <span
-      >*** START OF THE PROJECT GUTENBERG EBOOK PRIDE AND PREJUDICE ***</span
-    >
-  </div>
-</section>
-<div style="margin-top: 2em; margin-bottom: 4em"></div>
-<hr class="full" />
-
-<div class="blk">
-  <p class="toc">
-    <a href="#PREFACE" class="pginternal">PREFACE.</a><br />
-    <a href="#LIST_OF_ILLUSTRATIONS" class="pginternal"
-      >List of Illustrations.</a
-    ><br />
-    <a href="#Chapter_I" class="pginternal">Chapter: I., </a>
-    <a href="#CHAPTER_II" class="pginternal">II., </a>
-    <a href="#CHAPTER_III" class="pginternal">III., </a>
-    <a href="#CHAPTER_IV" class="pginternal">IV., </a>
-    <a href="#CHAPTER_V" class="pginternal">V., </a>
-    <a href="#CHAPTER_VI" class="pginternal">VI., </a>
-    <a href="#CHAPTER_VII" class="pginternal">VII., </a>
-    <a href="#CHAPTER_VIII" class="pginternal">VIII., </a>
-    <a href="#CHAPTER_IX" class="pginternal">IX., </a>
-    <a href="#CHAPTER_X" class="pginternal">X., </a>
-    <a href="#CHAPTER_XI" class="pginternal">XI., </a>
-    <a href="#CHAPTER_XII" class="pginternal">XII., </a>
-    <a href="#CHAPTER_XIII" class="pginternal">XIII., </a>
-    <a href="#CHAPTER_XIV" class="pginternal">XIV., </a>
-    <a href="#CHAPTER_XV" class="pginternal">XV., </a>
-    <a href="#CHAPTER_XVI" class="pginternal">XVI., </a>
-    <a href="#CHAPTER_XVII" class="pginternal">XVII., </a>
-    <a href="#CHAPTER_XVIII" class="pginternal">XVIII., </a>
-    <a href="#CHAPTER_XIX" class="pginternal">XIX., </a>
-    <a href="#CHAPTER_XX" class="pginternal">XX., </a>
-    <a href="#CHAPTER_XXI" class="pginternal">XXI., </a>
-    <a href="#CHAPTER_XXII" class="pginternal">XXII., </a>
-    <a href="#CHAPTER_XXIII" class="pginternal">XXIII., </a>
-    <a href="#CHAPTER_XXIV" class="pginternal">XXIV., </a>
-    <a href="#CHAPTER_XXV" class="pginternal">XXV., </a>
-    <a href="#CHAPTER_XXVI" class="pginternal">XXVI., </a>
-    <a href="#CHAPTER_XXVII" class="pginternal">XXVII., </a>
-    <a href="#CHAPTER_XXVIII" class="pginternal">XXVIII., </a>
-    <a href="#CHAPTER_XXIX" class="pginternal">XXIX., </a>
-    <a href="#CHAPTER_XXX" class="pginternal">XXX., </a>
-    <a href="#CHAPTER_XXXI" class="pginternal">XXXI., </a>
-    <a href="#CHAPTER_XXXII" class="pginternal">XXXII., </a>
-    <a href="#CHAPTER_XXXIII" class="pginternal">XXXIII., </a>
-    <a href="#CHAPTER_XXXIV" class="pginternal">XXXIV., </a>
-    <a href="#CHAPTER_XXXV" class="pginternal">XXXV., </a>
-    <a href="#CHAPTER_XXXVI" class="pginternal">XXXVI., </a>
-    <a href="#CHAPTER_XXXVII" class="pginternal">XXXVII., </a>
-    <a href="#CHAPTER_XXXVIII" class="pginternal">XXXVIII., </a>
-    <a href="#CHAPTER_XXXIX" class="pginternal">XXXIX., </a>
-    <a href="#CHAPTER_XL" class="pginternal">XL., </a>
-    <a href="#CHAPTER_XLI" class="pginternal">XLI., </a>
-    <a href="#CHAPTER_XLII" class="pginternal">XLII., </a>
-    <a href="#CHAPTER_XLIII" class="pginternal">XLIII., </a>
-    <a href="#CHAPTER_XLIV" class="pginternal">XLIV., </a>
-    <a href="#CHAPTER_XLV" class="pginternal">XLV., </a>
-    <a href="#CHAPTER_XLVI" class="pginternal"> XLVI., </a>
-    <a href="#CHAPTER_XLVII" class="pginternal">XLVII., </a>
-    <a href="#CHAPTER_XLVIII" class="pginternal">XLVIII., </a>
-    <a href="#CHAPTER_XLIX" class="pginternal">XLIX., </a>
-    <a href="#CHAPTER_L" class="pginternal">L., </a>
-    <a href="#CHAPTER_LI" class="pginternal">LI., </a>
-    <a href="#CHAPTER_LII" class="pginternal">LII., </a>
-    <a href="#CHAPTER_LIII" class="pginternal">LIII., </a>
-    <a href="#CHAPTER_LIV" class="pginternal">LIV., </a>
-    <a href="#CHAPTER_LV" class="pginternal">LV., </a>
-    <a href="#CHAPTER_LVI" class="pginternal">LVI., </a>
-    <a href="#CHAPTER_LVII" class="pginternal">LVII., </a>
-    <a href="#CHAPTER_LVIII" class="pginternal">LVIII., </a>
-    <a href="#CHAPTER_LIX" class="pginternal">LIX., </a>
-    <a href="#CHAPTER_LX" class="pginternal">LX., </a>
-    <a href="#CHAPTER_LXI" class="pginternal">LXI.</a>
-  </p>
-</div>
-
-<div class="blk">
-  <span class="pagenum"><a id="page_v">{v}</a></span>
-  <h1>
-    <img
-      alt=""
-      height="600"
-      src="images/front.png"
-      id="id-8169478171773910767"
-    />
-    <br /><br />
-    <i
-      >PRIDE.<br />
-      and<br />
-      PREJUDICE</i
-    >
-  </h1>
-
-  <p class="cbig250">
-    <i>
-      by<br />
-      Jane Austen,<br />
-      <br /><small> with a Preface by</small><br />
-      George Saintsbury<br />
-      <small
-        >and<br />
-        Illustrations by</small
-      ><br />
-      Hugh Thomson<br
-    /></i>
-  </p>
-
-  <table style="font-style: italic">
-    <tbody>
-      <tr>
-        <td class="c">
-          Ruskin<br />
-          House.
-        </td>
-        <td>
-          <img
-            alt="&nbsp; &nbsp; &nbsp; "
-            height="300"
-            src="images/peacock-1894.png"
-            style="vertical-align: top"
-            id="id-7201430654706313694"
-          />
-        </td>
-        <td class="c">
-          156. Charing<br />
-          Cross Road.
-        </td>
-      </tr>
-      <tr>
-        <td class="c" colspan="3">
-          London<br />
-          George Allen.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<p class="c">
-  <small>
-    CHISWICK PRESS:—CHARLES WHITTINGHAM AND CO.<br />
-    TOOKS COURT, CHANCERY LANE, LONDON.<br
-  /></small>
-</p>
-
-<div class="blk">
-  <span class="pagenum"><a id="page_vii">{vii}</a></span>
-  <p class="c">
-    <img
-      alt="To J. Comyns Carr in acknowledgment of all I owe to his friendship and advice, these illustrations are gratefully inscribed  Hugh Thomson"
-      src="images/i_008.png"
-      width="450"
-      id="id-5476690477111022252"
-    />
-  </p>
-</div>
-
-<h2>
-  <a id="PREFACE"></a><span class="pagenum"><a id="page_ix">{ix}</a></span>
-  <img
-    alt="PREFACE."
-    src="images/i_010.jpg"
-    width="450"
-    id="id-5807388946173054528"
-  />
-</h2>
-
-<p>
-  <i
-    ><span class="smcap">Walt Whitman</span> has somewhere a fine and just
-    distinction between “loving by allowance” and “loving with personal love.”
-    This distinction applies to books as well as to men and women; and in the
-    case of the not very numerous authors who are the objects of the personal
-    affection, it brings a curious consequence with it. There is much more
-    difference as to their best work than in the case of those others who are
-    loved “by allowance” by convention, and because it is felt to be the right
-    and proper thing to love them. And in the sect—fairly large and yet
-    unusually choice—of Austenians or Janites, there would probably be found
-    partisans of the claim to primacy of almost every one of the novels. To some
-    the delightful freshness and humour of</i
-  >
-  Northanger Abbey, <i>its completeness, finish, and</i> entrain,
-  <i
-    >obscure the undoubted critical facts that its scale is small, and its
-    scheme, after all, that of burlesque or parody, a kind in which the first
-    rank is reached with difficulty.</i
-  >
-  Persuasion,
-  <i
-    >relatively faint in tone, and not enthralling in interest, has devotees who
-    exalt above all the others its exquisite delicacy and keeping. The
-    catastrophe of</i
-  >
-  Mansfield Park
-  <i
-    >is admittedly theatrical, the hero and heroine are insipid, and the author
-    has almost<span class="pagenum"><a id="page_x">{x}</a></span> wickedly
-    destroyed all romantic interest by expressly admitting that Edmund only took
-    Fanny because Mary shocked him, and that Fanny might very likely have taken
-    Crawford if he had been a little more assiduous; yet the matchless
-    rehearsal-scenes and the characters of Mrs. Norris and others have secured,
-    I believe, a considerable party for it.</i
-  >
-  Sense and Sensibility
-  <i>has perhaps the fewest out-and-out admirers; but it does not want them.</i>
-</p>
-
-<p>
-  <i
-    >I suppose, however, that the majority of at least competent votes would,
-    all things considered, be divided between</i
-  >
-  Emma
-  <i
-    >and the present book; and perhaps the vulgar verdict (if indeed a fondness
-    for Miss Austen be not of itself a patent of exemption from any possible
-    charge of vulgarity) would go for</i
-  >
-  Emma.
-  <i
-    >It is the larger, the more varied, the more popular; the author had by the
-    time of its composition seen rather more of the world, and had improved her
-    general, though not her most peculiar and characteristic dialogue; such
-    figures as Miss Bates, as the Eltons, cannot but unite the suffrages of
-    everybody. On the other hand, I, for my part, declare for</i
-  >
-  Pride and Prejudice
-  <i
-    >unhesitatingly. It seems to me the most perfect, the most characteristic,
-    the most eminently quintessential of its author’s works; and for this
-    contention in such narrow space as is permitted to me, I propose here to
-    show cause.</i
-  >
-</p>
-
-<p>
-  <i
-    >In the first place, the book (it may be barely necessary to remind the
-    reader) was in its first shape written very early, somewhere about 1796,
-    when Miss Austen was barely twenty-one; though it was revised and finished
-    at Chawton some fifteen years later, and was not published till 1813, only
-    four years before her death. I do not know whether, in<span class="pagenum"
-      ><a id="page_xi">{xi}</a></span
-    >
-    this combination of the fresh and vigorous projection of youth, and the
-    critical revision of middle life, there may be traced the distinct
-    superiority in point of construction, which, as it seems to me, it possesses
-    over all the others. The plot, though not elaborate, is almost regular
-    enough for Fielding; hardly a character, hardly an incident could be
-    retrenched without loss to the story. The elopement of Lydia and Wickham is
-    not, like that of Crawford and Mrs. Rushworth, a</i
-  >
-  coup de théâtre;
-  <i
-    >it connects itself in the strictest way with the course of the story
-    earlier, and brings about the denouement with complete propriety. All the
-    minor passages—the loves of Jane and Bingley, the advent of Mr. Collins, the
-    visit to Hunsford, the Derbyshire tour—fit in after the same unostentatious,
-    but masterly fashion. There is no attempt at the hide-and-seek, in-and-out
-    business, which in the transactions between Frank Churchill and Jane Fairfax
-    contributes no doubt a good deal to the intrigue of</i
-  >
-  Emma,
-  <i
-    >but contributes it in a fashion which I do not think the best feature of
-    that otherwise admirable book. Although Miss Austen always liked something
-    of the misunderstanding kind, which afforded her opportunities for the
-    display of the peculiar and incomparable talent to be noticed presently, she
-    has been satisfied here with the perfectly natural occasions provided by the
-    false account of Darcy’s conduct given by Wickham, and by the awkwardness
-    (arising with equal naturalness) from the gradual transformation of
-    Elizabeth’s own feelings from positive aversion to actual love. I do not
-    know whether the all-grasping hand of the playwright has ever been laid
-    upon</i
-  >
-  Pride and Prejudice;
-  <i
-    >and I dare say that,<span class="pagenum"><a id="page_xii">{xii}</a></span>
-    if it were, the situations would prove not startling or garish enough for
-    the footlights, the character-scheme too subtle and delicate for pit and
-    gallery. But if the attempt were made, it would certainly not be hampered by
-    any of those loosenesses of construction, which, sometimes disguised by the
-    conveniences of which the novelist can avail himself, appear at once on the
-    stage.</i
-  >
-</p>
-
-<p>
-  <i
-    >I think, however, though the thought will doubtless seem heretical to more
-    than one school of critics, that construction is not the highest merit, the
-    choicest gift, of the novelist. It sets off his other gifts and graces most
-    advantageously to the critical eye; and the want of it will sometimes mar
-    those graces—appreciably, though not quite consciously—to eyes by no means
-    ultra-critical. But a very badly-built novel which excelled in pathetic or
-    humorous character, or which displayed consummate command of
-    dialogue—perhaps the rarest of all faculties—would be an infinitely better
-    thing than a faultless plot acted and told by puppets with pebbles in their
-    mouths. And despite the ability which Miss Austen has shown in working out
-    the story, I for one should put</i
-  >
-  Pride and Prejudice
-  <i
-    >far lower if it did not contain what seem to me the very masterpieces of
-    Miss Austen’s humour and of her faculty of character-creation—masterpieces
-    who may indeed admit John Thorpe, the Eltons, Mrs. Norris, and one or two
-    others to their company, but who, in one instance certainly, and perhaps in
-    others, are still superior to them.</i
-  >
-</p>
-
-<p>
-  <i
-    >The characteristics of Miss Austen’s humour are so subtle and delicate that
-    they are, perhaps, at all times easier to apprehend than to express, and at
-    any particular<span class="pagenum"><a id="page_xiii">{xiii}</a></span> time
-    likely to be differently apprehended by different persons. To me this humour
-    seems to possess a greater affinity, on the whole, to that of Addison than
-    to any other of the numerous species of this great British genus. The
-    differences of scheme, of time, of subject, of literary convention, are, of
-    course, obvious enough; the difference of sex does not, perhaps, count for
-    much, for there was a distinctly feminine element in “Mr. Spectator,” and in
-    Jane Austen’s genius there was, though nothing mannish, much that was
-    masculine. But the likeness of quality consists in a great number of common
-    subdivisions of quality—demureness, extreme minuteness of touch, avoidance
-    of loud tones and glaring effects. Also there is in both a certain not
-    inhuman or unamiable cruelty. It is the custom with those who judge grossly
-    to contrast the good nature of Addison with the savagery of Swift, the
-    mildness of Miss Austen with the boisterousness of Fielding and Smollett,
-    even with the ferocious practical jokes that her immediate predecessor, Miss
-    Burney, allowed without very much protest. Yet, both in Mr. Addison and in
-    Miss Austen there is, though a restrained and well-mannered, an insatiable
-    and ruthless delight in roasting and cutting up a fool. A man in the early
-    eighteenth century, of course, could push this taste further than a lady in
-    the early nineteenth; and no doubt Miss Austen’s principles, as well as her
-    heart, would have shrunk from such things as the letter from the unfortunate
-    husband in the</i
-  >
-  Spectator,
-  <i
-    >who describes, with all the gusto and all the innocence in the world, how
-    his wife and his friend induce him to play at blind-man’s-buff. But
-    another</i
-  >
-  Spectator
-  <i
-    >letter—that of the damsel of fourteen who<span class="pagenum"
-      ><a id="page_xiv">{xiv}</a></span
-    >
-    wishes to marry Mr. Shapely, and assures her selected Mentor that “he
-    admires your</i
-  >
-  Spectators
-  <i
-    >mightily”—might have been written by a rather more ladylike and intelligent
-    Lydia Bennet in the days of Lydia’s great-grandmother; while, on the other
-    hand, some (I think unreasonably) have found “cynicism” in touches of Miss
-    Austen’s own, such as her satire of Mrs. Musgrove’s self-deceiving regrets
-    over her son. But this word “cynical” is one of the most misused in the
-    English language, especially when, by a glaring and gratuitous falsification
-    of its original sense, it is applied, not to rough and snarling invective,
-    but to gentle and oblique satire. If cynicism means the perception of “the
-    other side,” the sense of “the accepted hells beneath,” the consciousness
-    that motives are nearly always mixed, and that to seem is not identical with
-    to be—if this be cynicism, then every man and woman who is not a fool, who
-    does not care to live in a fool’s paradise, who has knowledge of nature and
-    the world and life, is a cynic. And in that sense Miss Austen certainly was
-    one. She may even have been one in the further sense that, like her own Mr.
-    Bennet, she took an epicurean delight in dissecting, in displaying, in
-    setting at work her fools and her mean persons. I think she did take this
-    delight, and I do not think at all the worse of her for it as a woman, while
-    she was immensely the better for it as an artist.</i
-  >
-</p>
-
-<p>
-  <i
-    >In respect of her art generally, Mr. Goldwin Smith has truly observed that
-    “metaphor has been exhausted in depicting the perfection of it, combined
-    with the narrowness of her field;” and he has justly added that we need not
-    go beyond her own comparison to the art of a miniature<span class="pagenum"
-      ><a id="page_xv">{xv}</a></span
-    >
-    painter. To make this latter observation quite exact we must not use the
-    term miniature in its restricted sense, and must think rather of Memling at
-    one end of the history of painting and Meissonier at the other, than of
-    Cosway or any of his kind. And I am not so certain that I should myself use
-    the word “narrow” in connection with her. If her world is a microcosm, the
-    cosmic quality of it is at least as eminent as the littleness. She does not
-    touch what she did not feel herself called to paint; I am not so sure that
-    she could not have painted what she did not feel herself called to touch. It
-    is at least remarkable that in two very short periods of writing—one of
-    about three years, and another of not much more than five—she executed six
-    capital works, and has not left a single failure. It is possible that the
-    romantic paste in her composition was defective: we must always remember
-    that hardly anybody born in her decade—that of the eighteenth-century
-    seventies—independently exhibited the full romantic quality. Even Scott
-    required hill and mountain and ballad, even Coleridge metaphysics and German
-    to enable them to chip the classical shell. Miss Austen was an English girl,
-    brought up in a country retirement, at the time when ladies went back into
-    the house if there was a white frost which might pierce their kid shoes,
-    when a sudden cold was the subject of the gravest fears, when their studies,
-    their ways, their conduct were subject to all those fantastic limits and
-    restrictions against which Mary Wollstonecraft protested with better general
-    sense than particular taste or judgment. Miss Austen, too, drew back when
-    the white frost touched her shoes; but I think she would have made a pretty
-    good journey even in a black one.</i
-  ><span class="pagenum"><a id="page_xvi">{xvi}</a></span>
-</p>
-
-<p>
-  <i
-    >For if her knowledge was not very extended, she knew two things which only
-    genius knows. The one was humanity, and the other was art. On the first head
-    she could not make a mistake; her men, though limited, are true, and her
-    women are, in the old sense, “absolute.” As to art, if she has never tried
-    idealism, her realism is real to a degree which makes the false realism of
-    our own day look merely dead-alive. Take almost any Frenchman, except the
-    late M. de Maupassant, and watch him laboriously piling up strokes in the
-    hope of giving a complete impression. You get none; you are lucky if,
-    discarding two-thirds of what he gives, you can shape a real impression out
-    of the rest. But with Miss Austen the myriad, trivial, unforced strokes
-    build up the picture like magic. Nothing is false; nothing is superfluous.
-    When (to take the present book only) Mr. Collins changed his mind from Jane
-    to Elizabeth “while Mrs. Bennet was stirring the fire” (and we know</i
-  >
-  how
-  <i
-    >Mrs. Bennet would have stirred the fire), when Mr. Darcy “brought his
-    coffee-cup back</i
-  >
-  himself,”
-  <i
-    >the touch in each case is like that of Swift—“taller by the breadth of my
-    nail”—which impressed the half-reluctant Thackeray with just and outspoken
-    admiration. Indeed, fantastic as it may seem, I should put Miss Austen as
-    near to Swift in some ways, as I have put her to Addison in others.</i
-  >
-</p>
-
-<p>
-  <i
-    >This Swiftian quality appears in the present novel as it appears nowhere
-    else in the character of the immortal, the ineffable Mr. Collins. Mr.
-    Collins is really</i
-  >
-  great;
-  <i
-    >far greater than anything Addison ever did, almost great enough for
-    Fielding or for Swift himself. It has been said that no one ever was like
-    him. But in the first<span class="pagenum"
-      ><a id="page_xvii">{xvii}</a></span
-    >
-    place,</i
-  >
-  he
-  <i
-    >was like him; he is there—alive, imperishable, more real than hundreds of
-    prime ministers and archbishops, of “metals, semi-metals, and distinguished
-    philosophers.” In the second place, it is rash, I think, to conclude that an
-    actual Mr. Collins was impossible or non-existent at the end of the
-    eighteenth century. It is very interesting that we possess, in this same
-    gallery, what may be called a spoiled first draught, or an unsuccessful
-    study of him, in John Dashwood. The formality, the under-breeding, the
-    meanness, are there; but the portrait is only half alive, and is felt to be
-    even a little unnatural. Mr. Collins is perfectly natural, and perfectly
-    alive. In fact, for all the “miniature,” there is something gigantic in the
-    way in which a certain side, and more than one, of humanity, and especially
-    eighteenth-century humanity, its Philistinism, its well-meaning but
-    hide-bound morality, its formal pettiness, its grovelling respect for rank,
-    its materialism, its selfishness, receives exhibition. I will not admit that
-    one speech or one action of this inestimable man is incapable of being
-    reconciled with reality, and I should not wonder if many of these words and
-    actions are historically true.</i
-  >
-</p>
-
-<p>
-  <i
-    >But the greatness of Mr. Collins could not have been so satisfactorily
-    exhibited if his creatress had not adjusted so artfully to him the figures
-    of Mr. Bennet and of Lady Catherine de Bourgh. The latter, like Mr. Collins
-    himself, has been charged with exaggeration. There is, perhaps, a very faint
-    shade of colour for the charge; but it seems to me very faint indeed. Even
-    now I do not think that it would be impossible to find persons, especially
-    female persons, not necessarily of noble birth, as overbearing, as<span
-      class="pagenum"
-      ><a id="page_xviii">{xviii}</a></span
-    >
-    self-centred, as neglectful of good manners, as Lady Catherine. A hundred
-    years ago, an earl’s daughter, the Lady Powerful (if not exactly Bountiful)
-    of an out-of-the-way country parish, rich, long out of marital authority,
-    and so forth, had opportunities of developing these agreeable
-    characteristics which seldom present themselves now. As for Mr. Bennet, Miss
-    Austen, and Mr. Darcy, and even Miss Elizabeth herself, were, I am inclined
-    to think, rather hard on him for the “impropriety” of his conduct. His wife
-    was evidently, and must always have been, a quite irreclaimable fool; and
-    unless he had shot her or himself there was no way out of it for a man of
-    sense and spirit but the ironic. From no other point of view is he open to
-    any reproach, except for an excusable and not unnatural helplessness at the
-    crisis of the elopement, and his utterances are the most acutely delightful
-    in the consciously humorous kind—in the kind that we laugh with, not at—that
-    even Miss Austen has put into the mouth of any of her characters. It is
-    difficult to know whether he is most agreeable when talking to his wife, or
-    when putting Mr. Collins through his paces; but the general sense of the
-    world has probably been right in preferring to the first rank his
-    consolation to the former when she maunders over the entail, “My dear, do
-    not give way to such gloomy thoughts. Let us hope for better things. Let us
-    flatter ourselves that</i
-  >
-  I
-  <i
-    >may be the survivor;” and his inquiry to his colossal cousin as to the
-    compliments which Mr. Collins has just related as made by himself to Lady
-    Catherine, “May I ask whether these pleasing attentions proceed from the
-    impulse of the moment,<span class="pagenum"
-      ><a id="page_xix">{xix}</a></span
-    >
-    or are the result of previous study?” These are the things which give Miss
-    Austen’s readers the pleasant shocks, the delightful thrills, which are felt
-    by the readers of Swift, of Fielding, and we may here add, of Thackeray, as
-    they are felt by the readers of no other English author of fiction outside
-    of these four.</i
-  >
-</p>
-
-<p>
-  <i>The goodness of the minor characters in</i> Pride and Prejudice
-  <i
-    >has been already alluded to, and it makes a detailed dwelling on their
-    beauties difficult in any space, and impossible in this. Mrs. Bennet we have
-    glanced at, and it is not easy to say whether she is more exquisitely
-    amusing or more horribly true. Much the same may be said of Kitty and Lydia;
-    but it is not every author, even of genius, who would have differentiated
-    with such unerring skill the effects of folly and vulgarity of intellect and
-    disposition working upon the common weaknesses of woman at such different
-    ages. With Mary, Miss Austen has taken rather less pains, though she has
-    been even more unkind to her; not merely in the text, but, as we learn from
-    those interesting traditional appendices which Mr. Austen Leigh has given
-    us, in dooming her privately to marry “one of Mr. Philips’s clerks.” The
-    habits of first copying and then retailing moral sentiments, of playing and
-    singing too long in public, are, no doubt, grievous and criminal; but
-    perhaps poor Mary was rather the scapegoat of the sins of blue stockings in
-    that Fordyce-belectured generation. It is at any rate difficult not to
-    extend to her a share of the respect and affection (affection and respect of
-    a peculiar kind; doubtless), with which one regards Mr. Collins, when she
-    draws the moral of Lydia’s fall. I<span class="pagenum"
-      ><a id="page_xx">{xx}</a></span
-    >
-    sometimes wish that the exigencies of the story had permitted Miss Austen to
-    unite these personages, and thus at once achieve a notable mating and soothe
-    poor Mrs. Bennet’s anguish over the entail.</i
-  >
-</p>
-
-<p>
-  <i
-    >The Bingleys and the Gardiners and the Lucases, Miss Darcy and Miss de
-    Bourgh, Jane, Wickham, and the rest, must pass without special comment,
-    further than the remark that Charlotte Lucas (her egregious papa, though
-    delightful, is just a little on the thither side of the line between comedy
-    and farce) is a wonderfully clever study in drab of one kind, and that
-    Wickham (though something of Miss Austen’s hesitation of touch in dealing
-    with young men appears) is a not much less notable sketch in drab of
-    another. Only genius could have made Charlotte what she is, yet not
-    disagreeable; Wickham what he is, without investing him either with a cheap
-    Don Juanish attractiveness or a disgusting rascality. But the hero and the
-    heroine are not tints to be dismissed.</i
-  >
-</p>
-
-<p>
-  <i
-    >Darcy has always seemed to me by far the best and most interesting of Miss
-    Austen’s heroes; the only possible competitor being Henry Tilney, whose part
-    is so slight and simple that it hardly enters into comparison. It has
-    sometimes, I believe, been urged that his pride is unnatural at first in its
-    expression and later in its yielding, while his falling in love at all is
-    not extremely probable. Here again I cannot go with the objectors. Darcy’s
-    own account of the way in which his pride had been pampered, is perfectly
-    rational and sufficient; and nothing could be, psychologically speaking,
-    a</i
-  >
-  causa verior
-  <i
-    >for its sudden restoration to healthy conditions than the shock of
-    Elizabeth’s scornful refusal acting on a nature</i
-  ><span class="pagenum"><a id="page_xxi">{xxi}</a></span> ex hypothesi
-  <i
-    >generous. Nothing in even our author is finer and more delicately touched
-    than the change of his demeanour at the sudden meeting in the grounds of
-    Pemberley. Had he been a bad prig or a bad coxcomb, he might have been still
-    smarting under his rejection, or suspicious that the girl had come
-    husband-hunting. His being neither is exactly consistent with the probable
-    feelings of a man spoilt in the common sense, but not really injured in
-    disposition, and thoroughly in love. As for his being in love, Elizabeth has
-    given as just an exposition of the causes of that phenomenon as Darcy has of
-    the conditions of his unregenerate state, only she has of course not counted
-    in what was due to her own personal charm.</i
-  >
-</p>
-
-<p>
-  <i
-    >The secret of that charm many men and not a few women, from Miss Austen
-    herself downwards, have felt, and like most charms it is a thing rather to
-    be felt than to be explained. Elizabeth of course belongs to the</i
-  >
-  allegro <i>or</i> allegra
-  <i
-    >division of the army of Venus. Miss Austen was always provokingly chary of
-    description in regard to her beauties; and except the fine eyes, and a hint
-    or two that she had at any rate sometimes a bright complexion, and was not
-    very tall, we hear nothing about her looks. But her chief difference from
-    other heroines of the lively type seems to lie first in her being distinctly
-    clever—almost strong-minded, in the better sense of that objectionable
-    word—and secondly in her being entirely destitute of ill-nature for all her
-    propensity to tease and the sharpness of her tongue. Elizabeth can give at
-    least as good as she gets when she is attacked; but she never “scratches,”
-    and she never attacks first. Some of the merest obsoletenesses of phrase
-    and<span class="pagenum"><a id="page_xxii">{xxii}</a></span> manner give one
-    or two of her early speeches a slight pertness, but that is nothing, and
-    when she comes to serious business, as in the great proposal scene with
-    Darcy (which is, as it should be, the climax of the interest of the book),
-    and in the final ladies’ battle with Lady Catherine, she is unexceptionable.
-    Then too she is a perfectly natural girl. She does not disguise from herself
-    or anybody that she resents Darcy’s first ill-mannered personality with as
-    personal a feeling. (By the way, the reproach that the ill-manners of this
-    speech are overdone is certainly unjust; for things of the same kind,
-    expressed no doubt less stiltedly but more coarsely, might have been heard
-    in more than one ball-room during this very year from persons who ought to
-    have been no worse bred than Darcy.) And she lets the injury done to Jane
-    and the contempt shown to the rest of her family aggravate this resentment
-    in the healthiest way in the world.</i
-  >
-</p>
-
-<p>
-  <i
-    >Still, all this does not explain her charm, which, taking beauty as a
-    common form of all heroines, may perhaps consist in the addition to her
-    playfulness, her wit, her affectionate and natural disposition, of a certain
-    fearlessness very uncommon in heroines of her type and age. Nearly all of
-    them would have been in speechless awe of the magnificent Darcy; nearly all
-    of them would have palpitated and fluttered at the idea of proposals, even
-    naughty ones, from the fascinating Wickham. Elizabeth, with nothing
-    offensive, nothing</i
-  >
-  viraginous,
-  <i
-    >nothing of the “New Woman” about her, has by nature what the best modern
-    (not “new”) women have by education and experience, a perfect freedom from
-    the idea that all men may bully her if they choose, and that most will<span
-      class="pagenum"
-      ><a id="page_xxiii">{xxiii}</a></span
-    >
-    away with her if they can. Though not in the least “impudent and mannish
-    grown,” she has no mere sensibility, no nasty niceness about her. The form
-    of passion common and likely to seem natural in Miss Austen’s day was so
-    invariably connected with the display of one or the other, or both of these
-    qualities, that she has not made Elizabeth outwardly passionate. But I, at
-    least, have not the slightest doubt that she would have married Darcy just
-    as willingly without Pemberley as with it, and anybody who can read between
-    lines will not find the lovers’ conversations in the final chapters so
-    frigid as they might have looked to the Della Cruscans of their own day, and
-    perhaps do look to the Della Cruscans of this.</i
-  >
-</p>
-
-<p>
-  <i
-    >And, after all, what is the good of seeking for the reason of charm?—it is
-    there. There were better sense in the sad mechanic exercise of determining
-    the reason of its absence where it is not. In the novels of the last hundred
-    years there are vast numbers of young ladies with whom it might be a
-    pleasure to fall in love; there are at least five with whom, as it seems to
-    me, no man of taste and spirit can help doing so. Their names are, in
-    chronological order, Elizabeth Bennet, Diana Vernon, Argemone Lavington,
-    Beatrix Esmond, and Barbara Grant. I should have been most in love with
-    Beatrix and Argemone; I should, I think, for mere occasional companionship,
-    have preferred Diana and Barbara. But to live with and to marry, I do not
-    know that any one of the four can come into competition with Elizabeth.</i
-  >
-</p>
-
-<p class="rt">
-  <i><span class="smcap">George Saintsbury.</span></i
-  ><br />
-  <span class="pagenum"><a id="page_xxiv">{xxiv}</a></span>
-</p>
-
-<h2>
-  <a id="LIST_OF_ILLUSTRATIONS"></a
-  ><span class="pagenum"><a id="page_xxv">{xxv}</a></span>
-  <img
-    alt="List of Illustrations."
-    src="images/i_026.jpg"
-    width="450"
-    id="id-5508057309530028400"
-  />
-</h2>
-
-<table>
-  <tbody>
-    <tr>
-      <td>&nbsp;</td>
-      <td><small>PAGE</small></td>
-    </tr>
-
-    <tr>
-      <td>Frontispiece</td>
-      <td class="rtb"><a href="#page_iv" class="pginternal">iv</a></td>
-    </tr>
-    <tr>
-      <td>Title-page</td>
-      <td class="rtb"><a href="#page_v" class="pginternal">v</a></td>
-    </tr>
-    <tr>
-      <td>Dedication</td>
-      <td class="rtb"><a href="#page_vii" class="pginternal">vii</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Preface</td>
-      <td class="rtb"><a href="#page_ix" class="pginternal">ix</a></td>
-    </tr>
-    <tr>
-      <td>Heading to List of Illustrations</td>
-      <td class="rtb"><a href="#page_xxv" class="pginternal">xxv</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter I.</td>
-      <td class="rtb"><a href="#page_1" class="pginternal">1</a></td>
-    </tr>
-    <tr>
-      <td>“He came down to see the place”</td>
-      <td class="rtb"><a href="#page_2" class="pginternal">2</a></td>
-    </tr>
-    <tr>
-      <td>Mr. and Mrs. Bennet</td>
-      <td class="rtb"><a href="#page_5" class="pginternal">5</a></td>
-    </tr>
-    <tr>
-      <td>“I hope Mr. Bingley will like it”</td>
-      <td class="rtb"><a href="#page_6" class="pginternal">6</a></td>
-    </tr>
-    <tr>
-      <td>“I’m the tallest”</td>
-      <td class="rtb"><a href="#page_9" class="pginternal">9</a></td>
-    </tr>
-    <tr>
-      <td>“He rode a black horse”</td>
-      <td class="rtb"><a href="#page_10" class="pginternal">10</a></td>
-    </tr>
-    <tr>
-      <td>“When the party entered”</td>
-      <td class="rtb"><a href="#page_12" class="pginternal">12</a></td>
-    </tr>
-    <tr>
-      <td>“She is tolerable”</td>
-      <td class="rtb"><a href="#page_15" class="pginternal">15</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter IV.</td>
-      <td class="rtb"><a href="#page_18" class="pginternal">18</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter V.</td>
-      <td class="rtb"><a href="#page_22" class="pginternal">22</a></td>
-    </tr>
-    <tr>
-      <td>“Without once opening his lips”</td>
-      <td class="rtb"><a href="#page_24" class="pginternal">24</a></td>
-    </tr>
-    <tr>
-      <td>Tailpiece to Chapter V.</td>
-      <td class="rtb"><a href="#page_26" class="pginternal">26</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter VI.</td>
-      <td class="rtb"><a href="#page_27" class="pginternal">27</a></td>
-    </tr>
-    <tr>
-      <td>“The entreaties of several”</td>
-      <td class="rtb"><a href="#page_31" class="pginternal">31</a></td>
-    </tr>
-    <tr>
-      <td>“A note for Miss Bennet”</td>
-      <td class="rtb"><a href="#page_36" class="pginternal">36</a></td>
-    </tr>
-    <tr>
-      <td>“Cheerful prognostics”</td>
-      <td class="rtb"><a href="#page_40" class="pginternal">40</a></td>
-    </tr>
-    <tr>
-      <td>“The apothecary came”</td>
-      <td class="rtb"><a href="#page_43" class="pginternal">43</a></td>
-    </tr>
-    <tr>
-      <td>“Covering a screen”</td>
-      <td class="rtb"><a href="#page_45" class="pginternal">45</a></td>
-    </tr>
-    <tr>
-      <td>“Mrs. Bennet and her two youngest girls”</td>
-      <td class="rtb"><a href="#page_53" class="pginternal">53</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter X.</td>
-      <td class="rtb"><a href="#page_60" class="pginternal">60</a></td>
-    </tr>
-    <tr>
-      <td>“No, no; stay where you are”</td>
-      <td class="rtb"><a href="#page_67" class="pginternal">67</a></td>
-    </tr>
-    <tr>
-      <td>“Piling up the fire”</td>
-      <td class="rtb"><a href="#page_69" class="pginternal">69</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XII.</td>
-      <td class="rtb"><a href="#page_75" class="pginternal">75</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XIII.</td>
-      <td class="rtb"><a href="#page_78" class="pginternal">78</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XIV.</td>
-      <td class="rtb"><a href="#page_84" class="pginternal">84</a></td>
-    </tr>
-    <tr>
-      <td>“Protested that he never read novels”</td>
-      <td class="rtb"><a href="#page_87" class="pginternal">87</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XV.</td>
-      <td class="rtb"><a href="#page_89" class="pginternal">89</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XVI.</td>
-      <td class="rtb"><a href="#page_95" class="pginternal">95</a></td>
-    </tr>
-    <tr>
-      <td>“The officers of the ——shire”</td>
-      <td class="rtb"><a href="#page_97" class="pginternal">97</a></td>
-    </tr>
-    <tr>
-      <td>“Delighted to see their dear friend again”</td>
-      <td class="rtb"><a href="#page_108" class="pginternal">108</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XVIII.</td>
-      <td class="rtb"><a href="#page_113" class="pginternal">113</a></td>
-    </tr>
-    <tr>
-      <td>“Such very superior dancing is not often seen”</td>
-      <td class="rtb"><a href="#page_118" class="pginternal">118</a></td>
-    </tr>
-    <tr>
-      <td>“To assure you in the most animated language”</td>
-      <td class="rtb"><a href="#page_132" class="pginternal">132</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XX.</td>
-      <td class="rtb"><a href="#page_139" class="pginternal">139</a></td>
-    </tr>
-    <tr>
-      <td>“They entered the breakfast-room”</td>
-      <td class="rtb"><a href="#page_143" class="pginternal">143</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXI.</td>
-      <td class="rtb"><a href="#page_146" class="pginternal">146</a></td>
-    </tr>
-    <tr>
-      <td>“Walked back with them”</td>
-      <td class="rtb"><a href="#page_148" class="pginternal">148</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXII.</td>
-      <td class="rtb"><a href="#page_154" class="pginternal">154</a></td>
-    </tr>
-    <tr>
-      <td>“So much love and eloquence”</td>
-      <td class="rtb"><a href="#page_156" class="pginternal">156</a></td>
-    </tr>
-    <tr>
-      <td>“Protested he must be entirely mistaken”</td>
-      <td class="rtb"><a href="#page_161" class="pginternal">161</a></td>
-    </tr>
-    <tr>
-      <td>“Whenever she spoke in a low voice”</td>
-      <td class="rtb"><a href="#page_166" class="pginternal">166</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXIV.</td>
-      <td class="rtb"><a href="#page_168" class="pginternal">168</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXV.</td>
-      <td class="rtb"><a href="#page_175" class="pginternal">175</a></td>
-    </tr>
-    <tr>
-      <td>“Offended two or three young ladies”</td>
-      <td class="rtb"><a href="#page_177" class="pginternal">177</a></td>
-    </tr>
-    <tr>
-      <td>“Will you come and see me?”</td>
-      <td class="rtb"><a href="#page_181" class="pginternal">181</a></td>
-    </tr>
-    <tr>
-      <td>“On the stairs”</td>
-      <td class="rtb"><a href="#page_189" class="pginternal">189</a></td>
-    </tr>
-    <tr>
-      <td>“At the door”</td>
-      <td class="rtb"><a href="#page_194" class="pginternal">194</a></td>
-    </tr>
-    <tr>
-      <td>“In conversation with the ladies”</td>
-      <td class="rtb"><a href="#page_198" class="pginternal">198</a></td>
-    </tr>
-    <tr>
-      <td>“Lady Catherine,” said she, “you have given me a treasure”</td>
-      <td class="rtb"><a href="#page_200" class="pginternal">200</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXX.</td>
-      <td class="rtb"><a href="#page_209" class="pginternal">209</a></td>
-    </tr>
-    <tr>
-      <td>“He never failed to inform them”</td>
-      <td class="rtb"><a href="#page_211" class="pginternal">211</a></td>
-    </tr>
-    <tr>
-      <td>“The gentlemen accompanied him”</td>
-      <td class="rtb"><a href="#page_213" class="pginternal">213</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXXI.</td>
-      <td class="rtb"><a href="#page_215" class="pginternal">215</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXXII.</td>
-      <td class="rtb"><a href="#page_221" class="pginternal">221</a></td>
-    </tr>
-    <tr>
-      <td>“Accompanied by their aunt”</td>
-      <td class="rtb"><a href="#page_225" class="pginternal">225</a></td>
-    </tr>
-    <tr>
-      <td>“On looking up”</td>
-      <td class="rtb"><a href="#page_228" class="pginternal">228</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXXIV.</td>
-      <td class="rtb"><a href="#page_235" class="pginternal">235</a></td>
-    </tr>
-    <tr>
-      <td>“Hearing herself called”</td>
-      <td class="rtb"><a href="#page_243" class="pginternal">243</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XXXVI.</td>
-      <td class="rtb"><a href="#page_253" class="pginternal">253</a></td>
-    </tr>
-    <tr>
-      <td>“Meeting accidentally in town”</td>
-      <td class="rtb"><a href="#page_256" class="pginternal">256</a></td>
-    </tr>
-    <tr>
-      <td>“His parting obeisance”</td>
-      <td class="rtb"><a href="#page_261" class="pginternal">261</a></td>
-    </tr>
-    <tr>
-      <td>“Dawson”</td>
-      <td class="rtb"><a href="#page_263" class="pginternal">263</a></td>
-    </tr>
-    <tr>
-      <td>“The elevation of his feelings”</td>
-      <td class="rtb"><a href="#page_267" class="pginternal">267</a></td>
-    </tr>
-    <tr>
-      <td>“They had forgotten to leave any message”</td>
-      <td class="rtb"><a href="#page_270" class="pginternal">270</a></td>
-    </tr>
-    <tr>
-      <td>“How nicely we are crammed in!”</td>
-      <td class="rtb"><a href="#page_272" class="pginternal">272</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XL.</td>
-      <td class="rtb"><a href="#page_278" class="pginternal">278</a></td>
-    </tr>
-    <tr>
-      <td>“I am determined never to speak of it again”</td>
-      <td class="rtb"><a href="#page_283" class="pginternal">283</a></td>
-    </tr>
-    <tr>
-      <td>“When Colonel Miller’s regiment went away”</td>
-      <td class="rtb"><a href="#page_285" class="pginternal">285</a></td>
-    </tr>
-    <tr>
-      <td>“Tenderly flirting”</td>
-      <td class="rtb"><a href="#page_290" class="pginternal">290</a></td>
-    </tr>
-    <tr>
-      <td>The arrival of the Gardiners</td>
-      <td class="rtb"><a href="#page_294" class="pginternal">294</a></td>
-    </tr>
-    <tr>
-      <td>“Conjecturing as to the date”</td>
-      <td class="rtb"><a href="#page_301" class="pginternal">301</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XLIV.</td>
-      <td class="rtb"><a href="#page_318" class="pginternal">318</a></td>
-    </tr>
-    <tr>
-      <td>“To make herself agreeable to all”</td>
-      <td class="rtb"><a href="#page_321" class="pginternal">321</a></td>
-    </tr>
-    <tr>
-      <td>“Engaged by the river”</td>
-      <td class="rtb"><a href="#page_327" class="pginternal">327</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XLVI.</td>
-      <td class="rtb"><a href="#page_334" class="pginternal">334</a></td>
-    </tr>
-    <tr>
-      <td>“I have not an instant to lose”</td>
-      <td class="rtb"><a href="#page_339" class="pginternal">339</a></td>
-    </tr>
-    <tr>
-      <td>“The first pleasing earnest of their welcome”</td>
-      <td class="rtb"><a href="#page_345" class="pginternal">345</a></td>
-    </tr>
-    <tr>
-      <td>The Post</td>
-      <td class="rtb"><a href="#page_359" class="pginternal">359</a></td>
-    </tr>
-    <tr>
-      <td>“To whom I have related the affair”</td>
-      <td class="rtb"><a href="#page_363" class="pginternal">363</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter XLIX.</td>
-      <td class="rtb"><a href="#page_368" class="pginternal">368</a></td>
-    </tr>
-    <tr>
-      <td>“But perhaps you would like to read it”</td>
-      <td class="rtb"><a href="#page_370" class="pginternal">370</a></td>
-    </tr>
-    <tr>
-      <td>“The spiteful old ladies”</td>
-      <td class="rtb"><a href="#page_377" class="pginternal">377</a></td>
-    </tr>
-    <tr>
-      <td>“With an affectionate smile”</td>
-      <td class="rtb"><a href="#page_385" class="pginternal">385</a></td>
-    </tr>
-    <tr>
-      <td>“I am sure she did not listen”</td>
-      <td class="rtb"><a href="#page_393" class="pginternal">393</a></td>
-    </tr>
-    <tr>
-      <td>“Mr. Darcy with him”</td>
-      <td class="rtb"><a href="#page_404" class="pginternal">404</a></td>
-    </tr>
-    <tr>
-      <td>“Jane happened to look round”</td>
-      <td class="rtb"><a href="#page_415" class="pginternal">415</a></td>
-    </tr>
-    <tr>
-      <td>“Mrs. Long and her nieces”</td>
-      <td class="rtb"><a href="#page_420" class="pginternal">420</a></td>
-    </tr>
-    <tr>
-      <td>“Lizzy, my dear, I want to speak to you”</td>
-      <td class="rtb"><a href="#page_422" class="pginternal">422</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter LVI.</td>
-      <td class="rtb"><a href="#page_431" class="pginternal">431</a></td>
-    </tr>
-    <tr>
-      <td>“After a short survey”</td>
-      <td class="rtb"><a href="#page_434" class="pginternal">434</a></td>
-    </tr>
-    <tr>
-      <td>“But now it comes out”</td>
-      <td class="rtb"><a href="#page_442" class="pginternal">442</a></td>
-    </tr>
-    <tr>
-      <td>“The efforts of his aunt”</td>
-      <td class="rtb"><a href="#page_448" class="pginternal">448</a></td>
-    </tr>
-    <tr>
-      <td>“Unable to utter a syllable”</td>
-      <td class="rtb"><a href="#page_457" class="pginternal">457</a></td>
-    </tr>
-    <tr>
-      <td>“The obsequious civility”</td>
-      <td class="rtb"><a href="#page_466" class="pginternal">466</a></td>
-    </tr>
-    <tr>
-      <td>Heading to Chapter LXI.</td>
-      <td class="rtb"><a href="#page_472" class="pginternal">472</a></td>
-    </tr>
-    <tr>
-      <td>The End</td>
-      <td class="rtb"><a href="#page_476" class="pginternal">476</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>
-  <span class="pagenum"><a id="page_1">{1}</a></span>
-</p>
-
 <h2>
   <a id="Chapter_I"></a>
+
   <img alt="" height="550" src="images/i_030.jpg" id="id-2468055542117577475" />
-  <br /><br />
-  Chapter I.
+  
+  I.
 </h2>
 
 <p class="nind">
-  <span class="letra">I</span>T is a truth universally acknowledged, that a
+  It is a truth universally acknowledged, that a
   single man in possession of a good fortune must be in want of a wife.
 </p>
 
@@ -1223,7 +22,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “My dear Mr. Bennet,” said his lady to him one day, “have you heard that
   Netherfield Park is let at last?<span class="pagenum"
-    ><a id="page_2">{2}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -1240,15 +40,6 @@ const PrideAndPrejudiceHtml = `
 
 <p>“<i>You</i> want to tell me, and I have no objection to hearing it.”</p>
 
-<div class="figcenter" style="width: 550px">
-  <img alt="" src="images/i_031.jpg" width="550" id="id-9046359730503820848" />
-  <div class="caption">
-    <p>“He came down to see the place”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
-
 <p>This was invitation enough.</p>
 
 <p>
@@ -1257,7 +48,8 @@ const PrideAndPrejudiceHtml = `
   Monday in a chaise and four to see the place, and was so much delighted with
   it that he agreed with Mr. Morris immediately; that he is to take possession
   before Michaelmas, and some of his servants are to be in the house by the end
-  of next week.<span class="pagenum"><a id="page_3">{3}</a></span
+  of next week.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -1312,7 +104,8 @@ const PrideAndPrejudiceHtml = `
   “But consider your daughters. Only think what an establishment it would be for
   one of them. Sir William and Lady Lucas are determined to go, merely on that
   account; for in general, you know, they visit no new<span class="pagenum"
-    ><a id="page_4">{4}</a></span
+    >
+    </span
   >
   comers. Indeed you must go, for it will be impossible for <i>us</i> to visit
   him, if you do not.”
@@ -1367,30 +160,17 @@ const PrideAndPrejudiceHtml = `
 <p>
   Mr. Bennet was so odd a mixture of quick parts, sarcastic humour, reserve, and
   caprice, that the experience of three-and-twenty years had been insufficient
-  to<span class="pagenum"><a id="page_5">{5}</a></span> make his wife understand
+  to<span class="pagenum">
+  </span> make his wife understand
   his character. <i>Her</i> mind was less difficult to develope. She was a woman
   of mean understanding, little information, and uncertain temper. When she was
   discontented, she fancied herself nervous. The business of her life was to get
   her daughters married: its solace was visiting and news.
 </p>
 
-<div class="figcenter" style="width: 444px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_034.jpg"
-    width="444"
-    id="id-8912801051854578352"
-  />
-  <div class="caption">
-    <p>M<sup>r.</sup> &amp; M<sup>rs.</sup> Bennet</p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
-
 <p>
-  <span class="pagenum"><a id="page_6">{6}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -1402,17 +182,11 @@ const PrideAndPrejudiceHtml = `
     id="id-7469236910530212672"
   />
   <span class="caption"> I hope Mr. Bingley will like it. </span>
-  <br /><br />CHAPTER II.
+  CHAPTER II.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_035_b.png"
-      width="100"
-      id="id-1788742569324011031" /></span
-  >R. BENNET was among the earliest of those who waited on Mr. Bingley. He had
+  Mr. Bennet was among the earliest of those who waited on Mr. Bingley. He had
   always intended to visit him, though to the last always assuring his wife that
   he should not go; and till the evening after the visit was paid she had no
   knowledge of it. It was then disclosed in the following manner. Observing his
@@ -1424,7 +198,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “We are not in a way to know <i>what</i> Mr. Bingley likes,” said her mother,
   resentfully, “since we are not to visit.<span class="pagenum"
-    ><a id="page_7">{7}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -1486,7 +261,8 @@ const PrideAndPrejudiceHtml = `
   little. One cannot know what a man really is by the end of a fortnight. But if
   <i>we</i> do not venture, somebody else will; and after all, Mrs. Long and her
   nieces must stand their chance; and, therefore,<span class="pagenum"
-    ><a id="page_8">{8}</a></span
+    >
+    </span
   >
   as she will think it an act of kindness, if you decline the office, I will
   take it on myself.”
@@ -1537,7 +313,8 @@ const PrideAndPrejudiceHtml = `
   “Now, Kitty, you may cough as much as you choose,” said Mr. Bennet; and, as he
   spoke, he left the room, fatigued with the raptures of his wife.<span
     class="pagenum"
-    ><a id="page_9">{9}</a></span
+    >
+    </span
   >
 </p>
 
@@ -1560,21 +337,6 @@ const PrideAndPrejudiceHtml = `
   Bennet’s visit, and determining when they should ask him to dinner.
 </p>
 
-<div class="figcenter" style="width: 386px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_038.jpg"
-    width="386"
-    id="id-6452247690295352856"
-  />
-  <div class="caption">
-    <p>
-      “I’m the tallest<span class="pagenum"><a id="page_10">{10}</a></span
-      >”
-    </p>
-  </div>
-</div>
 
 <h2>
   <a id="CHAPTER_III"></a
@@ -1584,23 +346,18 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4055260564299690959"
   />
-  <br /><span class="caption"> He rode a black horse. </span>
-  <br /><br />CHAPTER III.
+  <span class="caption"> He rode a black horse. </span>
+  CHAPTER III.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="N"
-      src="images/i_039_b.png"
-      width="100"
-      id="id-1162277276445006216" /></span
-  >OT all that Mrs. Bennet, however, with the assistance of her five daughters,
+  Not all that Mrs. Bennet, however, with the assistance of her five daughters,
   could ask on the subject, was sufficient to draw from her husband any
   satisfactory description of Mr. Bingley. They attacked him in various ways,
   with barefaced questions, ingenious suppositions, and distant surmises; but he
   eluded the skill of them all; and they were at<span class="pagenum"
-    ><a id="page_11">{11}</a></span
+    >
+    </span
   >
   last obliged to accept the second-hand intelligence of their neighbour, Lady
   Lucas. Her report was highly favourable. Sir William had been delighted with
@@ -1637,31 +394,18 @@ const PrideAndPrejudiceHtml = `
   one place to another, and never settled at Netherfield as he ought to be. Lady
   Lucas quieted her fears a little by starting the idea of his<span
     class="pagenum"
-    ><a id="page_12">{12}</a></span
+    >
+    </span
   >
 </p>
-
-<div class="figcenter" style="width: 374px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_041.jpg"
-    width="374"
-    id="id-6995980926961587857"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“When the Party entered”</p></div>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p class="nind">
   being gone to London only to get a large party for the ball; and a report soon
   followed that Mr. Bingley was to bring twelve ladies and seven gentlemen with
   him to the assembly. The girls grieved over such a number of<span
     class="pagenum"
-    ><a id="page_13">{13}</a></span
+    >
+    </span
   >
   ladies; but were comforted the day before the ball by hearing that, instead of
   twelve, he had brought only six with him from London, his five sisters and a
@@ -1693,7 +437,8 @@ const PrideAndPrejudiceHtml = `
   amiable qualities must speak for themselves. What a contrast between him and
   his friend! Mr. Darcy danced only once with Mrs. Hurst and once with Miss
   Bingley, declined being introduced to<span class="pagenum"
-    ><a id="page_14">{14}</a></span
+    >
+    </span
   >
   any other lady, and spent the rest of the evening in walking about the room,
   speaking occasionally to one of his own party. His character was decided. He
@@ -1735,27 +480,13 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Oh, she is the most beautiful creature I ever beheld!<span class="pagenum"
-    ><a id="page_15">{15}</a></span
+    >
+    </span
   >
   But there is one of her sisters sitting down just behind you, who is very
   pretty, and I dare say very agreeable. Do let me ask my partner to introduce
   you.”
 </p>
-
-<div class="figcenter" style="width: 456px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_044.jpg"
-    width="456"
-    id="id-233503479664251838"
-  />
-  <div class="caption">
-    <p>“She is tolerable”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   “Which do you mean?” and turning round, he looked for a moment at Elizabeth,
@@ -1763,7 +494,8 @@ const PrideAndPrejudiceHtml = `
   tolerable: but not handsome enough to tempt <i>me</i>; and I am in no humour
   at present to give consequence to young ladies who are slighted by other men.
   You had better return to your<span class="pagenum"
-    ><a id="page_16">{16}</a></span
+    >
+    </span
   >
   partner and enjoy her smiles, for you are wasting your time with me.”
 </p>
@@ -1799,7 +531,8 @@ const PrideAndPrejudiceHtml = `
   so admired, nothing could be like it. Everybody said how well she looked; and
   Mr. Bingley thought her quite beautiful, and danced with her twice. Only think
   of <i>that</i>, my dear: he<span class="pagenum"
-    ><a id="page_17">{17}</a></span
+    >
+    </span
   >
   actually danced with her twice; and she was the only creature in the room that
   he asked a second time. First of all, he asked Miss Lucas. I was so vexed to
@@ -1838,7 +571,8 @@ const PrideAndPrejudiceHtml = `
   He walked here, and he walked there, fancying himself so very great! Not
   handsome enough to dance with! I wish you had been there, my dear, to have
   given him one of your set-downs. I quite detest the man.<span class="pagenum"
-    ><a id="page_18">{18}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -1850,17 +584,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3318441270395841253"
   />
-  <br /><br />CHAPTER IV.
+  CHAPTER IV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="W"
-      src="images/i_047_b.png"
-      width="100"
-      id="id-5068389810196466029" /></span
-  >HEN Jane and Elizabeth were alone, the former, who had been cautious in her
+  When Jane and Elizabeth were alone, the former, who had been cautious in her
   praise of Mr. Bingley before, expressed to her sister how very much she
   admired him.
 </p>
@@ -1885,7 +613,8 @@ const PrideAndPrejudiceHtml = `
   “Did not you? <i>I</i> did for you. But that is one great difference between
   us. Compliments always take <i>you</i> by surprise, and <i>me</i> never. What
   could be more natural than his asking you again? He could not help seeing that
-  you<span class="pagenum"><a id="page_19">{19}</a></span> were about five times
+  you<span class="pagenum">
+  </span> were about five times
   as pretty as every other woman in the room. No thanks to his gallantry for
   that. Well, he certainly is very agreeable, and I give you leave to like him.
   You have liked many a stupider person.”
@@ -1927,7 +656,8 @@ const PrideAndPrejudiceHtml = `
   judgment, too, unassailed by any attention to herself, she was very little
   disposed to approve them. They were, in fact, very fine ladies; not deficient
   in good-humour when they were pleased, nor in the power<span class="pagenum"
-    ><a id="page_20">{20}</a></span
+    >
+    </span
   >
   of being agreeable where they chose it; but proud and conceited. They were
   rather handsome; had been educated in one of the first private seminaries in
@@ -1963,7 +693,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Between him and Darcy there was a very steady<span class="pagenum"
-    ><a id="page_21">{21}</a></span
+    >
+    </span
   >
   friendship, in spite of a great opposition of character. Bingley was endeared
   to Darcy by the easiness, openness, and ductility of his temper, though no
@@ -1994,7 +725,8 @@ const PrideAndPrejudiceHtml = `
   liked her, and pronounced her to be a sweet girl, and one whom they should not
   object to know more of. Miss Bennet was therefore established as a sweet girl;
   and their brother felt authorized by such commendation to think of her as he
-  chose.<span class="pagenum"><a id="page_22">{22}</a></span>
+  chose.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -2005,18 +737,12 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-5755800330073207023"
   />
-  <br /><br />
+  
   CHAPTER V.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="W"
-      src="images/i_051_b.png"
-      width="100"
-      id="id-8321605898593179206" /></span
-  >ITHIN a short walk of Longbourn lived a family with whom the Bennets were
+  Within a short walk of Longbourn lived a family with whom the Bennets were
   particularly intimate. Sir William Lucas had been formerly in trade in
   Meryton, where he had made a tolerable fortune, and risen to the honour of
   knighthood by an address to the king during his mayoralty. The distinction
@@ -2033,7 +759,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Lady Lucas was a very good kind of woman, not too<span class="pagenum"
-    ><a id="page_23">{23}</a></span
+    >
+    </span
   >
   clever to be a valuable neighbour to Mrs. Bennet. They had several children.
   The eldest of them, a sensible, intelligent young woman, about twenty-seven,
@@ -2082,27 +809,13 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I beg you will not put it into Lizzy’s head to be<span class="pagenum"
-    ><a id="page_24">{24}</a></span
+    >
+    </span
   >
   vexed by his ill-treatment, for he is such a disagreeable man that it would be
   quite a misfortune to be liked by him. Mrs. Long told me last night that he
   sat close to her for half an hour without once opening his lips.”
 </p>
-
-<div class="figcenter" style="width: 354px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_053.jpg"
-    width="354"
-    id="id-1434249403727204506"
-  />
-  <div class="caption">
-    <p>“Without once opening his lips”</p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   “Are you quite sure, ma’am? Is not there a little mistake?” said Jane. “I
@@ -2111,7 +824,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Ay, because she asked him at last how he liked<span class="pagenum"
-    ><a id="page_25">{25}</a></span
+    >
+    </span
   >
   Netherfield, and he could not help answering her; but she said he seemed very
   angry at being spoke to.”
@@ -2162,7 +876,8 @@ const PrideAndPrejudiceHtml = `
   particularly prone to it, and that there are very few of us who do not cherish
   a feeling of self-complacency on the score of some quality or other, real or
   imaginary. Vanity and pride are different things, though the words are
-  often<span class="pagenum"><a id="page_26">{26}</a></span> used synonymously.
+  often<span class="pagenum">
+  </span> used synonymously.
   A person may be proud without being vain. Pride relates more to our opinion of
   ourselves; vanity to what we would have others think of us.”
 </p>
@@ -2182,19 +897,9 @@ const PrideAndPrejudiceHtml = `
   The boy protested that she should not; she continued to declare that she
   would; and the argument ended only with the visit.
 </p>
-
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="513"
-    src="images/i_055.jpg"
-    width="550"
-    id="id-4480906969307493964"
-  />
-</div>
-
 <p>
-  <span class="pagenum"><a id="page_27">{27}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -2205,17 +910,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-773621983793441680"
   />
-  <br /><br />CHAPTER VI.
+  CHAPTER VI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_056_b.png"
-      width="100"
-      id="id-1383273941413487022" /></span
-  >HE ladies of Longbourn soon waited on those of Netherfield. The visit was
+  The ladies of Longbourn soon waited on those of Netherfield. The visit was
   returned in due form. Miss Bennet’s pleasing manners grew on the good-will of
   Mrs. Hurst and Miss Bingley; and though the mother was found to be
   intolerable, and the younger sisters not worth speaking to, a wish of being
@@ -2231,7 +930,8 @@ const PrideAndPrejudiceHtml = `
   pleasure that it was not likely to be discovered by the world in general,
   since Jane united with great strength of feeling, a composure of temper and an
   uniform cheerfulness of manner, which would guard<span class="pagenum"
-    ><a id="page_28">{28}</a></span
+    >
+    </span
   >
   her from the suspicions of the impertinent. She mentioned this to her friend,
   Miss Lucas.
@@ -2272,7 +972,8 @@ const PrideAndPrejudiceHtml = `
   every half hour in which she can command his attention. When she is secure of
   him, there will be leisure for falling in love as much as she chooses.<span
     class="pagenum"
-    ><a id="page_29">{29}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -2310,7 +1011,8 @@ const PrideAndPrejudiceHtml = `
   continue to grow sufficiently unlike afterwards to have their share of
   vexation; and it is better to know as little as possible of the defects of the
   person with whom you are to pass your life.<span class="pagenum"
-    ><a id="page_30">{30}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -2352,23 +1054,11 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “But if he does it any more, I shall certainly let him know that I see what he
-  is about. He has a very<span class="pagenum"><a id="page_31">{31}</a></span>
+  is about. He has a very<span class="pagenum">
+  </span>
   satirical eye, and if I do not begin by being impertinent myself, I shall soon
   grow afraid of him.”
 </p>
-
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="547"
-    src="images/i_060.jpg"
-    width="550"
-    id="id-3208803702844028614"
-  />
-  <div class="caption">
-    <p>“The entreaties of several” [<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   On his approaching them soon afterwards, though without seeming to have any
@@ -2384,7 +1074,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “With great energy; but it is a subject which always makes a lady
-  energetic.<span class="pagenum"><a id="page_32">{32}</a></span
+  energetic.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -2424,7 +1115,8 @@ const PrideAndPrejudiceHtml = `
   of her younger sisters, who with some of the Lucases, and two or three
   officers, joined eagerly in dancing at one end of the room.<span
     class="pagenum"
-    ><a id="page_33">{33}</a></span
+    >
+    </span
   >
 </p>
 
@@ -2478,7 +1170,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   He paused in hopes of an answer: but his companion was not disposed to make
   any; and Elizabeth at that instant moving towards them, he was struck with
-  the<span class="pagenum"><a id="page_34">{34}</a></span> notion of doing a
+  the<span class="pagenum">
+  </span> notion of doing a
   very gallant thing, and called out to her,—
 </p>
 
@@ -2527,7 +1220,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “You are considering how insupportable it would be<span class="pagenum"
-    ><a id="page_35">{35}</a></span
+    >
+    </span
   >
   to pass many evenings in this manner,—in such society; and, indeed, I am quite
   of your opinion. I was never more annoyed! The insipidity, and yet the
@@ -2569,7 +1263,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   He listened to her with perfect indifference, while she chose to entertain
   herself in this manner; and as his composure convinced her that all was safe,
-  her wit flowed along.<span class="pagenum"><a id="page_36">{36}</a></span>
+  her wit flowed along.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -2580,23 +1275,18 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1494747683996897280"
   />
-  <br />
+  
   <span class="caption"> A note for Miss Bennet. </span>
-  <br /><br />CHAPTER VII.
+  CHAPTER VII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_065_b.png"
-      width="100"
-      id="id-8465956215477355698" /></span
-  >R. BENNET’S property consisted almost entirely in an estate of two thousand a
+  Mr. Bennet's property consisted almost entirely in an estate of two thousand a
   year, which, unfortunately for his daughters, was entailed, in default of
   heirs male, on a distant relation; and their mother’s fortune, though ample
   for her situation in life, could but ill supply the deficiency of his. Her
-  father had been an<span class="pagenum"><a id="page_37">{37}</a></span>
+  father had been an<span class="pagenum">
+  </span>
   attorney in Meryton, and had left her four thousand pounds.
 </p>
 
@@ -2630,7 +1320,8 @@ const PrideAndPrejudiceHtml = `
   of nothing but officers; and Mr. Bingley’s large fortune, the mention of which
   gave animation to their mother, was worthless in their eyes when opposed to
   the regimentals of an ensign.<span class="pagenum"
-    ><a id="page_38">{38}</a></span
+    >
+    </span
   >
 </p>
 
@@ -2676,7 +1367,8 @@ const PrideAndPrejudiceHtml = `
   young colonel, with five or six thousand a year, should want one of my girls,
   I shall not say nay to him; and I thought Colonel Forster looked very becoming
   the other night at Sir William’s in his regimentals.<span class="pagenum"
-    ><a id="page_39">{39}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -2711,7 +1403,7 @@ const PrideAndPrejudiceHtml = `
     gentlemen are to dine with the officers. Yours ever,
   </p>
 
-  <p class="r">“<span class="smcap">Caroline Bingley</span>.”<br /></p>
+  <p class="r">“<span class="smcap">Caroline Bingley</span>.”</p>
 </div>
 
 <p>
@@ -2731,7 +1423,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “That would be a good scheme,” said Elizabeth, “if you were sure that they
   would not offer to send her home.<span class="pagenum"
-    ><a id="page_40">{40}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -2747,22 +1440,12 @@ const PrideAndPrejudiceHtml = `
   in the farm, Mr. Bennet, are not they?”
 </p>
 
-<div class="figcenter" style="width: 433px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_069.jpg"
-    width="433"
-    id="id-1819770041585416765"
-  />
-  <div class="caption"><p>Cheerful prognostics</p></div>
-</div>
-
 <p>“They are wanted in the farm much oftener than I can get them.”</p>
 
 <p>
   “But if you have got them to-day,” said Elizabeth, “my mother’s purpose will
-  be answered.<span class="pagenum"><a id="page_41">{41}</a></span
+  be answered.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -2795,7 +1478,7 @@ const PrideAndPrejudiceHtml = `
     with me.
   </p>
 
-  <p class="r">“Yours, etc.”<br /></p>
+  <p class="r">“Yours, etc.”</p>
 </div>
 
 <p>
@@ -2807,7 +1490,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Oh, I am not at all afraid of her dying. People do<span class="pagenum"
-    ><a id="page_42">{42}</a></span
+    >
+    </span
   >
   not die of little trifling colds. She will be taken good care of. As long as
   she stays there, it is all very well. I would go and see her if I could have
@@ -2856,7 +1540,8 @@ const PrideAndPrejudiceHtml = `
   after field at a quick pace, jumping over stiles and springing over puddles,
   with impatient activity, and finding herself at last within view of the house,
   with weary ancles, dirty stockings, and a face glowing with the warmth of
-  exercise.<span class="pagenum"><a id="page_43">{43}</a></span>
+  exercise.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -2894,7 +1579,7 @@ const PrideAndPrejudiceHtml = `
     id="id-8801678757269689571"
   />
   <div class="caption">
-    <p>“The Apothecary came”<br /></p>
+    <p>“The Apothecary came”</p>
   </div>
 </div>
 
@@ -2903,7 +1588,8 @@ const PrideAndPrejudiceHtml = `
   to like them herself, when she saw how much affection and solicitude they
   showed for Jane. The apothecary came; and having examined his patient, said,
   as might be supposed, that she had caught a violent cold, and that they must
-  endeavour to<span class="pagenum"><a id="page_44">{44}</a></span> get the
+  endeavour to<span class="pagenum">
+  </span> get the
   better of it; advised her to return to bed, and promised her some draughts.
   The advice was followed readily, for the feverish symptoms increased, and her
   head ached acutely. Elizabeth did not quit her room for a moment, nor were the
@@ -2922,7 +1608,8 @@ const PrideAndPrejudiceHtml = `
 </p>
 
 <p>
-  <span class="pagenum"><a id="page_45">{45}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -2933,23 +1620,18 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1263031656769029149"
   />
-  <br /><span class="caption"> Covering a screen. </span> <br /><br />CHAPTER
+  <span class="caption"> Covering a screen. </span> CHAPTER
   VIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="A"
-      src="images/i_074_b.png"
-      width="100"
-      id="id-5713016851338607620" /></span
-  >T five o’clock the two ladies retired to dress, and at half-past six
+  At five o’clock the two ladies retired to dress, and at half-past six
   Elizabeth was summoned to dinner. To the civil inquiries which then poured in,
   and amongst which she had the pleasure of distinguishing the much superior
   solicitude of Mr. Bingley, she could not make a very favourable answer.<span
     class="pagenum"
-    ><a id="page_46">{46}</a></span
+    >
+    </span
   >
   Jane was by no means better. The sisters, on hearing this, repeated three or
   four times how much they were grieved, how shocking it was to have a bad cold,
@@ -2987,7 +1669,8 @@ const PrideAndPrejudiceHtml = `
   “She did indeed, Louisa. I could hardly keep my countenance. Very nonsensical
   to come at all! Why must <i>she</i> be scampering about the country, because
   her sister had a cold? Her hair so untidy, so blowzy!<span class="pagenum"
-    ><a id="page_47">{47}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -3042,7 +1725,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I think I have heard you say that their uncle is an attorney in Meryton?<span
     class="pagenum"
-    ><a id="page_48">{48}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -3088,7 +1772,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I deserve neither such praise nor such censure,” cried<span class="pagenum"
-    ><a id="page_49">{49}</a></span
+    >
+    </span
   >
   Elizabeth; “I am <i>not</i> a great reader, and I have pleasure in many
   things.”
@@ -3145,7 +1830,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “But I would really advise you to make your purchase in that neighbourhood,
   and take Pemberley for a kind of model. There is not a finer county in England
-  than Derbyshire.<span class="pagenum"><a id="page_50">{50}</a></span
+  than Derbyshire.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -3200,7 +1886,8 @@ const PrideAndPrejudiceHtml = `
   truth. The word is applied to many a woman who deserves it no otherwise than
   by netting a purse or covering a screen; but I am very far<span
     class="pagenum"
-    ><a id="page_51">{51}</a></span
+    >
+    </span
   >
   from agreeing with you in your estimation of ladies in general. I cannot boast
   of knowing more than half-a-dozen in the whole range of my acquaintance that
@@ -3250,7 +1937,8 @@ const PrideAndPrejudiceHtml = `
   implied doubt, and were both protesting that they knew many women who answered
   this description, when Mr. Hurst called them to order, with<span
     class="pagenum"
-    ><a id="page_52">{52}</a></span
+    >
+    </span
   >
   bitter complaints of their inattention to what was going forward. As all
   conversation was thereby at an end, Elizabeth soon afterwards left the room.
@@ -3287,7 +1975,8 @@ const PrideAndPrejudiceHtml = `
   better relief to his feelings than by giving his housekeeper directions that
   every possible attention might be paid to the sick lady and her sister.<span
     class="pagenum"
-    ><a id="page_53">{53}</a></span
+    >
+    </span
   >
 </p>
 
@@ -3299,22 +1988,17 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3060596650826329333"
   />
-  <br /><span class="caption"> Mrs Bennet and her two youngest girls. </span>
-  <br /><br />CHAPTER IX.
+  <span class="caption"> Mrs Bennet and her two youngest girls. </span>
+  CHAPTER IX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_082_b.png"
-      width="100"
-      id="id-5815324863204341754" /></span
-  >LIZABETH passed the chief of the night in her sister’s room, and in the
+  Elizabeth passed the chief of the night in her sister’s room, and in the
   morning had the pleasure of being able to send a tolerable answer to the
   inquiries which she very early received from Mr. Bingley by a housemaid, and
   some time afterwards from the two elegant ladies who waited on his sisters. In
-  spite of this amendment,<span class="pagenum"><a id="page_54">{54}</a></span>
+  spite of this amendment,<span class="pagenum">
+  </span>
   however, she requested to have a note sent to Longbourn, desiring her mother
   to visit Jane, and form her own judgment of her situation. The note was
   immediately despatched, and its contents as quickly complied with. Mrs.
@@ -3358,7 +2042,8 @@ const PrideAndPrejudiceHtml = `
   what would become of her, for she is very ill indeed, and suffers a vast deal,
   though with the greatest patience in the world, which is always<span
     class="pagenum"
-    ><a id="page_55">{55}</a></span
+    >
+    </span
   >
   the way with her, for she has, without exception, the sweetest temper I ever
   met with. I often tell my other girls they are nothing to <i>her</i>. You have
@@ -3408,7 +2093,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “The country,” said Darcy, “can in general supply but few subjects for such a
   study. In a country neighbourhood you move in a very confined and unvarying
-  society.<span class="pagenum"><a id="page_56">{56}</a></span
+  society.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -3462,7 +2148,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Nothing but concern for Elizabeth could enable Bingley to keep his
   countenance. His sister was less delicate, and directed her eye towards Mr.
-  Darcy with a<span class="pagenum"><a id="page_57">{57}</a></span> very
+  Darcy with a<span class="pagenum">
+  </span> very
   expressive smile. Elizabeth, for the sake of saying something that might turn
   her mother’s thoughts, now asked her if Charlotte Lucas had been at Longbourn
   since <i>her</i> coming away.
@@ -3499,7 +2186,8 @@ const PrideAndPrejudiceHtml = `
   came away. But, however, he did not. Perhaps he thought her too young.
   However, he wrote some verses on her, and very pretty they were.<span
     class="pagenum"
-    ><a id="page_58">{58}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -3539,7 +2227,8 @@ const PrideAndPrejudiceHtml = `
   good-humoured countenance; a favourite with her mother, whose affection had
   brought her into public at an early age. She had high animal spirits, and a
   sort of natural self-consequence, which the attentions of the officers, to
-  whom her uncle’s good<span class="pagenum"><a id="page_59">{59}</a></span>
+  whom her uncle’s good<span class="pagenum">
+  </span>
   dinners and her own easy manners recommended her, had increased into
   assurance. She was very equal, therefore, to address Mr. Bingley on the
   subject of the ball, and abruptly reminded him of his promise; adding, that it
@@ -3567,7 +2256,8 @@ const PrideAndPrejudiceHtml = `
   two ladies and Mr. Darcy; the latter of whom, however, could not be prevailed
   on to join in their censure of <i>her</i>, in spite of all Miss Bingley’s
   witticisms on <i>fine eyes</i>.<span class="pagenum"
-    ><a id="page_60">{60}</a></span
+    >
+    </span
   >
 </p>
 
@@ -3579,17 +2269,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-2905396058419787847"
   />
-  <br /><br />CHAPTER X.
+  CHAPTER X.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_089_b.png"
-      width="100"
-      id="id-5044785378432711691" /></span
-  >HE day passed much as the day before had done. Mrs. Hurst and Miss Bingley
+  The day passed much as the day before had done. Mrs. Hurst and Miss Bingley
   had spent some hours of the morning with the invalid, who continued, though
   slowly, to mend; and, in the evening, Elizabeth joined their party in the
   drawing-room. The loo table, however, did not appear. Mr. Darcy was writing,
@@ -3604,7 +2288,8 @@ const PrideAndPrejudiceHtml = `
   the lady either on his hand-writing, or on the evenness of his lines, or on
   the length of his letter, with the perfect unconcern with which her praises
   were received, formed a curious dialogue, and was exactly in unison with her
-  opinion of each.<span class="pagenum"><a id="page_61">{61}</a></span>
+  opinion of each.<span class="pagenum">
+  </span>
 </p>
 
 <p>“How delighted Miss Darcy will be to receive such a letter!”</p>
@@ -3666,7 +2351,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “That will not do for a compliment to Darcy, Caroline,” cried her brother,
   “because he does <i>not</i> write with ease.<span class="pagenum"
-    ><a id="page_62">{62}</a></span
+    >
+    </span
   >
   He studies too much for words of four syllables. Do not you, Darcy?”
 </p>
@@ -3710,7 +2396,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Nay,” cried Bingley, “this is too much, to remember at night all the foolish
   things that were said in the morning. And yet, upon my honour, I believed what
-  I<span class="pagenum"><a id="page_63">{63}</a></span> said of myself to be
+  I<span class="pagenum">
+  </span> said of myself to be
   true, and I believe it at this moment. At least, therefore, I did not assume
   the character of needless precipitance merely to show off before the ladies.”
 </p>
@@ -3752,7 +2439,8 @@ const PrideAndPrejudiceHtml = `
   which I have never acknowledged. Allowing the case, however, to stand
   according to your representation, you must remember, Miss Bennet, that the
   friend who is supposed to desire his return to the house,<span class="pagenum"
-    ><a id="page_64">{64}</a></span
+    >
+    </span
   >
   and the delay of his plan, has merely desired it, asked it without offering
   one argument in favour of its propriety.”
@@ -3792,7 +2480,8 @@ const PrideAndPrejudiceHtml = `
   Darcy were not such a great tall fellow, in comparison with myself, I should
   not pay him half so much deference. I declare I do not know a more awful
   object than Darcy on particular occasions, and in<span class="pagenum"
-    ><a id="page_65">{65}</a></span
+    >
+    </span
   >
   particular places; at his own house especially, and of a Sunday evening, when
   he has nothing to do.”
@@ -3839,7 +2528,8 @@ const PrideAndPrejudiceHtml = `
   strange. She could only imagine, however, at last, that she drew his notice
   because there was something about her more wrong and reprehensible, according
   to his ideas of right, than in any other person present.<span class="pagenum"
-    ><a id="page_66">{66}</a></span
+    >
+    </span
   >
   The supposition did not pain her. She liked him too little to care for his
   approbation.
@@ -3893,7 +2583,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I hope,” said she, as they were walking together in<span class="pagenum"
-    ><a id="page_67">{67}</a></span
+    >
+    </span
   >
   the shrubbery the next day, “you will give your mother-in-law a few hints,
   when this desirable event takes place, as to the advantage of holding her
@@ -3903,25 +2594,11 @@ const PrideAndPrejudiceHtml = `
   possesses.”
 </p>
 
-<div class="figcenter" style="width: 470px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_096.jpg"
-    width="470"
-    id="id-3423137773654726462"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“No, no; stay where you are”</p></div>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
-
 <p>
   “Have you anything else to propose for my domestic felicity?<span
     class="pagenum"
-    ><a id="page_68">{68}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -3979,7 +2656,8 @@ const PrideAndPrejudiceHtml = `
   She then ran gaily off, rejoicing, as she rambled about, in the hope of being
   at home again in a day or two. Jane was already so much recovered as to intend
   leaving her room for a couple of hours that evening.<span class="pagenum"
-    ><a id="page_69">{69}</a></span
+    >
+    </span
   >
 </p>
 
@@ -3991,18 +2669,12 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4990443054095566812"
   />
-  <br /><span class="caption"> Piling up the fire. </span> <br /><br />CHAPTER
+  <span class="caption"> Piling up the fire. </span> CHAPTER
   XI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="W"
-      src="images/i_098_b.png"
-      width="100"
-      id="id-2366907931995655761" /></span
-  >HEN the ladies removed after dinner Elizabeth ran up to her sister, and
+  When the ladies removed after dinner Elizabeth ran up to her sister, and
   seeing her well guarded from cold, attended her into the drawing-room, where
   she was welcomed by her two friends with many professions of pleasure; and
   Elizabeth had never seen them so agreeable as they were during the hour which
@@ -4013,7 +2685,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   But when the gentlemen entered, Jane was no longer<span class="pagenum"
-    ><a id="page_70">{70}</a></span
+    >
+    </span
   >
   the first object; Miss Bingley’s eyes were instantly turned towards Darcy, and
   she had something to say to him before he had advanced many steps. He
@@ -4045,7 +2718,8 @@ const PrideAndPrejudiceHtml = `
   perpetually either making some inquiry, or looking at his page. She could not
   win him, however, to any conversation; he merely answered her question and
   read on. At length, quite exhausted by the attempt to be amused with her own
-  book, which she<span class="pagenum"><a id="page_71">{71}</a></span> had only
+  book, which she<span class="pagenum">
+  </span> had only
   chosen because it was the second volume of his, she gave a great yawn and
   said, “How pleasant it is to spend an evening in this way! I declare, after
   all, there is no enjoyment like reading! How much sooner one tires of anything
@@ -4087,7 +2761,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Miss Bingley made no answer, and soon afterwards got up and walked about the
   room. Her figure was elegant, and she walked well; but Darcy, at whom it
-  was<span class="pagenum"><a id="page_72">{72}</a></span> all aimed, was still
+  was<span class="pagenum">
+  </span> all aimed, was still
   inflexibly studious. In the desperation of her feelings, she resolved on one
   effort more; and, turning to Elizabeth, said,—
 </p>
@@ -4131,7 +2806,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Oh, shocking!” cried Miss Bingley. “I never heard<span class="pagenum"
-    ><a id="page_73">{73}</a></span
+    >
+    </span
   >
   anything so abominable. How shall we punish him for such a speech?”
 </p>
@@ -4181,7 +2857,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Yes, vanity is a weakness indeed. But pride—where there is a real superiority
   of mind—pride will be always under good regulation.<span class="pagenum"
-    ><a id="page_74">{74}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -4233,7 +2910,8 @@ const PrideAndPrejudiceHtml = `
   Her sister made not the smallest objection, and the pianoforte was opened; and
   Darcy, after a few moments’ recollection, was not sorry for it. He began to
   feel the danger of paying Elizabeth too much attention.<span class="pagenum"
-    ><a id="page_75">{75}</a></span
+    >
+    </span
   >
 </p>
 
@@ -4245,17 +2923,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-6123014934918212753"
   />
-  <br /><br />CHAPTER XII.
+  CHAPTER XII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="I"
-      src="images/i_104_b.png"
-      width="100"
-      id="id-7268215555478466144" /></span
-  >N consequence of an agreement between the sisters, Elizabeth wrote the next
+  In consequence of an agreement between the sisters, Elizabeth wrote the next
   morning to her mother, to beg that the carriage might be sent for them in the
   course of the day. But Mrs. Bennet, who had calculated on her daughters
   remaining at Netherfield till the following Tuesday, which would exactly
@@ -4265,7 +2937,8 @@ const PrideAndPrejudiceHtml = `
   they could not possibly have the carriage before Tuesday; and in her
   postscript it was added, that if Mr. Bingley and his sister pressed them to
   stay longer, she could spare them very well. Against staying longer, however,
-  Elizabeth was positively<span class="pagenum"><a id="page_76">{76}</a></span>
+  Elizabeth was positively<span class="pagenum">
+  </span>
   resolved—nor did she much expect it would be asked; and fearful, on the
   contrary, of being considered as intruding themselves needlessly long, she
   urged Jane to borrow Mr. Bingley’s carriage immediately, and at length it was
@@ -4299,7 +2972,8 @@ const PrideAndPrejudiceHtml = `
   crushing it. Steady to his purpose, he scarcely spoke ten words to her through
   the whole of Saturday: and though they were at one time left by themselves for
   half an hour, he adhered most conscientiously to his book, and would not even
-  look at her.<span class="pagenum"><a id="page_77">{77}</a></span>
+  look at her.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -4330,7 +3004,8 @@ const PrideAndPrejudiceHtml = `
   regiment since the preceding Wednesday; several of the officers had dined
   lately with their uncle; a private had been flogged; and it had actually been
   hinted that Colonel Forster was going to be married.<span class="pagenum"
-    ><a id="page_78">{78}</a></span
+    >
+    </span
   >
 </p>
 
@@ -4342,18 +3017,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-7014090806546319928"
   />
-  <br /><br />CHAPTER XIII
+  CHAPTER XIII
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="“I"
-      src="images/i_107_b.png"
-      width="70"
-      id="id-6003435432070811116"
-  /></span>
-  hope, my dear,” said Mr. Bennet to his wife, as they were at breakfast the
+  "I hope, my dear,” said Mr. Bennet to his wife, as they were at breakfast the
   next morning, “that you have ordered a good dinner to-day, because I have
   reason to expect an addition to our family party.”
 </p>
@@ -4381,7 +3049,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   This roused a general astonishment; and he had the<span class="pagenum"
-    ><a id="page_79">{79}</a></span
+    >
+    </span
   >
   pleasure of being eagerly questioned by his wife and five daughters at once.
 </p>
@@ -4425,14 +3094,15 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Why, indeed, he does seem to have had some filial scruples on that head, as
-  you will hear.<span class="pagenum"><a id="page_80">{80}</a></span
+  you will hear.<span class="pagenum">
+  </span
   >”
 </p>
 
 <div class="blockquot">
   <p class="rt">“Hunsford, near Westerham, Kent, <i>15th October</i>.</p>
 
-  <p class="nind">“Dear Sir,<br /></p>
+  <p class="nind">“Dear Sir,</p>
 
   <p>
     “The disagreement subsisting between yourself and my late honoured father
@@ -4458,7 +3128,8 @@ const PrideAndPrejudiceHtml = `
     apologize for it, as well as to assure you of my readiness to make them
     every possible amends; but of this hereafter. If you should have no
     objection to receive me into<span class="pagenum"
-      ><a id="page_81">{81}</a></span
+      >
+      </span
     >
     your house, I propose myself the satisfaction of waiting on you and your
     family, Monday, November 18th, by four o’clock, and shall probably trespass
@@ -4469,7 +3140,7 @@ const PrideAndPrejudiceHtml = `
     compliments to your lady and daughters, your well-wisher and friend,
   </p>
 
-  <p class="r">“<span class="smcap">William Collins</span>.”<br /></p>
+  <p class="r">“<span class="smcap">William Collins</span>.”</p>
 </div>
 
 <p>
@@ -4506,7 +3177,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “No, my dear; I think not. I have great hopes of<span class="pagenum"
-    ><a id="page_82">{82}</a></span
+    >
+    </span
   >
   finding him quite the reverse. There is a mixture of servility and
   self-importance in his letter which promises well. I am impatient to see him.”
@@ -4543,7 +3215,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “You are very kind, sir, I am sure; and I wish with all<span class="pagenum"
-    ><a id="page_83">{83}</a></span
+    >
+    </span
   >
   my heart it may prove so; for else they will be destitute enough. Things are
   settled so oddly.”
@@ -4579,7 +3252,8 @@ const PrideAndPrejudiceHtml = `
   in the kitchen. He begged pardon for having displeased her. In a softened tone
   she declared herself not at all offended; but he continued to apologize for
   about a quarter of an hour.<span class="pagenum"
-    ><a id="page_84">{84}</a></span
+    >
+    </span
   >
 </p>
 
@@ -4591,17 +3265,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1680402911867007017"
   />
-  <br /><br />CHAPTER XIV
+  CHAPTER XIV
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="D"
-      src="images/i_113_b.png"
-      width="100"
-      id="id-8291162269837194184" /></span
-  >URING dinner, Mr. Bennet scarcely spoke at all; but when the servants were
+  During dinner, Mr. Bennet scarcely spoke at all; but when the servants were
   withdrawn, he thought it time to have some conversation with his guest, and
   therefore started a subject in which he expected him to shine, by observing
   that he seemed very fortunate in his patroness. Lady Catherine de Bourgh’s
@@ -4619,7 +3287,8 @@ const PrideAndPrejudiceHtml = `
   always spoken to him as she would to any other gentleman; she made not the
   smallest objection to his joining in the society of the neighbourhood, nor to
   his leaving his parish occasionally<span class="pagenum"
-    ><a id="page_85">{85}</a></span
+    >
+    </span
   >
   for a week or two to visit his relations. She had even condescended to advise
   him to marry as soon as he could, provided he chose with discretion; and had
@@ -4660,7 +3329,8 @@ const PrideAndPrejudiceHtml = `
   otherwise have failed of, as I am informed by the lady who superintended her
   education, and who still resides with them. But she is perfectly amiable, and
   often condescends to drive by my humble abode in her little phaeton and
-  ponies.<span class="pagenum"><a id="page_86">{86}</a></span
+  ponies.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -4705,32 +3375,18 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   By tea-time, however, the dose had been enough, and<span class="pagenum"
-    ><a id="page_87">{87}</a></span
+    >
+    </span
   >
   Mr. Bennet was glad to take his guest into the drawing-room again, and when
   tea was over, glad to invite him
 </p>
 
-<div class="figcenter" style="width: 361px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_116.jpg"
-    width="361"
-    id="id-2979308535399230842"
-  />
-  <div class="caption">
-    <p>
-      “Protested<br />
-      that he never read novels” H.T Feb 94<br />
-    </p>
-  </div>
-</div>
-
 <p class="nind">
   to read aloud to the ladies. Mr. Collins readily assented, and a book was
   produced; but on beholding it (for everything announced it to be from a
-  circulating library)<span class="pagenum"><a id="page_88">{88}</a></span> he
+  circulating library)<span class="pagenum">
+  </span> he
   started back, and, begging pardon, protested that he never read novels. Kitty
   stared at him, and Lydia exclaimed. Other books were produced, and after some
   deliberation he chose “Fordyce’s Sermons.” Lydia gaped as he opened the
@@ -4766,7 +3422,8 @@ const PrideAndPrejudiceHtml = `
   after assuring them that he bore his young cousin no ill-will, and should
   never resent her behaviour as any affront, seated himself at another table
   with Mr. Bennet, and prepared for backgammon.<span class="pagenum"
-    ><a id="page_89">{89}</a></span
+    >
+    </span
   >
 </p>
 
@@ -4778,17 +3435,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-249828029260362113"
   />
-  <br /><br />CHAPTER XV.
+  CHAPTER XV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_118_b.png"
-      width="100"
-      id="id-6433451977229729326" /></span
-  >R. COLLINS was not a sensible man, and the deficiency of nature had been but
+  Mr. Collins was not a sensible man, and the deficiency of nature had been but
   little assisted by education or society; the greatest part of his life having
   been spent under the guidance of an illiterate and miserly father; and though
   he belonged to one of the universities, he had merely kept the necessary terms
@@ -4807,7 +3458,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Having now a good house and a very sufficient income, he intended to marry;
   and in seeking a reconciliation with the Longbourn family he had a wife in
-  view, as he<span class="pagenum"><a id="page_90">{90}</a></span> meant to
+  view, as he<span class="pagenum">
+  </span> meant to
   choose one of the daughters, if he found them as handsome and amiable as they
   were represented by common report. This was his plan of amends—of
   atonement—for inheriting their father’s estate; and he thought it an excellent
@@ -4844,7 +3496,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Lydia’s intention of walking to Meryton was not for<span class="pagenum"
-    ><a id="page_91">{91}</a></span
+    >
+    </span
   >gotten: every sister except Mary agreed to go with her; and Mr. Collins was
   to attend them, at the request of Mr. Bennet, who was most anxious to get rid
   of him, and have his library to himself; for thither Mr. Collins had followed
@@ -4876,7 +3529,8 @@ const PrideAndPrejudiceHtml = `
   whose return from London Lydia came to inquire, and he bowed as they passed.
   All were struck with the stranger’s air, all wondered who he could be; and
   Kitty and Lydia, determined if possible<span class="pagenum"
-    ><a id="page_92">{92}</a></span
+    >
+    </span
   >
   to find out, led the way across the street, under pretence of wanting
   something in an opposite shop, and fortunately had just gained the pavement,
@@ -4902,7 +3556,8 @@ const PrideAndPrejudiceHtml = `
   changed colour, one looked white, the other red. Mr. Wickham, after a few
   moments, touched his hat—a salutation which Mr. Darcy just deigned to return.
   What could be the meaning of it?<span class="pagenum"
-    ><a id="page_93">{93}</a></span
+    >
+    </span
   >
   It was impossible to imagine; it was impossible not to long to know.
 </p>
@@ -4936,7 +3591,8 @@ const PrideAndPrejudiceHtml = `
   inquiries about the other, of whom, however, she could only tell her nieces
   what they already knew, that Mr. Denny had brought him from London, and that
   he was to have a lieutenant’s
-  <span class="pagenum"><a id="page_94">{94}</a></span
+  <span class="pagenum">
+  </span
   >commission in the ——shire. She had been watching him the last hour, she said,
   as he walked up and down the street,—and had Mr. Wickham appeared, Kitty and
   Lydia would certainly have continued the occupation; but unluckily no one
@@ -4967,7 +3623,8 @@ const PrideAndPrejudiceHtml = `
   her invitation for the next evening, although utterly unknown to her before.
   Something, he supposed, might be attributed to his connection with them, but
   yet he had never met with so much attention in the whole course of his
-  life.<span class="pagenum"><a id="page_95">{95}</a></span>
+  life.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -4978,23 +3635,18 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3191309323686874162"
   />
-  <br /><br />CHAPTER XVI.
+  CHAPTER XVI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="A"
-      src="images/i_124_b.png"
-      width="100"
-      id="id-737762895895176869" /></span
-  >S no objection was made to the young people’s engagement with their aunt, and
+  As no objection was made to the young people’s engagement with their aunt, and
   all Mr. Collins’s scruples of leaving Mr. and Mrs. Bennet for a single evening
   during his visit were most steadily resisted, the coach conveyed him and his
   five cousins at a suitable hour to Meryton; and the girls had the pleasure of
   hearing, as they entered the drawing-room, that Mr. Wickham had<span
     class="pagenum"
-    ><a id="page_96">{96}</a></span
+    >
+    </span
   >
   accepted their uncle’s invitation, and was then in the house.
 </p>
@@ -5025,7 +3677,8 @@ const PrideAndPrejudiceHtml = `
   however. The gentlemen did approach: and when Mr. Wickham walked into the
   room, Elizabeth felt that she had neither been seeing him before, nor thinking
   of him since, with the smallest degree of
-  <span class="pagenum"><a id="page_97">{97}</a></span
+  <span class="pagenum">
+  </span
   >unreasonable admiration. The officers of the ——shire were in general a very
   creditable, gentlemanlike set and the best of them were of the present party;
   but Mr, Wickham was as far beyond them all in person, countenance, air, and
@@ -5033,24 +3686,10 @@ const PrideAndPrejudiceHtml = `
   breathing port wine, who followed them into the room.
 </p>
 
-<div class="figcenter" style="width: 391px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_126.jpg"
-    width="391"
-    id="id-7362078087590675455"
-  />
-  <div class="caption">
-    <p>“The officers of the ——shire”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
-
 <p>
   Mr. Wickham was the happy man towards whom almost every female eye was turned,
-  and Elizabeth was<span class="pagenum"><a id="page_98">{98}</a></span> the
+  and Elizabeth was<span class="pagenum">
+  </span> the
   happy woman by whom he finally seated himself; and the agreeable manner in
   which he immediately fell into conversation, though it was only on its being a
   wet night, and on the probability of a rainy season, made her feel that the
@@ -5088,7 +3727,8 @@ const PrideAndPrejudiceHtml = `
   was very willing to hear him, though what she chiefly wished to hear she could
   not hope to be told, the history of his acquaintance with Mr. Darcy. She dared
   not even mention that gentleman. Her curiosity, how<span class="pagenum"
-    ><a id="page_99">{99}</a></span
+    >
+    </span
   >ever, was unexpectedly relieved. Mr. Wickham began the subject himself. He
   inquired how far Netherfield was from Meryton; and, after receiving her
   answer, asked in a hesitating manner how long Mr. Darcy had been staying
@@ -5132,7 +3772,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Upon my word I say no more <i>here</i> than I might say in any house in the
   neighbourhood, except Netherfield. He is not at all liked in Hertfordshire.
-  Everybody is<span class="pagenum"><a id="page_100">{100}</a></span> disgusted
+  Everybody is<span class="pagenum">
+  </span> disgusted
   with his pride. You will not find him more favourably spoken of by anyone.”
 </p>
 
@@ -5174,7 +3815,8 @@ const PrideAndPrejudiceHtml = `
   His behaviour to myself has been scandalous; but I verily believe I could
   forgive him anything and everything, rather than his disappointing the hopes
   and disgracing the memory of his father.<span class="pagenum"
-    ><a id="page_101">{101}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -5216,7 +3858,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Good heavens!” cried Elizabeth; “but how could <i>that</i> be? How could his
   will be disregarded? Why did not you seek legal redress?<span class="pagenum"
-    ><a id="page_102">{102}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -5257,7 +3900,8 @@ const PrideAndPrejudiceHtml = `
   might have borne with me better; but his father’s uncommon attachment to me
   irritated him, I believe, very early in life. He had not a temper to bear the
   sort of competition in which we stood—the sort of preference which was often
-  given me.<span class="pagenum"><a id="page_103">{103}</a></span
+  given me.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -5299,7 +3943,8 @@ const PrideAndPrejudiceHtml = `
   himself to be under the greatest obligations to my father’s active
   superintendence; and when, immediately before my father’s death, Mr. Darcy
   gave him a voluntary promise<span class="pagenum"
-    ><a id="page_104">{104}</a></span
+    >
+    </span
   >
   of providing for me, I am convinced that he felt it to be as much a debt of
   gratitude to <i>him</i> as of affection to myself.”
@@ -5341,7 +3986,8 @@ const PrideAndPrejudiceHtml = `
   ill of a Darcy; but she is too much like her brother,—very, very proud. As a
   child, she was affectionate and pleasing, and extremely fond of me; and I have
   devoted hours and hours to her amuse<span class="pagenum"
-    ><a id="page_105">{105}</a></span
+    >
+    </span
   >ment. But she is nothing to me now. She is a handsome girl, about fifteen or
   sixteen, and, I understand, highly accomplished. Since her father’s death her
   home has been London, where a lady lives with her, and superintends her
@@ -5383,7 +4029,8 @@ const PrideAndPrejudiceHtml = `
   It had not been very great; he had lost every point; but when Mrs. Philips
   began to express her concern thereupon, he assured her, with much earnest
   gravity, that it was not of the least importance; that he<span class="pagenum"
-    ><a id="page_106">{106}</a></span
+    >
+    </span
   >
   considered the money as a mere trifle, and begged she would not make herself
   uneasy.
@@ -5433,7 +4080,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Mr. Collins,” said she, “speaks highly both of Lady Catherine and her
   daughter; but, from some particulars<span class="pagenum"
-    ><a id="page_107">{107}</a></span
+    >
+    </span
   >
   that he has related of her Ladyship, I suspect his gratitude misleads him; and
   that, in spite of her being his patroness, she is an arrogant, conceited
@@ -5466,7 +4114,8 @@ const PrideAndPrejudiceHtml = `
   whist, enumerating all the dishes at supper, and repeatedly fearing that he
   crowded his cousins, had more to say than he could well manage before the
   carriage stopped at Longbourn House.<span class="pagenum"
-    ><a id="page_108">{108}</a></span
+    >
+    </span
   >
 </p>
 
@@ -5478,18 +4127,12 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1340952447655074884"
   />
-  <br /><span class="caption"> delighted to see their dear friend again. </span>
-  <br /><br />CHAPTER XVII.
+  <span class="caption"> delighted to see their dear friend again. </span>
+  CHAPTER XVII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_137_b.png"
-      width="100"
-      id="id-5554717171560000584" /></span
-  >LIZABETH related to Jane, the next day, what had passed between Mr. Wickham
+  Elizabeth related to Jane, the next day, what had passed between Mr. Wickham
   and herself. Jane listened with astonishment and concern: she knew not how to
   believe that Mr. Darcy could be so unworthy of Mr. Bingley’s regard; and yet
   it was not in her nature to question the veracity of a young man of such
@@ -5498,7 +4141,8 @@ const PrideAndPrejudiceHtml = `
   therefore remained to be done but to think well of them both, to defend the
   conduct of each, and throw into the account of accident or mistake whatever
   could not be otherwise explained.<span class="pagenum"
-    ><a id="page_109">{109}</a></span
+    >
+    </span
   >
 </p>
 
@@ -5541,7 +4185,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   But Jane could think with certainty on only one point,—that Mr. Bingley, if he
   <i>had been</i> imposed on,<span class="pagenum"
-    ><a id="page_110">{110}</a></span
+    >
+    </span
   >
   would have much to suffer when the affair became public.
 </p>
@@ -5572,7 +4217,8 @@ const PrideAndPrejudiceHtml = `
   less on any single event, or any particular person; for though they each, like
   Elizabeth, meant to dance half the evening with Mr. Wickham, he was by no
   means the only partner who<span class="pagenum"
-    ><a id="page_111">{111}</a></span
+    >
+    </span
   >
   could satisfy them, and a ball was, at any rate, a ball. And even Mary could
   assure her family that she had no disinclination for it.
@@ -5609,7 +4255,8 @@ const PrideAndPrejudiceHtml = `
   Elizabeth felt herself completely taken in. She had fully proposed being
   engaged by Wickham for those very dances; and to have Mr. Collins instead!—her
   liveliness had been never worse timed. There was no<span class="pagenum"
-    ><a id="page_112">{112}</a></span
+    >
+    </span
   >
   help for it, however. Mr. Wickham’s happiness and her own was perforce delayed
   a little longer, and Mr. Collins’s proposal accepted with as good a grace as
@@ -5639,7 +4286,8 @@ const PrideAndPrejudiceHtml = `
   Mr. Wickham; and nothing less than a dance on Tuesday could have made such a
   Friday, Saturday, Sunday, and Monday endurable to Kitty and Lydia.<span
     class="pagenum"
-    ><a id="page_113">{113}</a></span
+    >
+    </span
   >
 </p>
 
@@ -5651,24 +4299,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-7863221565329737732"
   />
-  <br /><br />CHAPTER XVIII.
+  CHAPTER XVIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_142_b.png"
-      width="100"
-      id="id-2676417207819820891" /></span
-  >ILL Elizabeth entered the drawing-room at Netherfield, and looked in vain for
+  Till Elizabeth entered the drawing-room at Netherfield, and looked in vain for
   Mr. Wickham among the cluster of red coats there assembled, a doubt of his
   being present had never occurred to her. The certainty of meeting him had not
   been checked by any of those recollections that might not unreasonably have
   alarmed her. She had dressed with more than usual care, and prepared in the
   highest spirits for the conquest of all that remained unsubdued of his heart,
   trusting that it was not more than might be won in the course of the evening.
-  But in an<span class="pagenum"><a id="page_114">{114}</a></span> instant arose
+  But in an<span class="pagenum">
+  </span> instant arose
   the dreadful suspicion of his being purposely omitted, for Mr. Darcy’s
   pleasure, in the Bingleys’ invitation to the officers; and though this was not
   exactly the case, the absolute fact of his absence was pronounced by his
@@ -5703,7 +4346,8 @@ const PrideAndPrejudiceHtml = `
   her cousin, and to point him out to her particular notice. The two first
   dances, however, brought a return of distress: they were dances of
   mortification. Mr. Collins, awkward and solemn,<span class="pagenum"
-    ><a id="page_115">{115}</a></span
+    >
+    </span
   >
   apologizing instead of attending, and often moving wrong without being aware
   of it, gave her all the shame and misery which a disagreeable partner for a
@@ -5738,7 +4382,8 @@ const PrideAndPrejudiceHtml = `
   and she began to imagine that their silence was to last through the two
   dances, and, at first, was resolved not to break it; till suddenly fancying
   that it would be the greater punishment to her partner to oblige him to
-  talk,<span class="pagenum"><a id="page_116">{116}</a></span> she made some
+  talk,<span class="pagenum">
+  </span> she made some
   slight observation on the dance. He replied, and was again silent. After a
   pause of some minutes, she addressed him a second time, with—
 </p>
@@ -5792,7 +4437,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   He made no answer; and they were again silent till they had gone down the
   dance, when he asked her if she<span class="pagenum"
-    ><a id="page_117">{117}</a></span
+    >
+    </span
   >
   and her sisters did not very often walk to Meryton. She answered in the
   affirmative; and, unable to resist the temptation, added, “When you met us
@@ -5835,27 +4481,10 @@ const PrideAndPrejudiceHtml = `
   to Mr. Darcy;—but let me not interrupt you, sir. You will not thank me for
   detaining you from the bewitching converse of that young lady, whose bright
   eyes are also upbraiding me.<span class="pagenum"
-    ><a id="page_118">{118}</a></span
+    >
+    </span
   >”
 </p>
-
-<div class="figcenter" style="width: 444px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_147.jpg"
-    width="444"
-    id="id-3031424446155140249"
-  />
-  <div class="caption">
-    <p>
-      “Such very superior dancing is not<br />
-      often seen.”<br />
-    </p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   The latter part of this address was scarcely heard by Darcy; but Sir William’s
@@ -5868,7 +4497,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Sir William’s interruption has made me forget what we were talking of.<span
     class="pagenum"
-    ><a id="page_119">{119}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -5929,7 +4559,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “And what is your success?<span class="pagenum"
-    ><a id="page_120">{120}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -5973,7 +4604,8 @@ const PrideAndPrejudiceHtml = `
   perfectly false: for, on the contrary, he has been always remarkably kind to
   him, though George Wickham has treated Mr. Darcy in a most infamous manner. I
   do not know the particulars, but I know very well that Mr. Darcy is not in the
-  least to<span class="pagenum"><a id="page_121">{121}</a></span> blame; that he
+  least to<span class="pagenum">
+  </span> blame; that he
   cannot bear to hear George Wickham mentioned; and that though my brother
   thought he could not well avoid including him in his invitation to the
   officers, he was excessively glad to find that he had taken himself out of the
@@ -6011,7 +4643,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I want to know,” said she, with a countenance no less smiling than her
   sister’s, “what you have learnt<span class="pagenum"
-    ><a id="page_122">{122}</a></span
+    >
+    </span
   >
   about Mr. Wickham. But perhaps you have been too pleasantly engaged to think
   of any third person, in which case you may be sure of my pardon.”
@@ -6055,7 +4688,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   She then changed the discourse to one more gratifying<span class="pagenum"
-    ><a id="page_123">{123}</a></span
+    >
+    </span
   >
   to each, and on which there could be no difference of sentiment. Elizabeth
   listened with delight to the happy though modest hopes which Jane entertained
@@ -6090,7 +4724,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Elizabeth tried hard to dissuade him from such a scheme; assuring him that Mr.
   Darcy would consider his addressing him without introduction as an
-  impertinent<span class="pagenum"><a id="page_124">{124}</a></span> freedom,
+  impertinent<span class="pagenum">
+  </span> freedom,
   rather than a compliment to his aunt; that it was not in the least necessary
   there should be any notice on either side, and that if it were, it must belong
   to Mr. Darcy, the superior in consequence, to begin the acquaintance. Mr.
@@ -6118,7 +4753,8 @@ const PrideAndPrejudiceHtml = `
   saw in the motion of his lips the words “apology,” “Hunsford,” and “Lady
   Catherine de Bourgh.” It vexed her to see him expose himself to such a man.
   Mr. Darcy was eyeing him with un<span class="pagenum"
-    ><a id="page_125">{125}</a></span
+    >
+    </span
   >restrained wonder; and when at last Mr. Collins allowed him to speak, replied
   with an air of distant civility. Mr. Collins, however, was not discouraged
   from speaking again, and Mr. Darcy’s contempt seemed abundantly increasing
@@ -6149,7 +4785,8 @@ const PrideAndPrejudiceHtml = `
   that her mother was talking to that one person (Lady Lucas) freely, openly,
   and of nothing else but of her expectation that Jane would be soon married to
   Mr. Bingley. It was an animating subject, and Mrs. Bennet<span class="pagenum"
-    ><a id="page_126">{126}</a></span
+    >
+    </span
   >
   seemed incapable of fatigue while enumerating the advantages of the match. His
   being such a charming young man, and so rich, and living but three miles from
@@ -6185,7 +4822,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “For heaven’s sake, madam, speak lower. What advantage can it be to you to
   offend Mr. Darcy? You will never recommend yourself to his friend by so
-  doing.<span class="pagenum"><a id="page_127">{127}</a></span
+  doing.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -6217,7 +4855,8 @@ const PrideAndPrejudiceHtml = `
   no means fitted for such a display; her voice was weak, and her manner
   affected. Elizabeth was in agonies. She looked at Jane to see how she bore it;
   but Jane was very composedly<span class="pagenum"
-    ><a id="page_128">{128}</a></span
+    >
+    </span
   >
   talking to Bingley. She looked at his two sisters, and saw them making signs
   of derision at each other, and at Darcy, who continued, however, impenetrably
@@ -6252,7 +4891,8 @@ const PrideAndPrejudiceHtml = `
   should have attentive and conciliatory manners towards everybody, especially
   towards those to whom he owes his preferment. I cannot acquit him of that
   duty; nor could I think well<span class="pagenum"
-    ><a id="page_129">{129}</a></span
+    >
+    </span
   >
   of the man who should omit an occasion of testifying his respect towards
   anybody connected with the family.” And with a bow to Mr. Darcy, he concluded
@@ -6285,7 +4925,8 @@ const PrideAndPrejudiceHtml = `
   as to dancing, he was perfectly indifferent to it; that his chief object was,
   by delicate attentions, to recommend himself to her; and that he<span
     class="pagenum"
-    ><a id="page_130">{130}</a></span
+    >
+    </span
   >
   should therefore make a point of remaining close to her the whole evening.
   There was no arguing upon such a project. She owed her greatest relief to her
@@ -6317,7 +4958,8 @@ const PrideAndPrejudiceHtml = `
   preserved as steady a silence as either Mrs. Hurst or Miss Bingley; and even
   Lydia was too much fatigued to utter more than the occasional exclamation of
   “Lord, how tired I am!” accompanied by a violent yawn.<span class="pagenum"
-    ><a id="page_131">{131}</a></span
+    >
+    </span
   >
 </p>
 
@@ -6341,7 +4983,8 @@ const PrideAndPrejudiceHtml = `
   the least dear to her of all her children; and though the man and the match
   were quite good enough for <i>her</i>, the worth of each was eclipsed by Mr.
   Bingley and Netherfield.<span class="pagenum"
-    ><a id="page_132">{132}</a></span
+    >
+    </span
   >
 </p>
 
@@ -6353,27 +4996,22 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-8631929698405272177"
   />
-  <br /><span class="caption">
+  <span class="caption">
     “to assure you in the most animated language.”
   </span>
-  <br /><br />CHAPTER XIX.
+  CHAPTER XIX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_161_b.png"
-      width="100"
-      id="id-4411957917036105019" /></span
-  >HE next day opened a new scene at Longbourn. Mr. Collins made his declaration
+  The next day opened a new scene at Longbourn. Mr. Collins made his declaration
   in form. Having resolved to do it without loss of time, as his leave of
   absence extended only to the following Saturday, and having no feelings of
   diffidence to make it distressing to himself even at the moment, he set about
   it in a very orderly manner, with all the observances which he supposed a
   regular part of the business. On finding Mrs. Bennet, Elizabeth,<span
     class="pagenum"
-    ><a id="page_133">{133}</a></span
+    >
+    </span
   >
   and one of the younger girls together, soon after breakfast, he addressed the
   mother in these words,—
@@ -6422,7 +5060,8 @@ const PrideAndPrejudiceHtml = `
   any disservice, rather adds to your other perfections. You would have been
   less amiable in my eyes had there <i>not</i> been this little unwillingness;
   but allow me to assure you that I have your respected mother’s permission for
-  this address.<span class="pagenum"><a id="page_134">{134}</a></span> You can
+  this address.<span class="pagenum">
+  </span> You can
   hardly doubt the purport of my discourse, however your natural delicacy may
   lead you to dissemble; my attentions have been too marked to be mistaken.
   Almost as soon as I entered the house I singled you out as the companion of my
@@ -6453,7 +5092,8 @@ const PrideAndPrejudiceHtml = `
   an active, useful sort of person, not brought up high, but able to make a
   small income go a good way. This is my advice. Find such a woman as soon as
   you can, bring her to Hunsford, and<span class="pagenum"
-    ><a id="page_135">{135}</a></span
+    >
+    </span
   >
   I will visit her.’ Allow me, by the way, to observe, my fair cousin, that I do
   not reckon the notice and kindness of Lady Catherine de Bourgh as among the
@@ -6484,7 +5124,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “You are too hasty, sir,” she cried. “You forget that<span class="pagenum"
-    ><a id="page_136">{136}</a></span
+    >
+    </span
   >
   I have made no answer. Let me do it without further loss of time. Accept my
   thanks for the compliment you are paying me. I am very sensible of the honour
@@ -6523,7 +5164,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Indeed, Mr. Collins, all praise of me will be unnecessary. You must give me
   leave to judge for myself, and<span class="pagenum"
-    ><a id="page_137">{137}</a></span
+    >
+    </span
   >
   pay me the compliment of believing what I say. I wish you very happy and very
   rich, and by refusing your hand, do all in my power to prevent your being
@@ -6558,7 +5200,8 @@ const PrideAndPrejudiceHtml = `
   highly desirable. My situation in life, my connections with the family of De
   Bourgh, and my relationship to your own, are circumstances highly in my
   favour; and you should take<span class="pagenum"
-    ><a id="page_138">{138}</a></span
+    >
+    </span
   >
   it into further consideration that, in spite of your manifold attractions, it
   is by no means certain that another offer of marriage may ever be made you.
@@ -6592,7 +5235,8 @@ const PrideAndPrejudiceHtml = `
   father, whose negative might be uttered in such a manner as must be decisive,
   and whose behaviour at least could not be mistaken for the affectation and
   coquetry of an elegant female.<span class="pagenum"
-    ><a id="page_139">{139}</a></span
+    >
+    </span
   >
 </p>
 
@@ -6604,17 +5248,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-6706948105214323956"
   />
-  <br /><br />CHAPTER XX.
+  CHAPTER XX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_168_b.png"
-      width="100"
-      id="id-5218521322595011471" /></span
-  >R. COLLINS was not left long to the silent contemplation of his successful
+  Mr. Collins was not left long to the silent contemplation of his successful
   love; for Mrs. Bennet, having dawdled about in the vestibule to watch for the
   end of the conference, no sooner saw Elizabeth open the door and with quick
   step pass her towards the staircase, than she entered the breakfast-room, and
@@ -6624,7 +5262,8 @@ const PrideAndPrejudiceHtml = `
   interview, with the result of which he trusted he had every reason to be
   satisfied, since the refusal which his cousin had steadfastly given him would
   naturally flow from her bashful modesty and the genuine delicacy of her
-  character.<span class="pagenum"><a id="page_140">{140}</a></span>
+  character.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -6668,7 +5307,8 @@ const PrideAndPrejudiceHtml = `
   come and make Lizzy marry Mr. Collins, for she vows she will not have him; and
   if you do not make haste he will change his mind and not have <i>her</i>.<span
     class="pagenum"
-    ><a id="page_141">{141}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -6724,7 +5364,8 @@ const PrideAndPrejudiceHtml = `
   “An unhappy alternative is before you, Elizabeth. From this day you must be a
   stranger to one of your parents. Your mother will never see you again if you
   do <i>not</i> marry Mr. Collins, and I will never see you again if you
-  <i>do</i>.<span class="pagenum"><a id="page_142">{142}</a></span
+  <i>do</i>.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -6768,23 +5409,11 @@ const PrideAndPrejudiceHtml = `
   with them. She was met in the vestibule by Lydia, who, flying to her, cried in
   a half whisper, “I am glad you are come, for there is such fun here! What do
   you think has happened this<span class="pagenum"
-    ><a id="page_143">{143}</a></span
+    >
+    </span
   >
   morning? Mr. Collins has made an offer to Lizzy, and she will not have him.”
 </p>
-
-<div class="figcenter" style="width: 443px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_172.jpg"
-    width="443"
-    id="id-5533365200876089991"
-  />
-  <div class="caption">
-    <p>“they entered the breakfast room”</p>
-  </div>
-</div>
 
 <p>
   Charlotte had hardly time to answer before they were joined by Kitty, who came
@@ -6793,7 +5422,8 @@ const PrideAndPrejudiceHtml = `
   on Miss Lucas for her compassion, and entreating her to persuade her friend
   Lizzy to comply with the wishes of her family. “Pray do, my dear Miss<span
     class="pagenum"
-    ><a id="page_144">{144}</a></span
+    >
+    </span
   >
   Lucas,” she added, in a melancholy tone; “for nobody is on my side, nobody
   takes part with me; I am cruelly used, nobody feels for my poor nerves.”
@@ -6828,7 +5458,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Now, I do insist upon it, that you, all of you, hold your tongues, and let
   Mr. Collins and me have a little conversation together.<span class="pagenum"
-    ><a id="page_145">{145}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -6862,7 +5493,8 @@ const PrideAndPrejudiceHtml = `
   secure an amiable companion for myself, with due consideration for the
   advantage of all your family; and if my <i>manner</i> has been at all
   reprehensible, I here beg leave to apologize.<span class="pagenum"
-    ><a id="page_146">{146}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -6874,22 +5506,17 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3814189673339312384"
   />
-  <br /><br />CHAPTER XXI.
+  CHAPTER XXI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_175_b.png"
-      width="100"
-      id="id-3891860053847147788" /></span
-  >HE discussion of Mr. Collins’s offer was now nearly at an end, and Elizabeth
+  The discussion of Mr. Collins’s offer was now nearly at an end, and Elizabeth
   had only to suffer from the uncomfortable feelings necessarily attending it,
   and occasionally from some peevish allusion of her mother. As for the
   gentleman himself, <i>his</i> feelings were chiefly expressed, not by
   embarrassment or dejection, or<span class="pagenum"
-    ><a id="page_147">{147}</a></span
+    >
+    </span
   >
   by trying to avoid her, but by stiffness of manner and resentful silence. He
   scarcely ever spoke to her; and the assiduous attentions which he had been so
@@ -6929,26 +5556,12 @@ const PrideAndPrejudiceHtml = `
   and during the walk he particularly attended to her. His accompanying them was
   a double advantage: she felt all the compliment it offered to herself;<span
     class="pagenum"
-    ><a id="page_148">{148}</a></span
+    >
+    </span
   >
   and it was most acceptable as an occasion of introducing him to her father and
   mother.
 </p>
-
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="438"
-    src="images/i_177.jpg"
-    width="550"
-    id="id-617953597099188097"
-  />
-  <div class="caption">
-    <p>“Walked back with them”</p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   Soon after their return, a letter was delivered to Miss Bennet; it came from
@@ -6962,7 +5575,8 @@ const PrideAndPrejudiceHtml = `
   he and his companion taken leave, than a glance from Jane invited her to
   follow her upstairs. When they had gained their own room, Jane, taking out her
   letter, said, “This is from Caroline Bingley: what it<span class="pagenum"
-    ><a id="page_149">{149}</a></span
+    >
+    </span
   >
   contains has surprised me a good deal. The whole party have left Netherfield
   by this time, and are on their way to town; and without any intention of
@@ -6999,7 +5613,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Caroline decidedly says that none of the party will return into Hertfordshire
   this winter. I will read it to you.<span class="pagenum"
-    ><a id="page_150">{150}</a></span
+    >
+    </span
   >
 </p>
 
@@ -7035,7 +5650,8 @@ const PrideAndPrejudiceHtml = `
   sister. I do not know whether I ever before mentioned to you my feelings on
   this subject, but I will not leave the country without confiding them, and I
   trust you will not esteem them<span class="pagenum"
-    ><a id="page_151">{151}</a></span
+    >
+    </span
   >
   unreasonable. My brother admires her greatly already; he will have frequent
   opportunity now of seeing her on the most intimate footing; her relations all
@@ -7071,7 +5687,8 @@ const PrideAndPrejudiceHtml = `
   simpleton. Could she have seen half as much love in Mr. Darcy for herself, she
   would have ordered her wedding clothes. But the case is this:—we are not rich
   enough or grand enough for them; and she is<span class="pagenum"
-    ><a id="page_152">{152}</a></span
+    >
+    </span
   >
   the more anxious to get Miss Darcy for her brother, from the notion that when
   there has been <i>one</i> inter-marriage, she may have less trouble in
@@ -7112,7 +5729,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “How can you talk so?” said Jane, faintly smiling; “you must know, that,
   though I should be exceedingly grieved at their disapprobation, I could not
-  hesitate.<span class="pagenum"><a id="page_153">{153}</a></span
+  hesitate.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -7152,7 +5770,8 @@ const PrideAndPrejudiceHtml = `
   and soon dining at Longbourn; and the conclusion of all was the comfortable
   declaration, that, though he had been invited only to a family dinner, she
   would take care to have two full courses.<span class="pagenum"
-    ><a id="page_154">{154}</a></span
+    >
+    </span
   >
 </p>
 
@@ -7164,17 +5783,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4113934848678505323"
   />
-  <br /><br />CHAPTER XXII.
+  CHAPTER XXII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_183_b.png"
-      width="100"
-      id="id-1428223024824744766" /></span
-  >HE Bennets were engaged to dine with the Lucases; and again, during the chief
+  The Bennets were engaged to dine with the Lucases; and again, during the chief
   of the day, was Miss Lucas so kind as to listen to Mr. Collins. Elizabeth took
   an opportunity of thanking her. “It keeps him in good humour,” said she, “and
   I am more obliged to you than I can express.”
@@ -7190,7 +5803,8 @@ const PrideAndPrejudiceHtml = `
   she would have felt almost sure of success if he had not been to leave
   Hertfordshire so very soon. But here she did injustice to the fire and
   independence of his character; for it led him to escape out of Longbourn House
-  the next morning with<span class="pagenum"><a id="page_155">{155}</a></span>
+  the next morning with<span class="pagenum">
+  </span>
   admirable slyness, and hasten to Lucas Lodge to throw himself at her feet. He
   was anxious to avoid the notice of his cousins, from a conviction that, if
   they saw him depart, they could not fail to conjecture his design, and he was
@@ -7221,23 +5835,9 @@ const PrideAndPrejudiceHtml = `
   made it a most eligible match for their daughter, to whom they could give
   little fortune; and his prospects of future wealth were exceedingly fair. Lady
   Lucas began directly to calculate, with more interest than the matter had
-  ever<span class="pagenum"><a id="page_156">{156}</a></span>
+  ever<span class="pagenum">
+  </span>
 </p>
-
-<div class="figcenter" style="width: 371px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_185.jpg"
-    width="371"
-    id="id-3273176888405783756"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“So much love and eloquence”</p></div>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p class="nind">
   excited before, how many years longer Mr. Bennet was likely to live; and Sir
@@ -7246,7 +5846,8 @@ const PrideAndPrejudiceHtml = `
   and his wife should make their appearance at St. James’s. The whole family in
   short were properly overjoyed on the occasion. The younger girls formed<span
     class="pagenum"
-    ><a id="page_157">{157}</a></span
+    >
+    </span
   >
   hopes of <i>coming out</i> a year or two sooner than they might otherwise have
   done; and the boys were relieved from their apprehension of Charlotte’s dying
@@ -7275,7 +5876,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   As he was to begin his journey too early on the morrow<span class="pagenum"
-    ><a id="page_158">{158}</a></span
+    >
+    </span
   >
   to see any of the family, the ceremony of leave-taking was performed when the
   ladies moved for the night; and Mrs. Bennet, with great politeness and
@@ -7320,7 +5922,8 @@ const PrideAndPrejudiceHtml = `
   in Hertfordshire. As for my fair cousins, though my absence may not be long
   enough to render it necessary, I shall now take the liberty of wishing them
   health and happiness, not excepting my cousin Elizabeth.<span class="pagenum"
-    ><a id="page_159">{159}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -7359,7 +5962,8 @@ const PrideAndPrejudiceHtml = `
   “Why should you be surprised, my dear Eliza? Do you think it incredible that
   Mr. Collins should be able to procure any woman’s good opinion, because he was
   not so happy as to succeed with you?<span class="pagenum"
-    ><a id="page_160">{160}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -7393,7 +5997,8 @@ const PrideAndPrejudiceHtml = `
   Mr. Collins, was a most humiliating picture! And to the pang of a friend
   disgracing herself, and sunk in her esteem, was added the distressing
   conviction that it was impossible for that friend to be tolerably happy in the
-  lot she had chosen.<span class="pagenum"><a id="page_161">{161}</a></span>
+  lot she had chosen.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -7404,24 +6009,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1616588228531933200"
   />
-  <br /><span class="caption"> “Protested he must be entirely mistaken.” </span>
-  <br /><br />CHAPTER XXIII.
+  <span class="caption"> “Protested he must be entirely mistaken.” </span>
+  CHAPTER XXIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_190_b.png"
-      width="100"
-      id="id-3396317950721906037" /></span
-  >LIZABETH was sitting with her mother and sisters, reflecting on what she had
+  Elizabeth was sitting with her mother and sisters, reflecting on what she had
   heard, and doubting whether she was authorized to mention it, when Sir William
   Lucas himself appeared, sent by his daughter to announce her engagement to the
   family. With many compliments to them, and much self-gratulation on the
   prospect of a connection between the houses, he unfolded the<span
     class="pagenum"
-    ><a id="page_162">{162}</a></span
+    >
+    </span
   >
   matter,—to an audience not merely wondering, but incredulous; for Mrs. Bennet,
   with more perseverance than politeness, protested he must be entirely
@@ -7461,7 +6061,8 @@ const PrideAndPrejudiceHtml = `
   thirdly, she trusted that they would never be happy together; and, fourthly,
   that the match might be broken off. Two inferences, however,<span
     class="pagenum"
-    ><a id="page_163">{163}</a></span
+    >
+    </span
   >
   were plainly deduced from the whole: one, that Elizabeth was the real cause of
   all the mischief; and the other, that she herself had been barbarously used by
@@ -7500,7 +6101,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Between Elizabeth and Charlotte there was a restraint which kept them mutually
   silent on the subject; and Elizabeth felt persuaded that no real confidence
-  could<span class="pagenum"><a id="page_164">{164}</a></span> ever subsist
+  could<span class="pagenum">
+  </span> ever subsist
   between them again. Her disappointment in Charlotte made her turn with fonder
   regard to her sister, of whose rectitude and delicacy she was sure her opinion
   could never be shaken, and for whose happiness she grew daily more anxious, as
@@ -7532,7 +6134,8 @@ const PrideAndPrejudiceHtml = `
   hated having visitors in the house while her health was so indifferent, and
   lovers were of all people the most disagreeable. Such were the gentle murmurs
   of Mrs. Bennet, and they gave way<span class="pagenum"
-    ><a id="page_165">{165}</a></span
+    >
+    </span
   >
   only to the greater distress of Mr. Bingley’s continued absence.
 </p>
@@ -7571,7 +6174,8 @@ const PrideAndPrejudiceHtml = `
   reception at Longbourn was not quite so gracious as it had been on his first
   introduction. He was too happy, however, to need much attention; and,<span
     class="pagenum"
-    ><a id="page_166">{166}</a></span
+    >
+    </span
   >
   luckily for the others, the business of love-making relieved them from a great
   deal of his company. The chief of every day was spent by him at Lucas Lodge,
@@ -7579,25 +6183,13 @@ const PrideAndPrejudiceHtml = `
   absence before the family went to bed.
 </p>
 
-<div class="figcenter" style="width: 538px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_195.jpg"
-    width="538"
-    id="id-8491769423183883762"
-  />
-  <div class="caption">
-    <p>“<i>Whenever she spoke in a low voice</i>”</p>
-  </div>
-</div>
-
 <p>
   Mrs. Bennet was really in a most pitiable state. The very mention of anything
   concerning the match threw her into an agony of ill-humour, and wherever she
   went she was sure of hearing it talked of. The sight of Miss Lucas was odious
   to her. As her successor in that house, she<span class="pagenum"
-    ><a id="page_167">{167}</a></span
+    >
+    </span
   >
   regarded her with jealous abhorrence. Whenever Charlotte came to see them, she
   concluded her to be anticipating the hour of possession; and whenever she
@@ -7646,7 +6238,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I leave it to yourself to determine,” said Mr. Bennet.<span class="pagenum"
-    ><a id="page_168">{168}</a></span
+    >
+    </span
   >
 </p>
 
@@ -7658,17 +6251,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-2195469589850160008"
   />
-  <br /><br />CHAPTER XXIV.
+  CHAPTER XXIV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_197_b.png"
-      width="100"
-      id="id-6346159599088936268" /></span
-  >ISS BINGLEY’S letter arrived, and put an end to doubt. The very first
+  Miss Bingley's letter arrived, and put an end to doubt. The very first
   sentence conveyed the assurance of their being all settled in London for the
   winter, and concluded with her brother’s regret at not having had time to pay
   his respects to his friends in Hertfordshire before he left the country.
@@ -7684,7 +6271,8 @@ const PrideAndPrejudiceHtml = `
   pleasure of her brother’s being an inmate of Mr. Darcy’s house, and mentioned
   with raptures some plans of the latter with regard to new furniture.<span
     class="pagenum"
-    ><a id="page_169">{169}</a></span
+    >
+    </span
   >
 </p>
 
@@ -7720,7 +6308,8 @@ const PrideAndPrejudiceHtml = `
   “O that my dear mother had more command over herself! she can have no idea of
   the pain she gives me by her continual reflections on him. But I will not<span
     class="pagenum"
-    ><a id="page_170">{170}</a></span
+    >
+    </span
   >
   repine. It cannot last long. He will be forgot, and we shall all be as we were
   before.”
@@ -7764,7 +6353,8 @@ const PrideAndPrejudiceHtml = `
   and still fewer of whom I think well. The more I see of the world the more am
   I dissatisfied with it; and every day confirms my belief of the inconsistency
   of all human characters, and of the little dependence that can be placed on
-  the appearance<span class="pagenum"><a id="page_171">{171}</a></span> of
+  the appearance<span class="pagenum">
+  </span> of
   either merit or sense. I have met with two instances lately: one I will not
   mention, the other is Charlotte’s marriage. It is unaccountable! in every view
   it is unaccountable!”
@@ -7798,7 +6388,8 @@ const PrideAndPrejudiceHtml = `
   enough of this. You alluded to something else. You mentioned
   <i>two</i> instances. I cannot misunderstand you, but I entreat you, dear
   Lizzy, not to pain me by thinking <i>that person</i
-  ><span class="pagenum"><a id="page_172">{172}</a></span> to blame, and saying
+  ><span class="pagenum">
+  </span> to blame, and saying
   your opinion of him is sunk. We must not be so ready to fancy ourselves
   intentionally injured. We must not expect a lively young man to be always so
   guarded and circumspect. It is very often nothing but our own vanity that
@@ -7844,7 +6435,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Beyond a doubt they do wish him to choose Miss Darcy,” replied Jane; “but
-  this may be from better<span class="pagenum"><a id="page_173">{173}</a></span>
+  this may be from better<span class="pagenum">
+  </span>
   feelings than you are supposing. They have known her much longer than they
   have known me; no wonder if they love her better. But, whatever may be their
   own wishes, it is very unlikely they should have opposed their brother’s. What
@@ -7879,7 +6471,8 @@ const PrideAndPrejudiceHtml = `
   Mr. Bennet treated the matter differently. “So, Lizzy,” said he, one day,
   “your sister is crossed in love, I find. I congratulate her. Next to being
   married, a girl likes to<span class="pagenum"
-    ><a id="page_174">{174}</a></span
+    >
+    </span
   >
   be crossed in love a little now and then. It is something to think of, and
   gives her a sort of distinction among her companions. When is your turn to
@@ -7915,7 +6508,8 @@ const PrideAndPrejudiceHtml = `
   extenuating circumstances in the case unknown to the society of Hertfordshire:
   her mild and steady candour always pleaded for allowances, and urged the
   possibility of mistakes; but by everybody else Mr. Darcy was condemned as the
-  worst of men.<span class="pagenum"><a id="page_175">{175}</a></span>
+  worst of men.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -7926,17 +6520,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-436919395222565423"
   />
-  <br /><br />CHAPTER XXV.
+  CHAPTER XXV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="A"
-      src="images/i_204_b.png"
-      width="100"
-      id="id-6407237301841565293" /></span
-  >FTER a week spent in professions of love and schemes of felicity, Mr. Collins
+  After a week spent in professions of love and schemes of felicity, Mr. Collins
   was called from his amiable Charlotte by the arrival of Saturday. The pain of
   separation, however, might be alleviated on his side by preparations for the
   reception of his bride, as he had reason to hope, that shortly after his next
@@ -7954,7 +6542,8 @@ const PrideAndPrejudiceHtml = `
   in believing that a man who lived by trade, and within view of his own
   warehouses, could have been so well-bred and agreeable. Mrs. Gardiner, who was
   several years younger than Mrs. Bennet and Mrs. Philips, was an amiable,
-  intelligent,<span class="pagenum"><a id="page_176">{176}</a></span> elegant
+  intelligent,<span class="pagenum">
+  </span> elegant
   woman, and a great favourite with her Longbourn nieces. Between the two eldest
   and herself especially, there subsisted a very particular regard. They had
   frequently been staying with her in town.
@@ -7992,7 +6581,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   When alone with Elizabeth afterwards, she spoke more<span class="pagenum"
-    ><a id="page_177">{177}</a></span
+    >
+    </span
   >
   on the subject. “It seems likely to have been a desirable match for Jane,”
   said she. “I am sorry it went off. But these things happen so often! A young
@@ -8001,25 +6591,11 @@ const PrideAndPrejudiceHtml = `
   her, that these sort of inconstancies are very frequent.”
 </p>
 
-<div class="figcenter" style="width: 462px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_206.jpg"
-    width="462"
-    id="id-654870000656097674"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“Offended two or three young ladies”</p></div>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
-
 <p>
   “An excellent consolation in its way,” said Elizabeth; “but it will not do for
   <i>us</i>. We do not suffer by accident.<span class="pagenum"
-    ><a id="page_178">{178}</a></span
+    >
+    </span
   >
   It does not often happen that the interference of friends will persuade a
   young man of independent fortune to think no more of a girl whom he was
@@ -8061,7 +6637,8 @@ const PrideAndPrejudiceHtml = `
   young man will influence her. We live in so different a part of town, all our
   connections are so different, and, as you well know, we go out so little, that
   it is very improbable they should meet at all, unless he really comes to see
-  her.<span class="pagenum"><a id="page_179">{179}</a></span
+  her.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -8104,7 +6681,8 @@ const PrideAndPrejudiceHtml = `
   Bennet had so carefully provided for the entertainment of her brother and
   sister, that they did not once sit down to a family dinner. When the
   engagement was for home,<span class="pagenum"
-    ><a id="page_180">{180}</a></span
+    >
+    </span
   >
   some of the officers always made part of it, of which officers Mr. Wickham was
   sure to be one; and on these occasions Mrs. Gardiner, rendered suspicious by
@@ -8135,7 +6713,8 @@ const PrideAndPrejudiceHtml = `
   remember something of that gentleman’s reputed disposition, when quite a lad,
   which might agree with it; and was confident, at last, that she recollected
   having heard Mr. Fitzwilliam Darcy formerly spoken of as a very proud,
-  ill-natured boy.<span class="pagenum"><a id="page_181">{181}</a></span>
+  ill-natured boy.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -8146,18 +6725,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3594242738110071049"
   />
-  <br /><span class="caption"> “Will you come and see me.” </span>
-  <br /><br />CHAPTER XXVI.
+  <span class="caption"> “Will you come and see me.” </span>
+  CHAPTER XXVI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_210_b.png"
-      width="100"
-      id="id-2455704862363257963" /></span
-  >RS. GARDINER’S caution to Elizabeth was punctually and kindly given on the
+  
+
+  Mrs. Gardiner's caution to Elizabeth was punctually and kindly given on the
   first favourable opportunity of speaking to her alone: after honestly telling
   her what she thought, she thus went on:—
 </p>
@@ -8170,7 +6745,8 @@ const PrideAndPrejudiceHtml = `
   so very imprudent. I have nothing to say against <i>him</i>: he is a most
   interesting young man; and if he had the fortune he ought to have, I should
   think you could not do better. But as it is—you must not let your fancy run
-  away with you. You<span class="pagenum"><a id="page_182">{182}</a></span> have
+  away with you. You<span class="pagenum">
+  </span> have
   sense, and we all expect you to use it. Your father would depend on
   <i>your</i> resolution and good conduct, I am sure. You must not disappoint
   your father.”
@@ -8212,7 +6788,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “As I did the other day,” said Elizabeth, with a con<span class="pagenum"
-    ><a id="page_183">{183}</a></span
+    >
+    </span
   >scious smile; “very true, it will be wise in me to refrain from <i>that</i>.
   But do not imagine that he is always here so often. It is on your account that
   he has been so frequently invited this week. You know my mother’s ideas as to
@@ -8255,7 +6832,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Elizabeth could not refuse, though she foresaw little pleasure in the
-  visit.<span class="pagenum"><a id="page_184">{184}</a></span>
+  visit.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -8289,7 +6867,8 @@ const PrideAndPrejudiceHtml = `
   Jane had already written a few lines to her sister, to announce their safe
   arrival in London; and when she wrote again, Elizabeth hoped it would be in
   her power to say something of the Bingleys.<span class="pagenum"
-    ><a id="page_185">{185}</a></span
+    >
+    </span
   >
 </p>
 
@@ -8330,7 +6909,8 @@ const PrideAndPrejudiceHtml = `
   of her manner, would allow Jane to deceive herself no longer. The letter which
   she wrote on this occasion to her sister will prove what she felt:<span
     class="pagenum"
-    ><a id="page_186">{186}</a></span
+    >
+    </span
   >—
 </p>
 
@@ -8361,7 +6941,8 @@ const PrideAndPrejudiceHtml = `
     he had at all cared about me, we must have met long, long ago. He knows of
     my being in town, I am certain, from something she said herself; and yet it
     would seem, by her manner of talking,<span class="pagenum"
-      ><a id="page_187">{187}</a></span
+      >
+      </span
     >
     as if she wanted to persuade herself that he is really partial to Miss
     Darcy. I cannot understand it. If I were not afraid of judging harshly, I
@@ -8376,7 +6957,7 @@ const PrideAndPrejudiceHtml = `
     sure you will be very comfortable there.
   </p>
 
-  <p class="rt">“Yours, etc.”<br /></p>
+  <p class="rt">“Yours, etc.”</p>
 </div>
 
 <p>
@@ -8395,7 +6976,8 @@ const PrideAndPrejudiceHtml = `
   that gentleman, and required information; and Elizabeth had such to send as
   might rather give contentment to her aunt than to herself. His apparent
   partiality had subsided, his attentions were over, he was the admirer of some
-  one else. Elizabeth was<span class="pagenum"><a id="page_188">{188}</a></span>
+  one else. Elizabeth was<span class="pagenum">
+  </span>
   watchful enough to see it all, but she could see it and write of it without
   material pain. Her heart had been but slightly touched, and her vanity was
   satisfied with believing that <i>she</i> would have been his only choice, had
@@ -8423,7 +7005,8 @@ const PrideAndPrejudiceHtml = `
   dearly. Kitty and Lydia take his defection much more to heart than I do. They
   are young in the ways of the world, and not yet open to the mortifying
   conviction that handsome young men must have something to live on as well as
-  the plain.<span class="pagenum"><a id="page_189">{189}</a></span
+  the plain.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -8435,24 +7018,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-8107342366622283142"
   />
-  <br /><span class="caption"> “On the Stairs.” </span>
-  <br /><br />CHAPTERXXVII.
+  <span class="caption"> “On the Stairs.” </span>
+  CHAPTERXXVII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="W"
-      src="images/i_218_b.png"
-      width="100"
-      id="id-5758034147236113654" /></span
-  >ITH no greater events than these in the Longbourn family, and otherwise
+  With no greater events than these in the Longbourn family, and otherwise
   diversified by little beyond the walks to Meryton, sometimes dirty and
   sometimes cold, did January and February pass away. March was to take
   Elizabeth to Hunsford. She had not at first thought very seriously of going
   thither; but Charlotte, she soon found, was depending on the plan,<span
     class="pagenum"
-    ><a id="page_190">{190}</a></span
+    >
+    </span
   >
   and she gradually learned to consider it herself with greater pleasure as well
   as greater certainty. Absence had increased her desire of seeing Charlotte
@@ -8484,7 +7062,8 @@ const PrideAndPrejudiceHtml = `
   she felt must ever attach her to him with a most sincere regard; and she
   parted from him convinced, that, whether married or single, he must always be
   her model of the amiable and pleasing.<span class="pagenum"
-    ><a id="page_191">{191}</a></span
+    >
+    </span
   >
 </p>
 
@@ -8519,7 +7098,8 @@ const PrideAndPrejudiceHtml = `
   would not continue long. Mrs. Gardiner gave her the particulars also of Miss
   Bingley’s visit in Gracechurch Street, and repeated conversations occurring at
   different times between Jane and herself,<span class="pagenum"
-    ><a id="page_192">{192}</a></span
+    >
+    </span
   >
   which proved that the former had, from her heart, given up the acquaintance.
 </p>
@@ -8574,7 +7154,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “<i>Her</i> not objecting does not justify <i>him</i>. It only shows her being
   deficient in something herself—sense or feeling.<span class="pagenum"
-    ><a id="page_193">{193}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -8623,7 +7204,8 @@ const PrideAndPrejudiceHtml = `
   any particular scene, will we begin quarrelling about its relative situation.
   Let <i>our</i> first effusions be less insupportable than those of the
   generality of travellers.<span class="pagenum"
-    ><a id="page_194">{194}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -8635,17 +7217,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-7778904379692735046"
   />
-  <br /><span class="caption"> “At the door.” </span> <br /><br />CHAPTERXXVIII.
+  <span class="caption"> “At the door.” </span> CHAPTERXXVIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_223_b.png"
-      width="100"
-      id="id-7470732098398696722" /></span
-  >VERY object in the next day’s journey was new and interesting to Elizabeth;
+  Every object in the next day’s journey was new and interesting to Elizabeth;
   and her spirits were in a state of enjoyment; for she had seen her sister
   looking so well as to banish all fear for her health, and the prospect of her
   northern tour was a constant source of delight.
@@ -8660,7 +7236,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   At length the Parsonage was discernible. The garden<span class="pagenum"
-    ><a id="page_195">{195}</a></span
+    >
+    </span
   >
   sloping to the road, the house standing in it, the green pales and the laurel
   hedge, everything declared they were arriving. Mr. Collins and Charlotte
@@ -8690,7 +7267,8 @@ const PrideAndPrejudiceHtml = `
   might reasonably be ashamed, which certainly was not seldom, she involuntarily
   turned her eye on Charlotte. Once or twice she could discern a faint blush;
   but in general Charlotte<span class="pagenum"
-    ><a id="page_196">{196}</a></span
+    >
+    </span
   >
   wisely did not hear. After sitting long enough to admire every article of
   furniture in the room, from the sideboard to the fender, to give an account of
@@ -8719,7 +7297,8 @@ const PrideAndPrejudiceHtml = `
   well built and convenient; and everything was fitted up and arranged with a
   neatness and consistency, of which Elizabeth gave Charlotte all the credit.
   When Mr. Collins could be forgotten, there was really a great air of
-  comfort<span class="pagenum"><a id="page_197">{197}</a></span> throughout, and
+  comfort<span class="pagenum">
+  </span> throughout, and
   by Charlotte’s evident enjoyment of it, Elizabeth supposed he must be often
   forgotten.
 </p>
@@ -8761,7 +7340,8 @@ const PrideAndPrejudiceHtml = `
   with, her husband, and to acknowledge that it was all done very well. She had
   also to anticipate how her visit would pass, the quiet tenour of their usual
   employments, the vexatious interruptions of<span class="pagenum"
-    ><a id="page_198">{198}</a></span
+    >
+    </span
   >
   Mr. Collins, and the gaieties of their intercourse with Rosings. A lively
   imagination soon settled it all.
@@ -8775,25 +7355,11 @@ const PrideAndPrejudiceHtml = `
   landing-place, who, breathless with agitation, cried out,—
 </p>
 
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="514"
-    src="images/i_227.jpg"
-    width="550"
-    id="id-7458348586661430706"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“In Conversation with the ladies”</p></div>
-
-    <p>[Copyright 1894 by George Allen.]</p>
-  </div>
-</div>
-
 <p>
   “Oh, my dear Eliza! pray make haste and come into the dining-room, for there
   is such a sight to be seen! I will not tell you what it is. Make haste, and
-  come down this moment.<span class="pagenum"><a id="page_199">{199}</a></span
+  come down this moment.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -8843,7 +7409,8 @@ const PrideAndPrejudiceHtml = `
   others returned into the house. Mr. Collins no sooner saw the two girls than
   he began to congratulate them on their good fortune, which Charlotte explained
   by letting them know that the whole party was asked to dine at Rosings the
-  next day.<span class="pagenum"><a id="page_200">{200}</a></span>
+  next day.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -8854,20 +7421,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-7071151395951911122"
   />
-  <br /><span class="caption">
+  <span class="caption">
     “Lady Catherine, said she, you have given me a treasure.”
   </span>
-  <br /><br />CHAPTER XXIX.
+  CHAPTER XXIX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_229_b.png"
-      width="100"
-      id="id-5976798029837518063" /></span
-  >R. COLLINS’S triumph, in consequence of this invitation, was complete. The
+  Mr. Collin's triumph, in consequence of this invitation, was complete. The
   power of displaying the grandeur of his patroness to his wondering visitors,
   and of letting them see her civility towards himself and his wife, was exactly
   what he had wished for; and that an opportunity of doing it should be given so
@@ -8878,7 +7439,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I confess,” said he, “that I should not have been at all surprised by her
   Ladyship’s asking us on Sunday to<span class="pagenum"
-    ><a id="page_201">{201}</a></span
+    >
+    </span
   >
   drink tea and spend the evening at Rosings. I rather expected, from my
   knowledge of her affability, that it would happen. But who could have foreseen
@@ -8917,7 +7479,8 @@ const PrideAndPrejudiceHtml = `
   to recommend their being quick, as Lady Catherine very much objected to be
   kept waiting for her dinner. Such formidable accounts of her Ladyship, and her
   manner of living, quite frightened Maria<span class="pagenum"
-    ><a id="page_202">{202}</a></span
+    >
+    </span
   >
   Lucas, who had been little used to company; and she looked forward to her
   introduction at Rosings with as much apprehension as her father had done to
@@ -8956,7 +7519,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   In spite of having been at St. James’s, Sir William was so completely awed by
   the grandeur surrounding him, that he had but just courage enough to make a
-  very<span class="pagenum"><a id="page_203">{203}</a></span> low bow, and take
+  very<span class="pagenum">
+  </span> low bow, and take
   his seat without saying a word; and his daughter, frightened almost out of her
   senses, sat on the edge of her chair, not knowing which way to look. Elizabeth
   found herself quite equal to the scene, and could observe the three ladies
@@ -8986,7 +7550,8 @@ const PrideAndPrejudiceHtml = `
   After sitting a few minutes, they were all sent to one of the windows to
   admire the view, Mr. Collins attending them to point out its beauties, and
   Lady Catherine kindly informing them that it was much better worth looking at
-  in the summer.<span class="pagenum"><a id="page_204">{204}</a></span>
+  in the summer.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -9017,7 +7582,8 @@ const PrideAndPrejudiceHtml = `
   inquired into Charlotte’s domestic concerns familiarly and minutely, and gave
   her a great deal of advice as to the management of them all; told her how
   everything ought to be regulated in so<span class="pagenum"
-    ><a id="page_205">{205}</a></span
+    >
+    </span
   >
   small a family as hers, and instructed her as to the care of her cows and her
   poultry. Elizabeth found that nothing was beneath this great lady’s attention
@@ -9056,7 +7622,8 @@ const PrideAndPrejudiceHtml = `
 </p>
 
 <p>
-  “No, not at all.<span class="pagenum"><a id="page_206">{206}</a></span
+  “No, not at all.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -9106,7 +7673,8 @@ const PrideAndPrejudiceHtml = `
   get a young person well placed out. Four nieces of Mrs. Jenkinson are most
   delightfully situated through my means; and it was but the other day that I
   recommended another young person, who was<span class="pagenum"
-    ><a id="page_207">{207}</a></span
+    >
+    </span
   >
   merely accidentally mentioned to me, and the family are quite delighted with
   her. Mrs. Collins, did I tell you of Lady Metcalfe’s calling yesterday to
@@ -9155,7 +7723,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I am not one-and-twenty.<span class="pagenum"
-    ><a id="page_208">{208}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -9188,7 +7757,8 @@ const PrideAndPrejudiceHtml = `
   really was. But her commendation, though costing her some trouble, could by no
   means satisfy Mr. Collins, and he was very soon obliged to take her Ladyship’s
   praise into his own hands.<span class="pagenum"
-    ><a id="page_209">{209}</a></span
+    >
+    </span
   >
 </p>
 
@@ -9200,17 +7770,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-5470154614316165880"
   />
-  <br /><br />CHAPTER XXX.
+  CHAPTER XXX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="S"
-      src="images/i_238_b.png"
-      width="100"
-      id="id-2517695331358457375" /></span
-  >IR WILLIAM stayed only a week at Hunsford; but his visit was long enough to
+  Sir William stayed only a week at Hunsford; but his visit was long enough to
   convince him of his daughter’s being most comfortably settled, and of her
   possessing such a husband and such a neighbour as were not often met with.
   While Sir William was with them, Mr. Collins devoted his mornings to driving
@@ -9220,7 +7784,8 @@ const PrideAndPrejudiceHtml = `
   chief of the time between breakfast and dinner was now passed by him either at
   work in the garden, or in reading and writing, and looking out of window in
   his own book room, which fronted the road.<span class="pagenum"
-    ><a id="page_210">{210}</a></span
+    >
+    </span
   >
   The room in which the ladies sat was backwards. Elizabeth at first had rather
   wondered that Charlotte should not prefer the dining parlour for common use;
@@ -9251,7 +7816,8 @@ const PrideAndPrejudiceHtml = `
   the housemaid in negligence; and if she accepted any refreshment, seemed to do
   it only for the sake of finding out that Mrs. Collins’s joints of meat were
   too large for her family.<span class="pagenum"
-    ><a id="page_211">{211}</a></span
+    >
+    </span
   >
 </p>
 
@@ -9264,23 +7830,13 @@ const PrideAndPrejudiceHtml = `
   differences, silence their complaints, and scold them into harmony and plenty.
 </p>
 
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="536"
-    src="images/i_240.jpg"
-    width="550"
-    id="id-8933911774946875663"
-  />
-  <div class="caption">
-    <p>“he never failed to inform them”</p>
-  </div>
-</div>
+
 
 <p>
   The entertainment of dining at Rosings was repeated about twice a week; and,
   allowing for the loss of Sir William, and there being only one card-table in
-  the<span class="pagenum"><a id="page_212">{212}</a></span> evening, every such
+  the<span class="pagenum">
+  </span> evening, every such
   entertainment was the counterpart of the first. Their other engagements were
   few, as the style of living of the neighbourhood in general was beyond the
   Collinses’ reach. This, however, was no evil to Elizabeth, and upon the whole
@@ -9311,23 +7867,10 @@ const PrideAndPrejudiceHtml = `
 <p>
   His arrival was soon known at the Parsonage; for Mr. Collins was walking the
   whole morning within view of the lodges opening into Hunsford Lane, in order
-  to have<span class="pagenum"><a id="page_213">{213}</a></span>
+  to have<span class="pagenum">
+  </span>
 </p>
 
-<div class="figcenter" style="width: 472px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_242.jpg"
-    width="472"
-    id="id-1811998105928033152"
-  />
-  <div class="caption">
-    <p>“The gentlemen accompanied him.”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p class="nind">
   the earliest assurance of it; and, after making his bow as the carriage turned
@@ -9338,7 +7881,8 @@ const PrideAndPrejudiceHtml = `
   of all the party, when Mr. Collins returned, the gentlemen accompanied him.
   Charlotte had seen them from her husband’s room, crossing the road, and<span
     class="pagenum"
-    ><a id="page_214">{214}</a></span
+    >
+    </span
   >
   immediately running into the other, told the girls what an honour they might
   expect, adding,—
@@ -9381,7 +7925,8 @@ const PrideAndPrejudiceHtml = `
   Jane; and she thought he looked a little confused as he answered that he had
   never been so fortunate as to meet Miss Bennet. The subject was pursued no
   further, and the gentlemen soon afterwards went away.<span class="pagenum"
-    ><a id="page_215">{215}</a></span
+    >
+    </span
   >
 </p>
 
@@ -9393,18 +7938,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-347726381627242355"
   />
-  <br /><br />
+  
   CHAPTER XXXI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="C"
-      src="images/i_244_b.png"
-      width="100"
-      id="id-1276939067583142841" /></span
-  >OLONEL FITZWILLIAM’S manners were very much admired at the Parsonage, and the
+  
+
+  Colonel Fitzwilliam's manners were very much admired at the Parsonage, and the
   ladies all felt that he must add considerably to the pleasure of their
   engagements at Rosings. It was some days, however, before they received any
   invitation thither, for while there were visitors in the house they could not
@@ -9413,7 +7954,8 @@ const PrideAndPrejudiceHtml = `
   they were merely asked on leaving church to come there in the evening. For the
   last week they had seen very little of either Lady Catherine or her daughter.
   Colonel Fitzwilliam had called at the<span class="pagenum"
-    ><a id="page_216">{216}</a></span
+    >
+    </span
   >
   Parsonage more than once during the time, but Mr. Darcy they had only seen at
   church.
@@ -9455,7 +7997,8 @@ const PrideAndPrejudiceHtml = `
   “Of music! Then pray speak aloud. It is of all subjects my delight. I must
   have my share in the conversation, if you are speaking of music. There are few
   people in England, I suppose, who have more true<span class="pagenum"
-    ><a id="page_217">{217}</a></span
+    >
+    </span
   >
   enjoyment of music than myself, or a better natural taste. If I had ever
   learnt, I should have been a great proficient. And so would Anne, if her
@@ -9499,7 +8042,8 @@ const PrideAndPrejudiceHtml = `
   before, to her other nephew; till the latter walked away from her, and moving
   with his usual deliberation towards the pianoforte, stationed himself so<span
     class="pagenum"
-    ><a id="page_218">{218}</a></span
+    >
+    </span
   >
   as to command a full view of the fair performer’s countenance. Elizabeth saw
   what he was doing, and at the first convenient pause turned to him with an
@@ -9542,7 +8086,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “You shall hear, then—but prepare for something very<span class="pagenum"
-    ><a id="page_219">{219}</a></span
+    >
+    </span
   >
   dreadful. The first time of my ever seeing him in Hertfordshire, you must
   know, was at a ball—and at this ball, what do you think he did? He danced only
@@ -9591,7 +8136,8 @@ const PrideAndPrejudiceHtml = `
   masterly manner which I see so many women’s do. They have not the same force
   or rapidity, and do not produce the same expression. But then I have<span
     class="pagenum"
-    ><a id="page_220">{220}</a></span
+    >
+    </span
   >
   always supposed it to be my own fault—because I would not take the trouble of
   practising. It is not that I do not believe <i>my</i> fingers as capable as
@@ -9630,7 +8176,8 @@ const PrideAndPrejudiceHtml = `
   them many instructions on execution and taste. Elizabeth received them with
   all the forbearance of civility; and at the request of the gentlemen remained
   at the instrument till her Ladyship’s carriage was ready to take them all
-  home.<span class="pagenum"><a id="page_221">{221}</a></span>
+  home.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -9641,22 +8188,17 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-6501029806221143629"
   />
-  <br /><br />CHAPTER XXXII.
+  CHAPTER XXXII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_250_b.png"
-      width="100"
-      id="id-3268243385973933257" /></span
-  >LIZABETH was sitting by herself the next morning, and writing to Jane, while
+  Elizabeth was sitting by herself the next morning, and writing to Jane, while
   Mrs. Collins and Maria were gone on business into the village, when she was
   startled by a ring at the door, the certain signal of a visitor. As she had
   heard no carriage, she thought it not unlikely to be Lady Catherine; and under
   that apprehension was putting<span class="pagenum"
-    ><a id="page_222">{222}</a></span
+    >
+    </span
   >
   away her half-finished letter, that she might escape all impertinent
   questions, when the door opened, and to her very great surprise Mr. Darcy, and
@@ -9706,7 +8248,8 @@ const PrideAndPrejudiceHtml = `
   “If he means to be but little at Netherfield, it would be better for the
   neighbourhood that he should give up the place entirely, for then we might
   possibly get a settled family there. But, perhaps, Mr. Bingley did not take
-  the<span class="pagenum"><a id="page_223">{223}</a></span> house so much for
+  the<span class="pagenum">
+  </span> house so much for
   the convenience of the neighbourhood as for his own, and we must expect him to
   keep or quit it on the same principle.”
 </p>
@@ -9758,7 +8301,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I should never have considered the distance as one of<span class="pagenum"
-    ><a id="page_224">{224}</a></span
+    >
+    </span
   >
   the <i>advantages</i> of the match,” cried Elizabeth. “I should never have
   said Mrs. Collins was settled <i>near</i> her family.”
@@ -9804,30 +8348,19 @@ const PrideAndPrejudiceHtml = `
   concise—and soon put an end to by the entrance of Charlotte and her sister,
   just returned from their walk. The <i>tête-à-tête</i> surprised them. Mr.<span
     class="pagenum"
-    ><a id="page_225">{225}</a></span
+    >
+    </span
   >
   Darcy related the mistake which had occasioned his intruding on Miss Bennet,
   and, after sitting a few minutes longer, without saying much to anybody, went
   away.
 </p>
 
-<div class="figcenter" style="width: 361px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_254.jpg"
-    width="361"
-    id="id-8519136411223446537"
-  />
-  <div class="caption">
-    <p>“Accompanied by their aunt”</p>
 
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
-  <span class="pagenum"><a id="page_226">{226}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -9861,7 +8394,8 @@ const PrideAndPrejudiceHtml = `
   understand. It could not be for society, as he frequently sat there ten
   minutes together without opening his lips; and when he did speak, it seemed
   the effect of necessity rather than of choice—a sacrifice to propriety, not a
-  pleasure to himself. He<span class="pagenum"><a id="page_227">{227}</a></span>
+  pleasure to himself. He<span class="pagenum">
+  </span>
   seldom appeared really animated. Mrs. Collins knew not what to make of him.
   Colonel Fitzwilliam’s occasionally laughing at his stupidity proved that he
   was generally different, which her own knowledge of him could not have told
@@ -9889,7 +8423,8 @@ const PrideAndPrejudiceHtml = `
   admired her, and his situation in life was most eligible; but, to
   counterbalance these advantages, Mr. Darcy had considerable patronage in the
   church, and his cousin could have none at all.<span class="pagenum"
-    ><a id="page_228">{228}</a></span
+    >
+    </span
   >
 </p>
 
@@ -9901,18 +8436,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-709301874265535276"
   />
-  <br /><span class="caption"> “On looking up.” </span> <br /><br />CHAPTER
+  <span class="caption"> “On looking up.” </span> CHAPTER
   XXXIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_257_b.png"
-      width="100"
-      id="id-6475235623191991912" /></span
-  >ORE than once did Elizabeth, in her ramble within the park, unexpectedly meet
+  
+
+  More than once did Elizabeth, in her ramble within the park, unexpectedly meet
   Mr. Darcy. She felt all the perverseness of the mischance that should bring
   him where no one else was brought; and, to prevent its ever happening again,
   took care to inform him, at first, that it was a favourite haunt of hers. How
@@ -9923,7 +8454,8 @@ const PrideAndPrejudiceHtml = `
   her. He never said a great deal, nor did she give herself the trouble of
   talking or of listening much; but it struck her in the course of their<span
     class="pagenum"
-    ><a id="page_229">{229}</a></span
+    >
+    </span
   >
   third rencounter that he was asking some odd unconnected questions—about her
   pleasure in being at Hunsford, her love of solitary walks, and her opinion of
@@ -9968,7 +8500,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “And if not able to please himself in the arrangement, he has at least great
   pleasure in the power of choice. I<span class="pagenum"
-    ><a id="page_230">{230}</a></span
+    >
+    </span
   >
   do not know anybody who seems more to enjoy the power of doing what he likes
   than Mr. Darcy.”
@@ -10013,7 +8546,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   He answered her in the same style, and the subject dropped. To interrupt a
   silence which might make him fancy her affected with what had passed, she soon
-  afterwards said,<span class="pagenum"><a id="page_231">{231}</a></span
+  afterwards said,<span class="pagenum">
+  </span
   >—
 </p>
 
@@ -10064,7 +8598,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Care of him! Yes, I really believe Darcy <i>does</i> take care of him in
   those points where he most wants care.<span class="pagenum"
-    ><a id="page_232">{232}</a></span
+    >
+    </span
   >
   From something that he told me in our journey hither, I have reason to think
   Bingley very much indebted to him. But I ought to beg his pardon, for I have
@@ -10113,7 +8648,8 @@ const PrideAndPrejudiceHtml = `
   “I am thinking of what you have been telling me,” said she. “Your cousin’s
   conduct does not suit my feelings. Why was he to be the judge?<span
     class="pagenum"
-    ><a id="page_233">{233}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -10150,7 +8686,8 @@ const PrideAndPrejudiceHtml = `
   hope of happiness for the most affectionate, generous heart in the world; and
   no one could say how lasting an evil he might have inflicted.<span
     class="pagenum"
-    ><a id="page_234">{234}</a></span
+    >
+    </span
   >
 </p>
 
@@ -10184,7 +8721,8 @@ const PrideAndPrejudiceHtml = `
   from pressing her; but Mr. Collins could not conceal his apprehension of Lady
   Catherine’s being rather displeased by her staying at home.<span
     class="pagenum"
-    ><a id="page_235">{235}</a></span
+    >
+    </span
   >
 </p>
 
@@ -10196,21 +8734,18 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3181602744962272488"
   />
-  <br /><br />CHAPTER XXXIV.
+  CHAPTER XXXIV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="W"
-      src="images/i_264_b.png"
-      width="100"
-      id="id-5646591239505257791" /></span
-  >HEN they were gone, Elizabeth, as if intending to exasperate herself as much
+  
+
+  When they were gone, Elizabeth, as if intending to exasperate herself as much
   as possible against Mr. Darcy, chose for her employment the examination of all
   the letters which Jane had written to her since her being in Kent. They
   contained no actual complaint, nor was there any revival of past
-  occurrences,<span class="pagenum"><a id="page_236">{236}</a></span> or any
+  occurrences,<span class="pagenum">
+  </span> or any
   communication of present suffering. But in all, and in almost every line of
   each, there was a want of that cheerfulness which had been used to
   characterize her style, and which, proceeding from the serenity of a mind at
@@ -10242,7 +8777,8 @@ const PrideAndPrejudiceHtml = `
   immediately began an inquiry after her health, imputing his visit to a wish of
   hearing that she were better. She answered him with cold civility. He sat down
   for a few moments, and then getting up walked<span class="pagenum"
-    ><a id="page_237">{237}</a></span
+    >
+    </span
   >
   about the room. Elizabeth was surprised, but said not a word. After a silence
   of several minutes, he came towards her in an agitated manner, and thus
@@ -10278,7 +8814,8 @@ const PrideAndPrejudiceHtml = `
   rewarded by her acceptance of his hand. As he said this she could easily see
   that he had no doubt of a favourable answer. He <i>spoke</i> of apprehension
   and anxiety, but his countenance expressed real security. Such a
-  circumstance<span class="pagenum"><a id="page_238">{238}</a></span> could only
+  circumstance<span class="pagenum">
+  </span> could only
   exasperate farther; and when he ceased the colour rose into her cheeks and she
   said,—
 </p>
@@ -10317,7 +8854,8 @@ const PrideAndPrejudiceHtml = `
   your will, against your reason, and even against your character? Was not this
   some excuse for incivility, if I <i>was</i> uncivil? But I have other
   provocations. You know I have.<span class="pagenum"
-    ><a id="page_239">{239}</a></span
+    >
+    </span
   >
   Had not my own feelings decided against you, had they been indifferent, or had
   they even been favourable, do you think that any consideration would tempt me
@@ -10363,7 +8901,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “But it is not merely this affair,” she continued, “on which my dislike is
   founded. Long before it had taken<span class="pagenum"
-    ><a id="page_240">{240}</a></span
+    >
+    </span
   >
   place, my opinion of you was decided. Your character was unfolded in the
   recital which I received many months ago from Mr. Wickham. On this subject,
@@ -10406,7 +8945,8 @@ const PrideAndPrejudiceHtml = `
   forming any serious design. These bitter accusations might have been
   suppressed, had I, with greater policy, concealed my struggles, and<span
     class="pagenum"
-    ><a id="page_241">{241}</a></span
+    >
+    </span
   >
   flattered you into the belief of my being impelled by unqualified, unalloyed
   inclination; by reason, by reflection, by everything. But disguise of every
@@ -10447,7 +8987,8 @@ const PrideAndPrejudiceHtml = `
   succeeding events have built so immovable a dislike; and I had not known you a
   month before I felt that you were the last man in the world whom I could ever
   be prevailed on to marry.<span class="pagenum"
-    ><a id="page_242">{242}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -10481,7 +9022,8 @@ const PrideAndPrejudiceHtml = `
   She continued in very agitating reflections till the sound of Lady Catherine’s
   carriage made her feel how unequal she was to encounter Charlotte’s
   observation, and hurried her away to her room.<span class="pagenum"
-    ><a id="page_243">{243}</a></span
+    >
+    </span
   >
 </p>
 
@@ -10493,18 +9035,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1419291369370930144"
   />
-  <br /><span class="caption"> “Hearing herself called.” </span>
-  <br /><br />CHAPTER XXXV.
+  <span class="caption"> “Hearing herself called.” </span>
+  CHAPTER XXXV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_272_b.png"
-      width="100"
-      id="id-7621021703508384216" /></span
-  >LIZABETH awoke the next morning to the same thoughts and meditations which
+  
+
+  Elizabeth awoke the next morning to the same thoughts and meditations which
   had at length closed her eyes. She could not yet recover from the surprise of
   what had happened: it was impossible to think of anything else; and, totally
   indisposed for employment, she resolved soon after breakfast to indulge
@@ -10520,7 +9058,8 @@ const PrideAndPrejudiceHtml = `
   by the pleasantness of the morning, to stop at the gates and look into the
   park. The five weeks which she had now passed in Kent had made a great
   difference in the country, and every day was adding to the verdure of the
-  early trees. She was<span class="pagenum"><a id="page_244">{244}</a></span> on
+  early trees. She was<span class="pagenum">
+  </span> on
   the point of continuing her walk, when she caught a glimpse of a gentleman
   within the sort of grove which edged the park: he was moving that way; and
   fearful of its being Mr. Darcy, she was directly retreating. But the person
@@ -10551,7 +9090,8 @@ const PrideAndPrejudiceHtml = `
   happiness of both, cannot be too soon forgotten; and the effort which the
   formation and the perusal of this letter must occasion, should have been
   spared, had not my character required it to be written<span class="pagenum"
-    ><a id="page_245">{245}</a></span
+    >
+    </span
   >
   and read. You must, therefore, pardon the freedom with which I demand your
   attention; your feelings, I know, will bestow it unwillingly, but I demand it
@@ -10580,7 +9120,8 @@ const PrideAndPrejudiceHtml = `
   the country. But it was not till the evening of the dance at Netherfield that
   I had any apprehension of his feeling a serious attachment. I had often seen
   him in love before. At that ball, while I had<span class="pagenum"
-    ><a id="page_246">{246}</a></span
+    >
+    </span
   >
   the honour of dancing with you, I was first made acquainted, by Sir William
   Lucas’s accidental information, that Bingley’s attentions to your sister had
@@ -10607,7 +9148,8 @@ const PrideAndPrejudiceHtml = `
   utmost force of passion to put aside in my own case; the want of connection
   could not be so great an evil to my friend as to me. But there were<span
     class="pagenum"
-    ><a id="page_247">{247}</a></span
+    >
+    </span
   >
   other causes of repugnance; causes which, though still existing, and existing
   to an equal degree in both instances, I had myself endeavoured to forget,
@@ -10633,7 +9175,8 @@ const PrideAndPrejudiceHtml = `
   office of pointing out to my friend the certain evils of such a choice. I
   described and enforced them earnestly. But however this remonstrance might
   have staggered or delayed his determination, I do not<span class="pagenum"
-    ><a id="page_248">{248}</a></span
+    >
+    </span
   >
   suppose that it would ultimately have prevented the marriage, had it not been
   seconded by the assurance, which I hesitated not in giving, of your sister’s
@@ -10660,7 +9203,8 @@ const PrideAndPrejudiceHtml = `
   <i>particularly</i> accused me I am ignorant; but of the truth of what I shall
   relate I can summon more than one witness of undoubted veracity.<span
     class="pagenum"
-    ><a id="page_249">{249}</a></span
+    >
+    </span
   >
   Mr. Wickham is the son of a very respectable man, who had for many years the
   management of all the Pemberley estates, and whose good conduct in the
@@ -10686,7 +9230,8 @@ const PrideAndPrejudiceHtml = `
   the best manner that his profession might allow, and if he took orders,
   desired that a valuable family living might be his as soon as it became
   vacant. There was also a legacy of one<span class="pagenum"
-    ><a id="page_250">{250}</a></span
+    >
+    </span
   >
   thousand pounds. His own father did not long survive mine; and within half a
   year from these events Mr. Wickham wrote to inform me that, having finally
@@ -10712,7 +9257,8 @@ const PrideAndPrejudiceHtml = `
   him to the living in question—of which he trusted there could be little doubt,
   as he was well assured that I had no other person to provide for, and I could
   not have forgotten my revered father’s intentions. You will hardly blame
-  me<span class="pagenum"><a id="page_251">{251}</a></span> for refusing to
+  me<span class="pagenum">
+  </span> for refusing to
   comply with this entreaty, or for resisting every repetition of it. His
   resentment was in proportion to the distress of his circumstances—and he was
   doubtless as violent in his abuse of me to others as in his reproaches to
@@ -10736,7 +9282,8 @@ const PrideAndPrejudiceHtml = `
   unexpectedly a day or two before the intended elopement; and then Georgiana,
   unable to support the idea of grieving and offending a brother whom she almost
   looked up to as a father, acknowledged the whole to me. You may imagine
-  what<span class="pagenum"><a id="page_252">{252}</a></span> I felt and how I
+  what<span class="pagenum">
+  </span> I felt and how I
   acted. Regard for my sister’s credit and feelings prevented any public
   exposure; but I wrote to Mr. Wickham, who left the place immediately, and Mrs.
   Younge was of course removed from her charge. Mr. Wickham’s chief object was
@@ -10763,8 +9310,9 @@ const PrideAndPrejudiceHtml = `
 </p>
 
 <p class="rt">
-  “<span class="smcap">Fitzwilliam Darcy.</span>”<br />
-  <span class="pagenum"><a id="page_253">{253}</a></span>
+  “<span class="smcap">Fitzwilliam Darcy.</span>”
+  <span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -10775,17 +9323,13 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4062712135921841461"
   />
-  <br /><br />CHAPTER XXXVI.
+  CHAPTER XXXVI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt=""
-      src="images/i_282_b.png"
-      width="100"
-      id="id-2065141246810597515" /></span
-  >ELIZABETH, when Mr. Darcy gave her the letter, did not expect it to contain a
+  
+
+  Elizabeth, when Mr. Darcy gave her the letter, did not expect it to contain a
   renewal of his offers, she had formed no expectation at all of its contents.
   But such as they were, it may be well supposed how eagerly she went through
   them, and what a contrariety of emotion they excited. Her feelings as she read
@@ -10793,7 +9337,8 @@ const PrideAndPrejudiceHtml = `
   believed any apology to be in his power; and steadfastly was she persuaded,
   that he could have no explanation to give, which a just sense of shame would
   not conceal. With a strong prejudice<span class="pagenum"
-    ><a id="page_254">{254}</a></span
+    >
+    </span
   >
   against everything he might say, she began his account of what had happened at
   Netherfield. She read with an eagerness which hardly left her power of
@@ -10826,7 +9371,8 @@ const PrideAndPrejudiceHtml = `
   again; and collecting herself as well as she could, she again began the
   mortifying perusal of all that related to Wickham, and commanded herself so
   far as to examine the meaning of every sentence. The account of his connection
-  with<span class="pagenum"><a id="page_255">{255}</a></span> the Pemberley
+  with<span class="pagenum">
+  </span> the Pemberley
   family was exactly what he had related himself; and the kindness of the late
   Mr. Darcy, though she had not before known its extent, agreed equally well
   with his own words. So far each recital confirmed the other; but when she came
@@ -10854,24 +9400,12 @@ const PrideAndPrejudiceHtml = `
   man, who, on meeting him accidentally in town, had there renewed a slight
   acquaintance. Of his former way of life, nothing had been known in
   Hertfordshire but what he told<span class="pagenum"
-    ><a id="page_256">{256}</a></span
+    >
+    </span
   >
 </p>
 
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="459"
-    src="images/i_285.jpg"
-    width="550"
-    id="id-6126468181274321818"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“Meeting accidentally in Town”</p></div>
 
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p class="nind">
   himself. As to his real character, had information been in her power, she had
@@ -10885,7 +9419,8 @@ const PrideAndPrejudiceHtml = `
   see him instantly before her, in every charm of air and address, but she could
   remember no more substantial good than the general approbation of the
   neighbourhood, and the regard which his social powers had<span class="pagenum"
-    ><a id="page_257">{257}</a></span
+    >
+    </span
   >
   gained him in the mess. After pausing on this point a considerable while, she
   once more continued to read. But, alas! the story which followed, of his
@@ -10914,7 +9449,8 @@ const PrideAndPrejudiceHtml = `
   quitted the country, he had told his story to no one but herself; but that
   after their removal, it had been everywhere discussed; that he had then no
   reserves, no scruples in sinking Mr. Darc<span class="pagenum"
-    ><a id="page_258">{258}</a></span
+    >
+    </span
   >y’s character, though he had assured her that respect for the father would
   always prevent his exposing the son.
 </p>
@@ -10945,7 +9481,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   She grew absolutely ashamed of herself. Of neither<span class="pagenum"
-    ><a id="page_259">{259}</a></span
+    >
+    </span
   >
   Darcy nor Wickham could she think, without feeling that she had been blind,
   partial, prejudiced, absurd.
@@ -10979,7 +9516,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   When she came to that part of the letter in which her family were mentioned,
   in tones of such mortifying, yet merited, reproach, her sense of shame was
-  severe. The<span class="pagenum"><a id="page_260">{260}</a></span> justice of
+  severe. The<span class="pagenum">
+  </span> justice of
   the charge struck her too forcibly for denial; and the circumstances to which
   he particularly alluded, as having passed at the Netherfield ball, and as
   confirming all his first disapprobation, could not have made a stronger
@@ -11012,7 +9550,8 @@ const PrideAndPrejudiceHtml = `
   her return, and almost resolving to walk after her till she could be found.
   Elizabeth could but just <i>affect</i> concern in missing him; she really
   rejoiced at it. Colonel Fitzwilliam was no longer an object. She could think
-  only of her letter.<span class="pagenum"><a id="page_261">{261}</a></span>
+  only of her letter.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -11022,19 +9561,15 @@ const PrideAndPrejudiceHtml = `
     src="images/i_290_a.jpg"
     width="450"
     id="id-5063088782164089064"
-  /><br />
+  />
   <span class="caption"> “His parting obeisance.” </span>
-  <br /><br />CHAPTER XXXVII.
+  CHAPTER XXXVII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_290_b.png"
-      width="100"
-      id="id-4494915925314609362" /></span
-  >HE two gentlemen left Rosings the next morning; and Mr. Collins having been
+  
+
+  The two gentlemen left Rosings the next morning; and Mr. Collins having been
   in waiting near the lodges, to make them his parting obeisance, was able to
   bring home the pleasing intelligence of their appearing in very good health,
   and in as tolerable spirits as could be expected, after the melancholy scene
@@ -11043,7 +9578,8 @@ const PrideAndPrejudiceHtml = `
   satisfaction, a message from her Ladyship, importing that she felt herself so
   dull as to make her very desirous of having them all to dine with her.<span
     class="pagenum"
-    ><a id="page_262">{262}</a></span
+    >
+    </span
   >
 </p>
 
@@ -11091,33 +9627,21 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Why, at that rate, you will have been here only six weeks. I expected you to
   stay two months. I told Mrs. Collins so before you came. There can be no
-  occasion for<span class="pagenum"><a id="page_263">{263}</a></span> your going
+  occasion for<span class="pagenum">
+  </span> your going
   so soon. Mrs. Bennet could certainly spare you for another fortnight.”
 </p>
 
 <p>“But my father cannot. He wrote last week to hurry my return.”</p>
 
-<div class="figcenter" style="width: 395px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_292.jpg"
-    width="395"
-    id="id-3396623498630078587"
-  />
-  <div class="caption">
-    <p>“Dawson”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   “Oh, your father, of course, may spare you, if your mother can. Daughters are
   never of so much consequence to a father. And if you will stay another
   <i>month</i> complete, it will be in my power to take one of you as far as
   London, for I am going there early in June,<span class="pagenum"
-    ><a id="page_264">{264}</a></span
+    >
+    </span
   >
   for a week; and as Dawson does not object to the barouche-box, there will be
   very good room for one of you—and, indeed, if the weather should happen to be
@@ -11157,7 +9681,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Lady Catherine had many other questions to ask respecting their journey; and
   as she did not answer them all herself attention was necessary—which
-  Elizabeth<span class="pagenum"><a id="page_265">{265}</a></span> believed to
+  Elizabeth<span class="pagenum">
+  </span> believed to
   be lucky for her; or, with a mind so occupied, she might have forgotten where
   she was. Reflection must be reserved for solitary hours: whenever she was
   alone, she gave way to it as the greatest relief; and not a day went by
@@ -11185,7 +9710,8 @@ const PrideAndPrejudiceHtml = `
   improvement? Catherine, weak-spirited, irritable, and completely under Lydia’s
   guidance, had been always affronted by their advice; and Lydia, self-willed
   and careless, would scarcely give them a hearing. They were ignorant, idle,
-  and vain.<span class="pagenum"><a id="page_266">{266}</a></span> While there
+  and vain.<span class="pagenum">
+  </span> While there
   was an officer in Meryton, they would flirt with him; and while Meryton was
   within a walk of Longbourn, they would be going there for ever.
 </p>
@@ -11222,7 +9748,8 @@ const PrideAndPrejudiceHtml = `
   When they parted, Lady Catherine, with great condescension, wished them a good
   journey, and invited them to come to Hunsford again next year; and Miss de
   Bourgh exerted herself so far as to courtesy and hold out her hand to
-  both.<span class="pagenum"><a id="page_267">{267}</a></span>
+  both.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -11233,18 +9760,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3699026672041573654"
   />
-  <br /><span class="caption"> “The elevation of his feelings.” </span>
-  <br /><br />CHAPTER XXXVIII.
+  <span class="caption"> “The elevation of his feelings.” </span>
+  CHAPTER XXXVIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="O"
-      src="images/i_296_b.png"
-      width="100"
-      id="id-7412656522053141691" /></span
-  >N Saturday morning Elizabeth and Mr. Collins met for breakfast a few minutes
+  
+
+  On Saturday morning Elizabeth and Mr. Collins met for breakfast a few minutes
   before the others appeared; and he took the opportunity of paying the parting
   civilities which he deemed indispensably necessary.
 </p>
@@ -11255,7 +9778,8 @@ const PrideAndPrejudiceHtml = `
   leave the house without receiving her thanks for it. The favour of your
   company has been much felt, I assure you. We know how little there is to tempt
   anyone to our humble abode. Our plain manner of<span class="pagenum"
-    ><a id="page_268">{268}</a></span
+    >
+    </span
   >
   living, our small rooms, and few domestics, and the little we see of the
   world, must make Hunsford extremely dull to a young lady like yourself; but I
@@ -11292,7 +9816,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “You may, in fact, carry a very favourable report of us<span class="pagenum"
-    ><a id="page_269">{269}</a></span
+    >
+    </span
   >
   into Hertfordshire, my dear cousin. I flatter myself, at least, that you will
   be able to do so. Lady Catherine’s great attentions to Mrs. Collins you have
@@ -11325,25 +9850,13 @@ const PrideAndPrejudiceHtml = `
   respects to all her family, not forgetting his thanks for the kindness he had
   received at Longbourn in the winter, and his compliments to Mr. and Mrs.
   Gardiner, though unknown. He then handed<span class="pagenum"
-    ><a id="page_270">{270}</a></span
+    >
+    </span
   >
   her in, Maria followed, and the door was on the point of being closed, when he
   suddenly reminded them, with some consternation, that they had hitherto
   forgotten to leave any message for the ladies of Rosings.
 </p>
-
-<div class="figcenter" style="width: 450px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_299.jpg"
-    width="450"
-    id="id-8070088306509528436"
-  />
-  <div class="caption">
-    <p>“They had forgotten to leave any message”<br /></p>
-  </div>
-</div>
 
 <p>
   “But,” he added, “you will of course wish to have your humble respects
@@ -11353,7 +9866,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Elizabeth made no objection: the door was then allowed to be shut, and the
-  carriage drove off.<span class="pagenum"><a id="page_271">{271}</a></span>
+  carriage drove off.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -11393,7 +9907,8 @@ const PrideAndPrejudiceHtml = `
   the extent of what she should communicate, and her fear, if she once entered
   on the subject, of being hurried into repeating something of Bingley, which
   might only grieve her sister further.<span class="pagenum"
-    ><a id="page_272">{272}</a></span
+    >
+    </span
   >
 </p>
 
@@ -11405,24 +9920,21 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-1977957783123908222"
   />
-  <br /><span class="caption"> “How nicely we are crammed in.” </span>
-  <br /><br />CHAPTER XXXIX.
+  <span class="caption"> “How nicely we are crammed in.” </span>
+  CHAPTER XXXIX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="I"
-      src="images/i_301_b.png"
-      width="100"
-      id="id-8351313688745629451" /></span
-  >T was the second week in May, in which the three young ladies set out
+  
+
+  It was the second week in May, in which the three young ladies set out
   together from Gracechurch Street for the town of ——, in Hertfordshire; and, as
   they drew near the appointed inn where Mr. Bennet’s carriage was to meet them,
   they quickly perceived, in token of the coachman’s punctuality, both Kitty and
   Lydia looking out of a dining-room upstairs. These two girls had been above an
   hour in the place, happily employed in<span class="pagenum"
-    ><a id="page_273">{273}</a></span
+    >
+    </span
   >
   visiting an opposite milliner, watching the sentinel on guard, and dressing a
   salad and cucumber.
@@ -11464,7 +9976,8 @@ const PrideAndPrejudiceHtml = `
   and completely do for us at once. Good Heaven! Brighton and a whole campful of
   soldiers, to us, who have been overset already by one poor regiment of
   militia, and the monthly balls of Meryton!<span class="pagenum"
-    ><a id="page_274">{274}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -11514,7 +10027,8 @@ const PrideAndPrejudiceHtml = `
   As soon as all had ate, and the elder ones paid, the carriage was ordered;
   and, after some contrivance, the whole party, with all their boxes, workbags,
   and parcels, and the unwelcome addition of Kitty’s and Lydia’s purchases, were
-  seated in it.<span class="pagenum"><a id="page_275">{275}</a></span>
+  seated in it.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -11542,7 +10056,8 @@ const PrideAndPrejudiceHtml = `
   or three more of the men came in, they did not know him in the least. Lord!
   how I laughed! and so did Mrs. Forster. I thought I should have died. And
   <i>that</i> made the men<span class="pagenum"
-    ><a id="page_276">{276}</a></span
+    >
+    </span
   >
   suspect something, and then they soon found out what was the matter.”
 </p>
@@ -11580,7 +10095,8 @@ const PrideAndPrejudiceHtml = `
   sick; and when we got to the George, I do think we behaved very handsomely,
   for we treated the other three with the nicest cold luncheon in the world, and
   if you would have gone, we would have treated you<span class="pagenum"
-    ><a id="page_277">{277}</a></span
+    >
+    </span
   >
   too. And then when we came away it was such fun! I thought we never should
   have got into the coach. I was ready to die of laughter. And then we were so
@@ -11619,24 +10135,21 @@ const PrideAndPrejudiceHtml = `
   the smallest intention of yielding; but his answers were at the same time so
   vague and equivocal, that her mother, though often disheartened, had never yet
   despaired of succeeding at last.<span class="pagenum"
-    ><a id="page_278">{278}</a></span
+    >
+    </span
   >
 </p>
 
 <h2>
   <a id="CHAPTER_XL"></a
   ><img alt="" src="images/i_307_a.jpg" width="450" id="id-22036140731017967" />
-  <br /><br />CHAPTER XL.
+  CHAPTER XL.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_307_b.png"
-      width="100"
-      id="id-1304822007596329438" /></span
-  >LIZABETH’S impatience to acquaint Jane with what had happened could no longer
+  
+
+  Elizabeth's impatience to acquaint Jane with what had happened could no longer
   be overcome; and at length resolving to suppress every particular in which her
   sister was concerned, and preparing her to be surprised, she related to her
   the next morning the chief of the scene between Mr. Darcy and herself.
@@ -11654,7 +10167,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “His being so sure of succeeding was wrong,” said she, “and certainly ought
   not to have appeared; but consider how much it must increase his
-  disappointment.<span class="pagenum"><a id="page_279">{279}</a></span
+  disappointment.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -11700,7 +10214,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I do not know when I have been more shocked,” said she. “Wickham so very bad!
   It is almost past belief.<span class="pagenum"
-    ><a id="page_280">{280}</a></span
+    >
+    </span
   >
   And poor Mr. Darcy! dear Lizzy, only consider what he must have suffered. Such
   a disappointment! and with the knowledge of your ill opinion too! and having
@@ -11748,7 +10263,8 @@ const PrideAndPrejudiceHtml = `
   “Indeed, I could not. I was uncomfortable enough, I was very uncomfortable—I
   may say unhappy. And with no one to speak to of what I felt, no Jane to
   comfort me, and say that I had not been so very weak, and<span class="pagenum"
-    ><a id="page_281">{281}</a></span
+    >
+    </span
   >
   vain, and nonsensical, as I knew I had! Oh, how I wanted you!”
 </p>
@@ -11792,7 +10308,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   The tumult of Elizabeth’s mind was allayed by this<span class="pagenum"
-    ><a id="page_282">{282}</a></span
+    >
+    </span
   >
   conversation. She had got rid of two of the secrets which had weighed on her
   for a fortnight, and was certain of a willing listener in Jane, whenever she
@@ -11825,7 +10342,8 @@ const PrideAndPrejudiceHtml = `
   this sad business of Jane’s? For my part, I am determined never to speak of it
   again to anybody. I told my sister Philips so the other day. But I cannot find
   out that Jane saw anything of him in<span class="pagenum"
-    ><a id="page_283">{283}</a></span
+    >
+    </span
   >
   London. Well, he is a very undeserving young man—and I do not suppose there is
   the least chance in the world of her ever getting him now. There is no talk of
@@ -11833,23 +10351,9 @@ const PrideAndPrejudiceHtml = `
   everybody, too, who is likely to know.”
 </p>
 
-<div class="figcenter" style="width: 351px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_312.jpg"
-    width="351"
-    id="id-5908302112030653393"
-  />
-  <div class="caption">
-    <div class="blockquot">
-      <p>“I am determined never to speak of it again”</p>
-    </div>
-  </div>
-</div>
-
 <p>
-  <span class="pagenum"><a id="page_284">{284}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <p>“I do not believe that he will ever live at Netherfield any more.”</p>
@@ -11891,7 +10395,8 @@ const PrideAndPrejudiceHtml = `
   talk of it between themselves. Well, if they can be easy with an estate that
   is not lawfully their own, so much the better. <i>I</i> should be ashamed of
   having one that was only entailed on me.<span class="pagenum"
-    ><a id="page_285">{285}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -11903,24 +10408,21 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-5725959781242081160"
   />
-  <br /><span class="caption"> “When Colonel Miller’s regiment went.” </span>
-  <br /><br />CHAPTER XLI.
+  <span class="caption"> “When Colonel Miller’s regiment went.” </span>
+  CHAPTER XLI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_314_b.png"
-      width="100"
-      id="id-8936764564347785394" /></span
-  >HE first week of their return was soon gone. The second began. It was the
+  
+
+  The first week of their return was soon gone. The second began. It was the
   last of the regiment’s stay in Meryton, and all the young ladies in the
   neighbourhood were drooping apace. The dejection was almost universal. The
   elder Miss Bennets alone were still able to eat, drink, and sleep, and pursue
   the usual course of their employments. Very frequently were they reproached
   for this insensibility by Kitty and Lydia,<span class="pagenum"
-    ><a id="page_286">{286}</a></span
+    >
+    </span
   >
   whose own misery was extreme, and who could not comprehend such
   hard-heartedness in any of the family.
@@ -11969,7 +10471,8 @@ const PrideAndPrejudiceHtml = `
   very lately married. A resemblance in good-humour and good spirits had
   recommended her and Lydia to each other, and out of their <i>three</i> months’
   acquaintance they had been intimate <i>two</i>.<span class="pagenum"
-    ><a id="page_287">{287}</a></span
+    >
+    </span
   >
 </p>
 
@@ -12011,7 +10514,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “If you were aware,” said Elizabeth, “of the very great<span class="pagenum"
-    ><a id="page_288">{288}</a></span
+    >
+    </span
   >
   disadvantage to us all, which must arise from the public notice of Lydia’s
   unguarded and imprudent manner, nay, which has already arisen from it, I am
@@ -12044,7 +10548,8 @@ const PrideAndPrejudiceHtml = `
   ignorant, idle, and absolutely uncontrolled! Oh, my dear father, can you
   suppose it possible that they will not be censured and despised wherever they
   are known, and that their sisters will not be often involved in the
-  disgrace?<span class="pagenum"><a id="page_289">{289}</a></span
+  disgrace?<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -12083,28 +10588,14 @@ const PrideAndPrejudiceHtml = `
   streets of that gay bathing-place covered with officers. She saw herself the
   object of attention to tens and to scores of them at present unknown. She saw
   all the glories of the camp: its<span class="pagenum"
-    ><a id="page_290">{290}</a></span
+    >
+    </span
   >
   tents stretched forth in beauteous uniformity of lines, crowded with the young
   and the gay, and dazzling with scarlet; and, to complete the view, she saw
   herself seated beneath a tent, tenderly flirting with at least six officers at
   once.
 </p>
-
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="472"
-    src="images/i_319.jpg"
-    width="550"
-    id="id-666271360595893906"
-  />
-  <div class="caption">
-    <p>“Tenderly flirting”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   Had she known that her sister sought to tear her from such prospects and such
@@ -12116,7 +10607,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   But they were entirely ignorant of what had passed;<span class="pagenum"
-    ><a id="page_291">{291}</a></span
+    >
+    </span
   >
   and their raptures continued, with little intermission, to the very day of
   Lydia’s leaving home.
@@ -12152,7 +10644,8 @@ const PrideAndPrejudiceHtml = `
   and a returning smile, replied, that he had formerly seen him often; and,
   after observing that he was a very gentlemanlike man, asked her how she had
   liked him. Her answer was warmly in<span class="pagenum"
-    ><a id="page_292">{292}</a></span
+    >
+    </span
   >
   his favour. With an air of indifference, he soon afterwards added, “How long
   did you say that he was at Rosings?”
@@ -12204,7 +10697,8 @@ const PrideAndPrejudiceHtml = `
   “You, who so well know my feelings towards Mr. Darcy, will readily comprehend
   how sincerely I must rejoice that he is wise enough to assume even the<span
     class="pagenum"
-    ><a id="page_293">{293}</a></span
+    >
+    </span
   >
   <i>appearance</i> of what is right. His pride, in that direction, may be of
   service, if not to himself, to many others, for it must deter him from such
@@ -12236,7 +10730,8 @@ const PrideAndPrejudiceHtml = `
   much as possible,—advice which there was every reason to believe would be
   attended to; and, in the clamorous happiness of Lydia herself in bidding
   farewell, the more gentle adieus of her sisters were uttered without being
-  heard.<span class="pagenum"><a id="page_294">{294}</a></span>
+  heard.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -12247,24 +10742,21 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-6151511415585835385"
   />
-  <br /><span class="caption"> “The arrival of the Pardiners.” </span>
-  <br /><br />CHAPTER XLII.
+  <span class="caption"> “The arrival of the Pardiners.” </span>
+  CHAPTER XLII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="H"
-      src="images/i_323_b.png"
-      width="100"
-      id="id-1849277480010467675" /></span
-  >AD Elizabeth’s opinion been all drawn from her own family, she could not have
+  
+
+  Had Elizabeth’s opinion been all drawn from her own family, she could not have
   formed a very pleasing picture of conjugal felicity or domestic comfort. Her
   father, captivated by youth and beauty, and that appearance of good-humour
   which youth and beauty generally give, had married a woman whose weak
   understanding and illiberal mind had very early in their marriage put an end
   to all real affection for her.<span class="pagenum"
-    ><a id="page_295">{295}</a></span
+    >
+    </span
   >
   Respect, esteem, and confidence had vanished for ever; and all his views of
   domestic happiness were overthrown. But Mr. Bennet was not of a disposition to
@@ -12297,7 +10789,8 @@ const PrideAndPrejudiceHtml = `
   When Elizabeth had rejoiced over Wickham’s departure, she found little other
   cause for satisfaction in the loss of the regiment. Their parties abroad were
   less varied than before; and at home she had a mother and<span class="pagenum"
-    ><a id="page_296">{296}</a></span
+    >
+    </span
   >
   sister, whose constant repinings at the dulness of everything around them
   threw a real gloom over their domestic circle; and, though Kitty might in time
@@ -12330,7 +10823,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   When Lydia went away she promised to write very<span class="pagenum"
-    ><a id="page_297">{297}</a></span
+    >
+    </span
   >
   often and very minutely to her mother and Kitty; but her letters were always
   long expected, and always very short. Those to her mother contained little
@@ -12363,7 +10857,8 @@ const PrideAndPrejudiceHtml = `
   from Mrs. Gardiner, which at once delayed its commencement and curtailed its
   extent. Mr. Gardiner would be prevented by business from setting out till a
   fortnight later in July,<span class="pagenum"
-    ><a id="page_298">{298}</a></span
+    >
+    </span
   >
   and must be in London again within a month; and as that left too short a
   period for them to go so far, and see so much as they had proposed, or at
@@ -12398,7 +10893,8 @@ const PrideAndPrejudiceHtml = `
   children, two girls of six and eight years old, and two younger boys, were to
   be left under the particular care of their cousin Jane, who was the general
   favourite, and whose steady sense and sweetness<span class="pagenum"
-    ><a id="page_299">{299}</a></span
+    >
+    </span
   >
   of temper exactly adapted her for attending to them in every way—teaching
   them, playing with them, and loving them.
@@ -12436,7 +10932,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Elizabeth was distressed. She felt that she had no<span class="pagenum"
-    ><a id="page_300">{300}</a></span
+    >
+    </span
   >
   business at Pemberley, and was obliged to assume a disinclination for seeing
   it. She must own that she was tired of great houses: after going over so many,
@@ -12472,7 +10969,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   To Pemberley, therefore, they were to go.<span class="pagenum"
-    ><a id="page_301">{301}</a></span
+    >
+    </span
   >
 </p>
 
@@ -12484,18 +10982,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-5133242148940699921"
   />
-  <br /><span class="caption"> “Conjecturing as to the date.” </span>
-  <br /><br />CHAPTER XLIII.
+  <span class="caption"> “Conjecturing as to the date.” </span>
+  CHAPTER XLIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_330_b.png"
-      width="100"
-      id="id-3935579141497603843" /></span
-  >LIZABETH, as they drove along, watched for the first appearance of Pemberley
+  
+
+  Elizabeth, as they drove along, watched for the first appearance of Pemberley
   Woods with some perturbation; and when at length they turned in at the lodge,
   her spirits were in a high flutter.
 </p>
@@ -12512,7 +11006,8 @@ const PrideAndPrejudiceHtml = `
   and then found themselves at the top of a considerable eminence, where the
   wood ceased, and the eye was instantly caught by Pemberley House, situated on
   the opposite side of the valley, into which the road with<span class="pagenum"
-    ><a id="page_302">{302}</a></span
+    >
+    </span
   >
   some abruptness wound. It was a large, handsome stone building, standing well
   on rising ground, and backed by a ridge of high woody hills; and in front a
@@ -12544,7 +11039,8 @@ const PrideAndPrejudiceHtml = `
   the river, the trees scattered on its banks, and the winding of the valley, as
   far as she could trace it, with delight. As they passed into other rooms,
   these objects were taking different positions; but<span class="pagenum"
-    ><a id="page_303">{303}</a></span
+    >
+    </span
   >
   from every window there were beauties to be seen. The rooms were lofty and
   handsome, and their furniture suitable to the fortune of their proprietor; but
@@ -12580,7 +11076,8 @@ const PrideAndPrejudiceHtml = `
   came forward, and told them it was the picture of a young gentleman, the son
   of her late master’s steward, who had been brought up by him at his own
   expense. “He is now gone into the army,” she added; “but I am afraid he has
-  turned out very wild.<span class="pagenum"><a id="page_304">{304}</a></span
+  turned out very wild.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -12639,7 +11136,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   Mr. Gardiner, whose manners were easy and pleasant,<span class="pagenum"
-    ><a id="page_305">{305}</a></span
+    >
+    </span
   >
   encouraged her communicativeness by his questions and remarks: Mrs. Reynolds,
   either from pride or attachment, had evidently great pleasure in talking of
@@ -12690,7 +11188,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Yes, sir, I know I am. If I were to go through the world, I could not meet
   with a better. But I have always<span class="pagenum"
-    ><a id="page_306">{306}</a></span
+    >
+    </span
   >
   observed, that they who are good-natured when children, are good-natured when
   they grow up; and he was always the sweetest tempered, most generous-hearted
@@ -12735,7 +11234,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “That is not very likely; our authority was too good.<span class="pagenum"
-    ><a id="page_307">{307}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -12780,7 +11280,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   There was certainly at this moment, in Elizabet<span class="pagenum"
-    ><a id="page_308">{308}</a></span
+    >
+    </span
   >h’s mind, a more gentle sensation towards the original than she had ever felt
   in the height of their acquaintance. The commendation bestowed on him by Mrs.
   Reynolds was of no trifling nature. What praise is more valuable than the
@@ -12814,7 +11315,8 @@ const PrideAndPrejudiceHtml = `
   and for a moment seemed immovable from surprise; but shortly recovering
   himself, advanced towards the party, and spoke to Elizabeth,<span
     class="pagenum"
-    ><a id="page_309">{309}</a></span
+    >
+    </span
   >
   if not in terms of perfect composure, at least of perfect civility.
 </p>
@@ -12848,7 +11350,8 @@ const PrideAndPrejudiceHtml = `
   Elizabeth heard not a word, and, wholly engrossed by her own feelings,
   followed them in silence. She was overpowered by shame and vexation. Her
   coming there was the most unfortunate, the most ill-judged thing in the world!
-  How strange must it<span class="pagenum"><a id="page_310">{310}</a></span>
+  How strange must it<span class="pagenum">
+  </span>
   appear to him! In what a disgraceful light might it not strike so vain a man!
   It might seem as if she had purposely thrown herself in his way again! Oh! why
   did she come? or, why did he thus come a day before he was expected? Had they
@@ -12876,7 +11379,8 @@ const PrideAndPrejudiceHtml = `
   mind; in what manner he thought of her, and whether, in defiance of
   everything, she was still dear to him. Perhaps he had been civil only because
   he felt himself at ease; yet there had been<span class="pagenum"
-    ><a id="page_311">{311}</a></span
+    >
+    </span
   >
   <i>that</i> in his voice, which was not like ease. Whether he had felt more of
   pain or of pleasure in seeing her, she could not tell, but he certainly had
@@ -12908,7 +11412,8 @@ const PrideAndPrejudiceHtml = `
   carriage as quickly as possible. Her niece was, therefore, obliged to submit,
   and they took their way towards the house on the opposite side of the river,
   in the nearest direction; but their progress was<span class="pagenum"
-    ><a id="page_312">{312}</a></span
+    >
+    </span
   >
   slow, for Mr. Gardiner, though seldom able to indulge the taste, was very fond
   of fishing, and was so much engaged in watching the occasional appearance of
@@ -12937,7 +11442,8 @@ const PrideAndPrejudiceHtml = `
   suppress a smile at his being now seeking the acquaintance of some of those
   very people, against whom his pride had revolted, in his offer to herself.
   “What will be his surprise,” thought she, “when he<span class="pagenum"
-    ><a id="page_313">{313}</a></span
+    >
+    </span
   >
   knows who they are! He takes them now for people of fashion.”
 </p>
@@ -12968,7 +11474,8 @@ const PrideAndPrejudiceHtml = `
   he so altered? From what can it proceed? It cannot be for <i>me</i>, it cannot
   be for <i>my</i> sake that his manners are thus softened. My reproofs at
   Hunsford could not work such a change as this. It is impossible that he should
-  still love me.<span class="pagenum"><a id="page_314">{314}</a></span
+  still love me.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -13003,7 +11510,8 @@ const PrideAndPrejudiceHtml = `
   “There is also one other person in the party,” he continued after a pause,
   “who more particularly wishes to be known to you. Will you allow me, or do I
   ask too much, to introduce my sister to your acquaintance during your stay at
-  Lambton?<span class="pagenum"><a id="page_315">{315}</a></span
+  Lambton?<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -13046,7 +11554,8 @@ const PrideAndPrejudiceHtml = `
   The observations of her uncle and aunt now began; and each of them pronounced
   him to be infinitely superior to anything they had expected.<span
     class="pagenum"
-    ><a id="page_316">{316}</a></span
+    >
+    </span
   >
 </p>
 
@@ -13095,7 +11604,8 @@ const PrideAndPrejudiceHtml = `
   done by poor Wickham. He has not an ill-natured look. On the contrary, there
   is something pleasing about his mouth when he speaks. And there is something
   of dignity in his countenance, that would not give one an<span class="pagenum"
-    ><a id="page_317">{317}</a></span
+    >
+    </span
   >
   unfavourable idea of his heart. But, to be sure, the good lady who showed us
   the house did give him a most flaming character! I could hardly help laughing
@@ -13130,7 +11640,8 @@ const PrideAndPrejudiceHtml = `
   attention for any of these new friends; and she could do nothing but think,
   and think with wonder, of Mr. Darcy’s civility, and, above all, of his wishing
   her to be acquainted with his sister.<span class="pagenum"
-    ><a id="page_318">{318}</a></span
+    >
+    </span
   >
 </p>
 
@@ -13142,17 +11653,13 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-8019304182742449174"
   />
-  <br /><br />CHAPTER XLIV.
+  CHAPTER XLIV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_347_b.png"
-      width="100"
-      id="id-1245244427617818070" /></span
-  >LIZABETH had settled it that Mr. Darcy would bring his sister to visit her
+  
+
+  Elizabeth had settled it that Mr. Darcy would bring his sister to visit her
   the very day after her reaching Pemberley; and was, consequently, resolved not
   to be out of sight of the inn the whole of that morning. But her conclusion
   was false; for on the very morning after their own arrival at Lambton these
@@ -13162,7 +11669,8 @@ const PrideAndPrejudiceHtml = `
   saw a gentleman and lady in a curricle driving up the street. Elizabeth,
   immediately recognizing the livery, guessed what it meant, and imparted no
   small degree of surprise to her relations, by acquainting them with the honour
-  which she expected. Her<span class="pagenum"><a id="page_319">{319}</a></span>
+  which she expected. Her<span class="pagenum">
+  </span>
   uncle and aunt were all amazement; and the embarrassment of her manner as she
   spoke, joined to the circumstance itself, and many of the circumstances of the
   preceding day, opened to them a new idea on the business. Nothing had ever
@@ -13195,7 +11703,8 @@ const PrideAndPrejudiceHtml = `
   Miss Darcy was tall, and on a larger scale than Elizabeth; and, though little
   more than sixteen, her figure was formed, and her appearance womanly and
   graceful. She was less handsome than her brother, but<span class="pagenum"
-    ><a id="page_320">{320}</a></span
+    >
+    </span
   >
   there was sense and good-humour in her face, and her manners were perfectly
   unassuming and gentle. Elizabeth, who had expected to find in her as acute and
@@ -13231,26 +11740,13 @@ const PrideAndPrejudiceHtml = `
   of each of her visitors, she wanted to compose her own, and to make herself
   agreeable to all; and in the latter object, where she feared most to fail, she
   was most sure of success, for those to<span class="pagenum"
-    ><a id="page_321">{321}</a></span
+    >
+    </span
   >
   whom she endeavoured to give pleasure were pre-possessed in her favour.
   Bingley was ready, Georgiana was eager, and Darcy determined, to be pleased.
 </p>
 
-<div class="figcenter" style="width: 550px">
-  <img
-    alt="[Image unavailable.]"
-    height="538"
-    src="images/i_350.jpg"
-    width="550"
-    id="id-4223887118402579396"
-  />
-  <div class="caption">
-    <div class="blockquot"><p>“To make herself agreeable to all”</p></div>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
 
 <p>
   In seeing Bingley, her thoughts naturally flew to her sister; and oh! how
@@ -13259,7 +11755,8 @@ const PrideAndPrejudiceHtml = `
   occasions, and once or twice pleased herself with the notion that, as he
   looked at her, he was trying to trace a resemblance. But, though this might be
   imaginary, she could not be deceived as to his behaviour<span class="pagenum"
-    ><a id="page_322">{322}</a></span
+    >
+    </span
   >
   to Miss Darcy, who had been set up as a rival to Jane. No look appeared on
   either side that spoke particular regard. Nothing occurred between them that
@@ -13291,7 +11788,8 @@ const PrideAndPrejudiceHtml = `
   its existence might prove, had at least outlived one day. When she saw him
   thus seeking the acquaintance, and courting the good opinion of people with
   whom any intercourse a few months ago would have been a disgrace; when she
-  saw<span class="pagenum"><a id="page_323">{323}</a></span> him thus civil, not
+  saw<span class="pagenum">
+  </span> him thus civil, not
   only to herself, but to the very relations whom he had openly disdained, and
   recollected their last lively scene in Hunsford Parsonage, the difference, the
   change was so great, and struck so forcibly on her mind, that she could hardly
@@ -13324,7 +11822,8 @@ const PrideAndPrejudiceHtml = `
   having still a great deal to say to her, and many inquiries to make after all
   their Hertfordshire friends. Elizabeth, construing all this into a wish<span
     class="pagenum"
-    ><a id="page_324">{324}</a></span
+    >
+    </span
   >
   of hearing her speak of her sister, was pleased; and on this account, as well
   as some others, found herself, when their visitors left them, capable of
@@ -13356,7 +11855,8 @@ const PrideAndPrejudiceHtml = `
   in the intelligence of their Lambton friends that could materially lessen its
   weight. They had nothing to accuse him of but pride; pride he probably had,
   and if not, it would certainly be imputed by the inhabitants of a small market
-  town<span class="pagenum"><a id="page_325">{325}</a></span> where the family
+  town<span class="pagenum">
+  </span> where the family
   did not visit. It was acknowledged, however, that he was a liberal man, and
   did much good among the poor.
 </p>
@@ -13387,7 +11887,8 @@ const PrideAndPrejudiceHtml = `
   of her manner in rejecting him, and all the unjust accusations accompanying
   her rejection. He who, she had been persuaded, would avoid her as his greatest
   enemy, seemed, on this accidental<span class="pagenum"
-    ><a id="page_326">{326}</a></span
+    >
+    </span
   >
   meeting, most eager to preserve the acquaintance; and without any indelicate
   display of regard, or any peculiarity of manner, where their two selves only
@@ -13418,7 +11919,8 @@ const PrideAndPrejudiceHtml = `
   Mr. Gardiner left them soon after breakfast. The fishing scheme had been
   renewed the day before, and a positive engagement made of his meeting some of
   the gentlemen at Pemberley by noon.<span class="pagenum"
-    ><a id="page_327">{327}</a></span
+    >
+    </span
   >
 </p>
 
@@ -13430,22 +11932,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-499606761491875950"
   />
-  <br /><span class="caption"> “Engaged by the river.” </span>
-  <br /><br />CHAPTER XLV.
+  <span class="caption"> “Engaged by the river.” </span>
+  CHAPTER XLV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="C"
-      src="images/i_356_b.png"
-      width="100"
-      id="id-6787469644493644919" /></span
-  >ONVINCED as Elizabeth now was that Miss Bingley’s dislike of her had
+  
+
+  Convinced as Elizabeth now was that Miss Bingley’s dislike of her had
   originated in jealousy, she could not help feeling how very unwelcome her
   appearance at Pemberley must be to her, and was curious to know with<span
     class="pagenum"
-    ><a id="page_328">{328}</a></span
+    >
+    </span
   >
   how much civility on that lady’s side the acquaintance would now be renewed.
 </p>
@@ -13483,7 +11982,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Elizabeth soon saw that she was herself closely watched by Miss Bingley, and
   that she could not speak a word, especially to Miss Darcy, without calling her
-  attention.<span class="pagenum"><a id="page_329">{329}</a></span> This
+  attention.<span class="pagenum">
+  </span> This
   observation would not have prevented her from trying to talk to the latter,
   had they not been seated at an inconvenient distance; but she was not sorry to
   be spared the necessity of saying much: her own thoughts were employing her.
@@ -13516,7 +12016,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   He had been some time with Mr. Gardiner, who, with two or three other
   gentlemen from the house, was engaged by the river; and had left him only on
-  learning<span class="pagenum"><a id="page_330">{330}</a></span> that the
+  learning<span class="pagenum">
+  </span> that the
   ladies of the family intended a visit to Georgiana that morning. No sooner did
   he appear, than Elizabeth wisely resolved to be perfectly easy and
   unembarrassed;—a resolution the more necessary to be made, but perhaps not the
@@ -13547,7 +12048,8 @@ const PrideAndPrejudiceHtml = `
   question in a tolerably disengaged tone. While she spoke, an involuntary
   glance showed her Darcy with a heightened complexion, earnestly looking at
   her, and his sister overcome with confusion, and unable to lift up her
-  eyes.<span class="pagenum"><a id="page_331">{331}</a></span> Had Miss Bingley
+  eyes.<span class="pagenum">
+  </span> Had Miss Bingley
   known what pain she was then giving her beloved friend, she undoubtedly would
   have refrained from the hint; but she had merely intended to discompose
   Elizabeth, by bringing forward the idea of a man to whom she believed her
@@ -13579,7 +12081,8 @@ const PrideAndPrejudiceHtml = `
   mentioned; and while Mr. Darcy was attending them to their carriage, Miss
   Bingley was venting her feelings in criticisms on Elizabet<span
     class="pagenum"
-    ><a id="page_332">{332}</a></span
+    >
+    </span
   >h’s person, behaviour, and dress. But Georgiana would not join her. Her
   brother’s recommendation was enough to insure her favour: his judgment could
   not err; and he had spoken in such terms of Elizabeth, as to leave Georgiana
@@ -13616,7 +12119,8 @@ const PrideAndPrejudiceHtml = `
   Persuaded as Miss Bingley was that Darcy admired Elizabeth, this was not the
   best method of recommending herself; but angry people are not always wise; and
   in seeing him at last look somewhat nettled, she had all<span class="pagenum"
-    ><a id="page_333">{333}</a></span
+    >
+    </span
   >
   the success she expected. He was resolutely silent, however; and, from a
   determination of making him speak, she continued,—
@@ -13650,7 +12154,8 @@ const PrideAndPrejudiceHtml = `
   was longing to know what Mrs. Gardiner thought of him, and Mrs. Gardiner would
   have been highly gratified by her niece’s beginning the subject.<span
     class="pagenum"
-    ><a id="page_334">{334}</a></span
+    >
+    </span
   >
 </p>
 
@@ -13662,17 +12167,12 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-2649105159673432398"
   />
-  <br /><br />Chapter XLVI.
+  XLVI.
 </h2>
 
 <p class="nind">
-  <span class="letra"
-    ><img
-      alt="E"
-      src="images/i_363_b.png"
-      width="100"
-      id="id-1247955672824465572" /></span
-  >LIZABETH had been a good deal disappointed in not finding a letter from Jane
+  
+Elizabeth had been a good deal disappointed in not finding a letter from Jane
   on their first arrival at Lambton; and this disappointment had been renewed on
   each of the mornings that had now been spent there; but on the third her
   repining was over, and her sister justified, by the receipt of two letters
@@ -13694,7 +12194,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Since writing the above, dearest Lizzy, something has occurred of a most
   unexpected and serious nature; but I am afraid of alarming you—be assured that
-  we are all<span class="pagenum"><a id="page_335">{335}</a></span> well. What I
+  we are all<span class="pagenum">
+  </span> well. What I
   have to say relates to poor Lydia. An express came at twelve last night, just
   as we were all gone to bed, from Colonel Forster, to inform us that she was
   gone off to Scotland with one of his officers; to own the truth, with Wickham!
@@ -13727,7 +12228,8 @@ const PrideAndPrejudiceHtml = `
   this may be more intelligible, but though not confined for time, my head is so
   bewildered that I cannot answer for being coherent. Dearest Lizzy,<span
     class="pagenum"
-    ><a id="page_336">{336}</a></span
+    >
+    </span
   >
   I hardly know what I would write, but I have bad news for you, and it cannot
   be delayed. Imprudent as a marriage between Mr. Wickham and our poor Lydia
@@ -13753,7 +12255,8 @@ const PrideAndPrejudiceHtml = `
   might make it more eligible for them to be married privately in town than to
   pursue their first plan; and even if <i>he</i> could form such a design
   against a young woman of Lydi<span class="pagenum"
-    ><a id="page_337">{337}</a></span
+    >
+    </span
   >a’s connections, which is not likely, can I suppose her so lost to
   everything? Impossible! I grieve to find, however, that Colonel F. is not
   disposed to depend upon their marriage: he shook his head when I expressed my
@@ -13783,7 +12286,8 @@ const PrideAndPrejudiceHtml = `
   finished the letter, in eagerness to follow him, without losing a moment of
   the time so precious; but as she reached the door, it was opened<span
     class="pagenum"
-    ><a id="page_338">{338}</a></span
+    >
+    </span
   >
   by a servant, and Mr. Darcy appeared. Her pale face and impetuous manner made
   him start, and before he could recover himself enough to speak, she, in whose
@@ -13823,28 +12327,17 @@ const PrideAndPrejudiceHtml = `
 <p>
   She burst into tears as she alluded to it, and for a few minutes could not
   speak another word. Darcy, in wretched suspense, could only say something
-  indistinctly of his<span class="pagenum"><a id="page_339">{339}</a></span>
+  indistinctly of his<span class="pagenum">
+  </span>
 </p>
-
-<div class="figcenter" style="width: 442px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_368.jpg"
-    width="442"
-    id="id-8781993647738495912"
-  />
-  <div class="caption">
-    <p>“I have not an instant to lose”</p>
-  </div>
-</div>
 
 <p class="nind">
   concern, and observe her in compassionate silence. At length she spoke again.
   “I have just had a letter from Jane, with such dreadful news. It cannot be
   concealed from anyone. My youngest sister has left all her friends—has eloped;
   has thrown herself into the power of—of Mr.<span class="pagenum"
-    ><a id="page_340">{340}</a></span
+    >
+    </span
   >
   Wickham. They are gone off together from Brighton. <i>You</i> know him too
   well to doubt the rest. She has no money, no connections, nothing that can
@@ -13893,7 +12386,8 @@ const PrideAndPrejudiceHtml = `
   Darcy made no answer. He seemed scarcely to hear her, and was walking up and
   down the room in earnest meditation; his brow contracted, his air gloomy.<span
     class="pagenum"
-    ><a id="page_341">{341}</a></span
+    >
+    </span
   >
   Elizabeth soon observed, and instantly understood it. Her power was sinking;
   everything <i>must</i> sink under such a proof of family weakness, such an
@@ -13932,7 +12426,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   He readily assured her of his secrecy, again expressed<span class="pagenum"
-    ><a id="page_342">{342}</a></span
+    >
+    </span
   >
   his sorrow for her distress, wished it a happier conclusion than there was at
   present reason to hope, and, leaving his compliments for her relations, with
@@ -13964,7 +12459,8 @@ const PrideAndPrejudiceHtml = `
   thought, could flatter herself with such an expectation. Surprise was the
   least of all her feelings on this development. While the contents of the first
   letter remained on her mind, she was all surprise,<span class="pagenum"
-    ><a id="page_343">{343}</a></span
+    >
+    </span
   >
   all astonishment, that Wickham should marry a girl whom it was impossible he
   could marry for money; and how Lydia could ever have attached him had appeared
@@ -13995,7 +12491,8 @@ const PrideAndPrejudiceHtml = `
   hurried back in alarm, supposing, by the servant’s account, that their niece
   was taken suddenly ill; but satisfying them instantly on that head, she
   eagerly communicated the cause of their summons, reading the two letters
-  aloud,<span class="pagenum"><a id="page_344">{344}</a></span> and dwelling on
+  aloud,<span class="pagenum">
+  </span> and dwelling on
   the postscript of the last with trembling energy. Though Lydia had never been
   a favourite with them, Mr. and Mrs. Gardiner could not but be deeply affected.
   Not Lydia only, but all were concerned in it; and after the first exclamations
@@ -14029,7 +12526,8 @@ const PrideAndPrejudiceHtml = `
   at the inn, nothing remained to be done but to go; and Elizabeth, after all
   the misery of the morning, found herself, in a shorter space of time than she
   could have supposed, seated in the carriage, and on the road to
-  Longbourn.<span class="pagenum"><a id="page_345">{345}</a></span>
+  Longbourn.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -14040,21 +12538,16 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4209180066018447431"
   />
-  <br /><span class="caption">
+  <span class="caption">
     “The first pleasing earnest of their welcome.”
   </span>
-  <br /><br />CHAPTER XLVII.
+  CHAPTER XLVII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    “<img
-      alt="I"
-      src="images/i_374_b.png"
-      width="100"
-      id="id-8406528116622567036"
-  /></span>
-  HAVE been thinking it over again, Elizabeth,” said her uncle, as they drove
+  
+
+  “Have been thinking it over again, Elizabeth,” said her uncle, as they drove
   from the town; “and really, upon serious consideration, I am much more
   inclined than I was to judge as your eldest sister does of the matter. It
   appears to me so very unlikely that any young man should form such a design
@@ -14063,7 +12556,8 @@ const PrideAndPrejudiceHtml = `
   the best. Could he expect that her friends would not step forward? Could he
   expect to be noticed again by the regiment, after such an affront to Colonel
   Forster? His temptation is not adequate to the risk.<span class="pagenum"
-    ><a id="page_346">{346}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -14108,7 +12602,8 @@ const PrideAndPrejudiceHtml = `
   will never marry a woman without some money. He cannot afford it. And what
   claims has Lydia, what attractions has she beyond youth, health, and good
   humour, that could make him for her sake<span class="pagenum"
-    ><a id="page_347">{347}</a></span
+    >
+    </span
   >
   forego every chance of benefiting himself by marrying well? As to what
   restraint the apprehensions of disgrace in the corps might throw on a
@@ -14140,7 +12635,8 @@ const PrideAndPrejudiceHtml = `
   subject, to give greater—what shall I call it?—susceptibility to her feelings;
   which are naturally lively enough. And we all know that Wickham has every
   charm of person and address that can captivate a woman.<span class="pagenum"
-    ><a id="page_348">{348}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -14183,7 +12679,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Oh, yes!—that, that is the worst of all. Till I was in Kent, and saw so much
   both of Mr. Darcy and his relation Colonel Fitzwilliam, I was
-  <span class="pagenum"><a id="page_349">{349}</a></span
+  <span class="pagenum">
+  </span
   >ignorant of the truth myself. And when I returned home the ——shire was to
   leave Meryton in a week or fortnight’s time. As that was the case, neither
   Jane, to whom I related the whole, nor I, thought it necessary to make our
@@ -14219,7 +12716,8 @@ const PrideAndPrejudiceHtml = `
   repeated discussion, no other could detain them from it long, during the whole
   of the journey. From Elizabeth’s thoughts it was never absent. Fixed there by
   the keenest of all anguish,<span class="pagenum"
-    ><a id="page_350">{350}</a></span
+    >
+    </span
   >
   self-reproach, she could find no interval of ease or forgetfulness.
 </p>
@@ -14271,7 +12769,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “And my mother—how is she? How are you all?<span class="pagenum"
-    ><a id="page_351">{351}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -14317,7 +12816,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “If I had been able,” said she, “to carry my point in going to Brighton with
   all my family, <i>this</i> would not<span class="pagenum"
-    ><a id="page_352">{352}</a></span
+    >
+    </span
   >
   have happened: but poor dear Lydia had nobody to take care of her. Why did the
   Forsters ever let her go out of their sight? I am sure there was some great
@@ -14354,7 +12854,8 @@ const PrideAndPrejudiceHtml = `
   wish for. And now do, when you get to town, find them out, wherever they may
   be; and if they are not married already, <i>make</i> them marry. And as for
   wedding clothes, do not let them wait for that,<span class="pagenum"
-    ><a id="page_353">{353}</a></span
+    >
+    </span
   >
   but tell Lydia she shall have as much money as she chooses to buy them, after
   they are married. And, above all things, keep Mr. Bennet from fighting. Tell
@@ -14388,7 +12889,8 @@ const PrideAndPrejudiceHtml = `
   busily engaged in their separate apartments to make their appearance before.
   One came from her books, and the other from her toilette. The faces of both,
   however, were tolerably calm; and no change was visible in either, except that
-  the loss of her<span class="pagenum"><a id="page_354">{354}</a></span>
+  the loss of her<span class="pagenum">
+  </span>
   favourite sister, or the anger which she had herself incurred in the business,
   had given something more of fretfulness than usual to the accents of Kitty. As
   for Mary, she was mistress enough of herself to whisper to Elizabeth, with a
@@ -14425,7 +12927,8 @@ const PrideAndPrejudiceHtml = `
   impossible, the former continued the subject by saying, “But tell me all and
   everything about it which I have not already heard. Give me further
   particulars. What did Colonel Forster say? Had they no<span class="pagenum"
-    ><a id="page_355">{355}</a></span
+    >
+    </span
   >
   apprehension of anything before the elopement took place? They must have seen
   them together for ever.”
@@ -14470,7 +12973,8 @@ const PrideAndPrejudiceHtml = `
 <p>“But not before they went to Brighton?”</p>
 
 <p>
-  “No, I believe not.<span class="pagenum"><a id="page_356">{356}</a></span
+  “No, I believe not.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -14524,7 +13028,8 @@ const PrideAndPrejudiceHtml = `
     will make the surprise the greater when I write to them, and sign my name
     Lydia Wickham. What a good joke it will be! I can hardly write for laughing.
     Pray make my excuses to Pratt for not keeping my engagement, and dancing
-    with him to-night.<span class="pagenum"><a id="page_357">{357}</a></span>
+    with him to-night.<span class="pagenum">
+    </span>
     Tell him I hope he will excuse me when he knows all, and tell him I will
     dance with him at the next ball we meet with great pleasure. I shall send
     for my clothes when I get to Longbourn; but I wish you would tell Sally to
@@ -14534,9 +13039,9 @@ const PrideAndPrejudiceHtml = `
   </p>
 
   <p class="r">
-    “Your affectionate friend,<br />
-    <br />
-    “<span class="smcap">Lydia Bennet</span>.”<br />
+    “Your affectionate friend,
+    
+    “<span class="smcap">Lydia Bennet</span>.”
   </p>
 </div>
 
@@ -14576,7 +13081,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Mary and Kitty have been very kind, and would have shared in every fatigue, I
   am sure, but I did not think it<span class="pagenum"
-    ><a id="page_358">{358}</a></span
+    >
+    </span
   >
   right for either of them. Kitty is slight and delicate, and Mary studies so
   much that her hours of repose should not be broken in on. My aunt Philips came
@@ -14611,7 +13117,8 @@ const PrideAndPrejudiceHtml = `
   be impossible to find out the stand and number of the coach. I do not know of
   any other designs that he had formed; but he was in such a hurry to be gone,
   and his spirits so greatly discomposed, that I had difficulty in finding out
-  even so much as this.<span class="pagenum"><a id="page_359">{359}</a></span
+  even so much as this.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -14623,17 +13130,13 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-8732742170675072940"
   />
-  <br /><span class="caption"> “The Post.” </span> <br /><br />CHAPTER XLVIII.
+  <span class="caption"> “The Post.” </span> CHAPTER XLVIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_388_b.png"
-      width="100"
-      id="id-3405463595520763573" /></span
-  >HE whole party were in hopes of a letter from Mr. Bennet the next morning,
+  
+
+  The whole party were in hopes of a letter from Mr. Bennet the next morning,
   but the post came in without bringing a single line from him. His family knew
   him to be, on all common occasions, a most negligent and dilatory
   correspondent; but at such a time they had hoped for exertion. They were
@@ -14644,7 +13147,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   When he was gone, they were certain at least of<span class="pagenum"
-    ><a id="page_360">{360}</a></span
+    >
+    </span
   >
   receiving constant information of what was going on; and their uncle promised,
   at parting, to prevail on Mr. Bennet to return to Longbourn as soon as he
@@ -14675,7 +13179,8 @@ const PrideAndPrejudiceHtml = `
   who believed still less of it, became almost hopeless, more especially as the
   time was now come, when, if they had gone to Scotland, which she had never
   before entirely despaired of, they must in all probability have gained some
-  news of them.<span class="pagenum"><a id="page_361">{361}</a></span>
+  news of them.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -14713,7 +13218,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   She had never heard of his having had any relations,<span class="pagenum"
-    ><a id="page_362">{362}</a></span
+    >
+    </span
   >
   except a father and mother, both of whom had been dead many years. It was
   possible, however, that some of his companions in the ——shire might be able to
@@ -14750,27 +13256,13 @@ const PrideAndPrejudiceHtml = `
     remove. No arguments shall be wanting on my part, that can alleviate so
     severe a misfortune; or that may comfort you, under a circumstance that must
     be, of all others, most afflicting to a parent’s mind.<span class="pagenum"
-      ><a id="page_363">{363}</a></span
+      >
+      </span
     >
     The death of your daughter would have been a blessing in comparison of this.
     And it is the more to be lamented, because there is reason to suppose, as my
     dear Charlotte informs me, that this licentiousness of behaviour in your
   </p>
-
-  <div class="figcenter" style="width: 529px">
-    <img
-      alt="[Image unavailable.]"
-      height="550"
-      src="images/i_392.jpg"
-      width="529"
-      id="id-4501403877297848139"
-    />
-    <div class="caption">
-      <p>“To whom I have related the affair”<br /></p>
-
-      <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-    </div>
-  </div>
 
   <p class="nind">
     daughter has proceeded from a faulty degree of indulgence; though, at the
@@ -14778,7 +13270,8 @@ const PrideAndPrejudiceHtml = `
     think that her own disposition must be naturally bad, or she could not be
     guilty of such an enormity, at so early an age. Howsoever that may be, you
     are grievously to be pitied;<span class="pagenum"
-      ><a id="page_364">{364}</a></span
+      >
+      </span
     >
     in which opinion I am not only joined by Mrs. Collins, but likewise by Lady
     Catherine and her daughter, to whom I have related the affair. They agree
@@ -14793,7 +13286,7 @@ const PrideAndPrejudiceHtml = `
     reap the fruits of her own heinous offence.
   </p>
 
-  <p>“I am, dear sir,” etc., etc.<br /></p>
+  <p>“I am, dear sir,” etc., etc.</p>
 </div>
 
 <p>
@@ -14810,7 +13303,8 @@ const PrideAndPrejudiceHtml = `
   considerable amount. Colonel Forster believed that more than a thousand pounds
   would be necessary to clear his expenses at Brighton. He owed a good deal<span
     class="pagenum"
-    ><a id="page_365">{365}</a></span
+    >
+    </span
   >
   in the town, but his debts of honour were still more formidable. Mr. Gardiner
   did not attempt to conceal these particulars from the Longbourn family; Jane
@@ -14852,7 +13346,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   The present unhappy state of the family rendered any<span class="pagenum"
-    ><a id="page_366">{366}</a></span
+    >
+    </span
   >
   other excuse for the lowness of her spirits unnecessary; nothing, therefore,
   could be fairly conjectured from <i>that</i>,—though Elizabeth, who was by
@@ -14894,7 +13389,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “She is happy, then,” said her father, drily; “and her residence there will
   probably be of some duration.<span class="pagenum"
-    ><a id="page_367">{367}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -14934,7 +13430,8 @@ const PrideAndPrejudiceHtml = `
   “Well, well,” said he, “do not make yourself unhappy. If you are a good girl
   for the next ten years, I will take you to a review at the end of them.<span
     class="pagenum"
-    ><a id="page_368">{368}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -14946,17 +13443,13 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4960321224947581433"
   />
-  <br /><br />CHAPTER XLIX.
+  CHAPTER XLIX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_397_b.png"
-      width="100"
-      id="id-6104962410281086656" /></span
-  >WO days after Mr. Bennet’s return, as Jane and Elizabeth were walking
+  
+
+  Two days after Mr. Bennet’s return, as Jane and Elizabeth were walking
   together in the shrubbery behind the house, they saw the housekeeper coming
   towards them, and concluding that she came to call them to their mother, went
   forward to meet her; but instead of the expected summons, when they approached
@@ -14970,7 +13463,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Dear madam,” cried Mrs. Hill, in great astonishment, “don’t you know there is
   an express come for master<span class="pagenum"
-    ><a id="page_369">{369}</a></span
+    >
+    </span
   >
   from Mr. Gardiner? He has been here this half hour, and master has had a
   letter.”
@@ -15021,37 +13515,24 @@ const PrideAndPrejudiceHtml = `
 <div class="blockquot">
   <p class="rt">“Gracechurch Street, <i>Monday, August 2</i>.</p>
 
-  <p class="nind">“My dear Brother,<br /></p>
+  <p class="nind">“My dear Brother,</p>
 
   <p>
     “At last I am able to send you some tidings of my niece, and such as, upon
     the whole, I hope will give<span class="pagenum"
-      ><a id="page_370">{370}</a></span
+      >
+      </span
     >
     you satisfaction. Soon after you left me on Saturday, I was fortunate enough
     to find out in what part of London they were. The particulars I reserve till
     we meet. It is enough to know they are discovered: I have seen them both——”
   </p>
 
-  <div class="figcenter" style="width: 480px">
-    <img
-      alt="[Image unavailable.]"
-      height="550"
-      src="images/i_399.jpg"
-      width="480"
-      id="id-4299514851798216948"
-    />
-    <div class="caption">
-      <p>“But perhaps you would like to read it”<br /></p>
-
-      <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-    </div>
-  </div>
-
   <p>
     “Then it is as I always hoped,” cried Jane: “they are married!<span
       class="pagenum"
-      ><a id="page_371">{371}</a></span
+      >
+      </span
     >”
   </p>
 
@@ -15083,8 +13564,9 @@ const PrideAndPrejudiceHtml = `
   </p>
 
   <p class="r">
-    “<span class="smcap">Edw. Gardiner</span>.”<br />
-    <span class="pagenum"><a id="page_372">{372}</a></span>
+    “<span class="smcap">Edw. Gardiner</span>.”
+    <span class="pagenum">
+    </span>
   </p>
 </div>
 
@@ -15137,7 +13619,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I mean that no man in his proper senses would marry Lydia on so slight a
   temptation as one hundred a year during my life, and fifty after I am
-  gone.<span class="pagenum"><a id="page_373">{373}</a></span
+  gone.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -15184,7 +13667,8 @@ const PrideAndPrejudiceHtml = `
   “and how much is settled on his side on our sister, we shall exactly know what
   Mr. Gardiner has done for them, because Wickham has not sixpence of his own.
   The kindness of my uncle and aunt can never be requited. Their taking her
-  home, and affording<span class="pagenum"><a id="page_374">{374}</a></span> her
+  home, and affording<span class="pagenum">
+  </span> her
   their personal protection and countenance, is such a sacrifice to her
   advantage as years of gratitude cannot enough acknowledge. By this time she is
   actually with them! If such goodness does not make her miserable now, she will
@@ -15226,7 +13710,8 @@ const PrideAndPrejudiceHtml = `
   was read aloud. Mrs. Bennet could hardly contain herself. As soon as Jane had
   read Mr. Gardiner’s hope of Lydia’s being soon married, her joy burst forth,
   and every following sentence added to its exuberance. She<span class="pagenum"
-    ><a id="page_375">{375}</a></span
+    >
+    </span
   >
   was now in an irritation as violent from delight as she had ever been fidgety
   from alarm and vexation. To know that her daughter would be married was
@@ -15264,7 +13749,8 @@ const PrideAndPrejudiceHtml = `
   from him except a few presents. Well! I am so happy. In a short time, I shall
   have a daughter married. Mrs. Wickham! How well it sounds! And she was only
   sixteen last June. My dear Jane, I<span class="pagenum"
-    ><a id="page_376">{376}</a></span
+    >
+    </span
   >
   am in such a flutter, that I am sure I can’t write; so I will dictate, and you
   write for me. We will settle with your father about the money afterwards; but
@@ -15299,7 +13785,8 @@ const PrideAndPrejudiceHtml = `
   nor worldly prosperity could be justly expected for her sister, in looking
   back to what they had feared, only two hours ago, she felt all the advantages
   of what they had gained.<span class="pagenum"
-    ><a id="page_377">{377}</a></span
+    >
+    </span
   >
 </p>
 
@@ -15311,24 +13798,21 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-4743821652525010467"
   />
-  <br /><span class="caption"> “The spiteful old ladies.” </span>
-  <br /><br />CHAPTER L.
+  <span class="caption"> “The spiteful old ladies.” </span>
+  CHAPTER L.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_406_b.png"
-      width="100"
-      id="id-3172310333015975091" /></span
-  >R. BENNET had very often wished, before this period of his life, that,
+  
+
+  Mr. Bennet had very often wished, before this period of his life, that,
   instead of spending his whole income, he had laid by an annual sum, for the
   better provision of his children, and of his wife, if she survived him. He now
   wished it more than ever. Had he done his duty in that respect, Lydia need not
   have been indebted to her uncle for whatever of honour or credit could now be
   purchased for her. The satisfaction of prevailing on one of the most worthless
-  young<span class="pagenum"><a id="page_378">{378}</a></span> men in Great
+  young<span class="pagenum">
+  </span> men in Great
   Britain to be her husband might then have rested in its proper place.
 </p>
 
@@ -15363,7 +13847,8 @@ const PrideAndPrejudiceHtml = `
   before supposed that, could Wickham be prevailed on to marry his daughter, it
   would be done with so little inconvenience to himself as by the present<span
     class="pagenum"
-    ><a id="page_379">{379}</a></span
+    >
+    </span
   >
   arrangement. He would scarcely be ten pounds a year the loser, by the hundred
   that was to be paid them; for, what with her board and pocket allowance, and
@@ -15399,7 +13884,8 @@ const PrideAndPrejudiceHtml = `
   day she again took her seat at the head of her table, and in spirits
   oppressively high. No sentiment of shame gave a damp to her triumph.<span
     class="pagenum"
-    ><a id="page_380">{380}</a></span
+    >
+    </span
   >
   The marriage of a daughter, which had been the first object of her wishes
   since Jane was sixteen, was now on the point of accomplishment, and her
@@ -15436,7 +13922,8 @@ const PrideAndPrejudiceHtml = `
   privilege, without which her marriage would scarcely seem valid, exceeded all
   that she could believe possible. She was more alive to the<span
     class="pagenum"
-    ><a id="page_381">{381}</a></span
+    >
+    </span
   >
   disgrace, which her want of new clothes must reflect on her daughter’s
   nuptials, than to any sense of shame at her eloping and living with Wickham a
@@ -15471,7 +13958,8 @@ const PrideAndPrejudiceHtml = `
   She became jealous of his esteem, when she could no longer hope to be
   benefited by it. She wanted to hear of him, when there seemed the least chance
   of gaining intelligence. She was convinced<span class="pagenum"
-    ><a id="page_382">{382}</a></span
+    >
+    </span
   >
   that she could have been happy with him, when it was no longer likely they
   should meet.
@@ -15512,7 +14000,8 @@ const PrideAndPrejudiceHtml = `
   he briefly replied, with assurances of his eagerness to promote the welfare of
   any of his family; and concluded with entreaties that the subject might never
   be mentioned to him again.<span class="pagenum"
-    ><a id="page_383">{383}</a></span
+    >
+    </span
   >
   The principal purport of his letter was to inform them, that Mr. Wickham had
   resolved on quitting the militia.
@@ -15541,11 +14030,12 @@ const PrideAndPrejudiceHtml = `
   dutifully remembered to you and her mother.—Yours, etc.
 </p>
 
-<p class="r">“<span class="smcap">E. Gardiner</span>.”<br /></p>
+<p class="r">“<span class="smcap">E. Gardiner</span>.”</p>
 
 <p>
   Mr. Bennet and his daughters saw all the advantages
-  <span class="pagenum"><a id="page_384">{384}</a></span
+  <span class="pagenum">
+  </span
   >of Wickham’s removal from the ——shire, as clearly as Mr. Gardiner could do.
   But Mrs. Bennet was not so well pleased with it. Lydia’s being settled in the
   north, just when she had expected most pleasure and pride in her company, for
@@ -15577,7 +14067,8 @@ const PrideAndPrejudiceHtml = `
   surprised, however, that Wickham should consent to such a scheme; and, had she
   consulted only her own inclination, any meeting with him would have been the
   last object of her wishes.<span class="pagenum"
-    ><a id="page_385">{385}</a></span
+    >
+    </span
   >
 </p>
 
@@ -15589,22 +14080,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-8495330800384902454"
   />
-  <br /><span class="caption"> “With an affectionate smile.” </span>
-  <br /><br />CHAPTER LI.
+  <span class="caption"> “With an affectionate smile.” </span>
+  CHAPTER LI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_414_b.png"
-      width="100"
-      id="id-1177379981780643751" /></span
-  >HEIR sister’s wedding-day arrived; and Jane and Elizabeth felt for her
+  
+
+  Their sister’s wedding-day arrived; and Jane and Elizabeth felt for her
   probably more than she felt for herself. The carriage was sent to meet them
   at——, and they were to return in it by dinnertime. Their arrival was dreaded
   by the elder Miss Bennets—and Jane more<span class="pagenum"
-    ><a id="page_386">{386}</a></span
+    >
+    </span
   >
   especially, who gave Lydia the feelings which would have attended herself, had
   <i>she</i> been the culprit, and was wretched in the thought of what her
@@ -15647,7 +14135,8 @@ const PrideAndPrejudiceHtml = `
   always so pleasing, that, had his character and his marriage been exactly what
   they ought, his smiles and his easy address, while he claimed their
   relationship, would have delighted them all. Elizabeth<span class="pagenum"
-    ><a id="page_387">{387}</a></span
+    >
+    </span
   >
   had not before believed him quite equal to such assurance; but she sat down,
   resolving within herself to draw no limits in future to the impudence of an
@@ -15684,7 +14173,8 @@ const PrideAndPrejudiceHtml = `
   they might not; and we overtook William Goulding in his curricle, so I was
   determined he should know it, and so I let down the side glass next to him,
   and took off my glove and let my hand just rest upon the window frame, so that
-  he<span class="pagenum"><a id="page_388">{388}</a></span> might see the ring,
+  he<span class="pagenum">
+  </span> might see the ring,
   and then I bowed and smiled like anything.”
 </p>
 
@@ -15728,7 +14218,8 @@ const PrideAndPrejudiceHtml = `
   and papa, and my sisters, must come down and see us. We shall be at Newcastle
   all the winter, and I dare say there will be some balls, and I will take care
   to get good partners for them all.<span class="pagenum"
-    ><a id="page_389">{389}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -15773,7 +14264,8 @@ const PrideAndPrejudiceHtml = `
   Lydia was exceedingly fond of him. He was her dear Wickham on every occasion;
   no one was to be put in competition with him. He did everything best in the
   world; and she was sure he would kill more<span class="pagenum"
-    ><a id="page_390">{390}</a></span
+    >
+    </span
   >
   birds on the first of September than anybody else in the country.
 </p>
@@ -15817,7 +14309,8 @@ const PrideAndPrejudiceHtml = `
   not once put my foot out of doors, though I was there a fortnight. Not one
   party, or scheme, or anything! To be sure, London was rather thin, but,
   however, the Little Theatre was open.<span class="pagenum"
-    ><a id="page_391">{391}</a></span
+    >
+    </span
   >
 </p>
 
@@ -15866,7 +14359,8 @@ const PrideAndPrejudiceHtml = `
   wedding. It was exactly a scene, and exactly among people, where he had
   apparently least to do, and least temptation to go. Conjectures as to the
   meaning of it, rapid and wild,<span class="pagenum"
-    ><a id="page_392">{392}</a></span
+    >
+    </span
   >
   hurried into her brain; but she was satisfied with none. Those that best
   pleased her, as placing his conduct in the noblest light, seemed most
@@ -15896,7 +14390,8 @@ const PrideAndPrejudiceHtml = `
   privately of what Lydia had let fall; Elizabeth was glad of it:—till it
   appeared whether her inquiries would receive any satisfaction, she had rather
   be without a confidante.<span class="pagenum"
-    ><a id="page_393">{393}</a></span
+    >
+    </span
   >
 </p>
 
@@ -15908,22 +14403,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-8179336031363313990"
   />
-  <br /><span class="caption"> “I am sure she did not listen.” </span>
-  <br /><br />CHAPTER LII.
+  <span class="caption"> “I am sure she did not listen.” </span>
+  CHAPTER LII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_422_b.png"
-      width="100"
-      id="id-519190288529670848" /></span
-  >LIZABETH had the satisfaction of receiving an answer to her letter as soon as
+  
+
+  Elizabeth had the satisfaction of receiving an answer to her letter as soon as
   she possibly could. She was no sooner in possession of it, than hurrying into
   the little copse, where she was least likely to be interrupted, she sat down
   on one of the benches, and prepared<span class="pagenum"
-    ><a id="page_394">{394}</a></span
+    >
+    </span
   >
   to be happy; for the length of the letter convinced her that it did not
   contain a denial.
@@ -15932,7 +14424,7 @@ const PrideAndPrejudiceHtml = `
 <div class="blockquot">
   <p class="rt">“Gracechurch Street, <i>Sept. 6</i>.</p>
 
-  <p class="nind">“My dear Niece,<br /></p>
+  <p class="nind">“My dear Niece,</p>
 
   <p>
     “I have just received your letter, and shall devote this whole morning to
@@ -15958,7 +14450,8 @@ const PrideAndPrejudiceHtml = `
     generously imputed the whole to his mistaken pride, and confessed that he
     had before thought it beneath him to lay his private actions open to<span
       class="pagenum"
-      ><a id="page_395">{395}</a></span
+      >
+      </span
     >
     the world. His character was to speak for itself. He called it, therefore,
     his duty to step forward, and endeavour to remedy an evil which had been
@@ -15985,7 +14478,8 @@ const PrideAndPrejudiceHtml = `
     would go. But he found Lydia absolutely resolved on remaining where she was.
     She cared for none of her friends; she wanted no help of his; she would not
     hear of leaving Wickham.<span class="pagenum"
-      ><a id="page_396">{396}</a></span
+      >
+      </span
     >
     She was sure they should be married some time or other, and it did not much
     signify when. Since such were her feelings, it only remained, he thought, to
@@ -16012,7 +14506,8 @@ const PrideAndPrejudiceHtml = `
     would quit town the next morning. He did not judge your father to be a
     person whom he could so properly consult as your uncle, and therefore
     readily postponed seeing him till after the
-    <span class="pagenum"><a id="page_397">{397}</a></span
+    <span class="pagenum">
+    </span
     >departure of the former. He did not leave his name, and till the next day
     it was only known that a gentleman had called on business. On Saturday he
     came again. Your father was gone, your uncle at home, and, as I said before,
@@ -16039,7 +14534,8 @@ const PrideAndPrejudiceHtml = `
     was such as I have given above. It was owing to him, to his reserve and want
     of proper consideration, that Wickham’s character had been so<span
       class="pagenum"
-      ><a id="page_398">{398}</a></span
+      >
+      </span
     >
     misunderstood, and consequently that he had been received and noticed as he
     was. Perhaps there was some truth in <i>this</i>; though I doubt whether
@@ -16067,7 +14563,8 @@ const PrideAndPrejudiceHtml = `
     wedding. He dined with us the next day, and was to leave town again on
     Wednesday or Thursday. Will you be very angry with me, my dear<span
       class="pagenum"
-      ><a id="page_399">{399}</a></span
+      >
+      </span
     >
     Lizzy, if I take this opportunity of saying (what I was never bold enough to
     say before) how much I like him? His behaviour to us has, in every respect,
@@ -16083,8 +14580,8 @@ const PrideAndPrejudiceHtml = `
   </p>
 
   <p class="r">
-    “Yours, very sincerely,<br />
-    “<span class="smcap">M. Gardiner</span>.”<br />
+    “Yours, very sincerely,
+    “<span class="smcap">M. Gardiner</span>.”
   </p>
 </div>
 
@@ -16100,7 +14597,8 @@ const PrideAndPrejudiceHtml = `
   on such a research; in which supplication had been necessary to a woman whom
   he must abominate and despise, and where he was reduced to meet, frequently
   meet, reason with, persuade, and<span class="pagenum"
-    ><a id="page_400">{400}</a></span
+    >
+    </span
   >
   finally bribe the man whom he always most wished to avoid, and whose very name
   it was punishment to him to pronounce. He had done all this for a girl whom he
@@ -16126,7 +14624,8 @@ const PrideAndPrejudiceHtml = `
   himself. She read over her aunt’s commendation of him again and again. It was
   hardly enough; but it pleased her. She was even sensible of some pleasure,
   though mixed with regret, on<span class="pagenum"
-    ><a id="page_401">{401}</a></span
+    >
+    </span
   >
   finding how steadfastly both she and her uncle had been persuaded that
   affection and confidence subsisted between Mr. Darcy and herself.
@@ -16182,7 +14681,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Certainly,” he replied, biting his lips. Elizabeth hoped she had silenced
   him; but he soon afterwards said,<span class="pagenum"
-    ><a id="page_402">{402}</a></span
+    >
+    </span
   >—
 </p>
 
@@ -16238,7 +14738,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I <i>have</i> heard from authority, which I thought <i>as good</i>,<span
     class="pagenum"
-    ><a id="page_403">{403}</a></span
+    >
+    </span
   >
   that it was left you conditionally only, and at the will of the present
   patron.”
@@ -16275,7 +14776,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   She held out her hand: he kissed it with affectionate gallantry, though he
   hardly knew how to look, and they entered the house.<span class="pagenum"
-    ><a id="page_404">{404}</a></span
+    >
+    </span
   >
 </p>
 
@@ -16287,22 +14789,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3167713698196576023"
   />
-  <br /><span class="caption"> “Mr Darcey with him.” </span> <br /><br />CHAPTER
+  <span class="caption"> “Mr Darcey with him.” </span> CHAPTER
   LIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="M"
-      src="images/i_433_b.png"
-      width="100"
-      id="id-3911209828991789079" /></span
-  >R. WICKHAM was so perfectly satisfied with this conversation, that he never
+  
+
+  Mr. Wickham was so perfectly satisfied with this conversation, that he never
   again distressed himself, or provoked his dear sister Elizabeth, by
   introducing the subject of it; and she was pleased to find that she had said
   enough to keep him quiet.<span class="pagenum"
-    ><a id="page_405">{405}</a></span
+    >
+    </span
   >
 </p>
 
@@ -16354,7 +14853,8 @@ const PrideAndPrejudiceHtml = `
   “It is no such thing. Lydia does not leave me because she is married; but only
   because her husband’s regiment happens to be so far off. If that had been
   nearer, she would not have gone so soon.<span class="pagenum"
-    ><a id="page_406">{406}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -16395,7 +14895,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I saw you look at me to-day, Lizzy, when my aunt told us of the present
   report; and I know I appeared<span class="pagenum"
-    ><a id="page_407">{407}</a></span
+    >
+    </span
   >
   distressed; but don’t imagine it was from any silly cause. I was only confused
   for the moment, because I felt that I <i>should</i> be looked at. I do assure
@@ -16443,7 +14944,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   His wife represented to him how absolutely necessary<span class="pagenum"
-    ><a id="page_408">{408}</a></span
+    >
+    </span
   >
   such an attention would be from all the neighbouring gentlemen, on his
   returning to Netherfield.
@@ -16490,7 +14992,8 @@ const PrideAndPrejudiceHtml = `
   contrived to have the earliest tidings of it, that the period of anxiety and
   fretfulness on her side be as long as it could. She counted the days that<span
     class="pagenum"
-    ><a id="page_409">{409}</a></span
+    >
+    </span
   >
   must intervene before their invitation could be sent—hopeless of seeing him
   before. But on the third morning after his arrival in Hertfordshire, she saw
@@ -16532,7 +15035,8 @@ const PrideAndPrejudiceHtml = `
   friend, without being heard by either of them. But Elizabeth had sources of
   uneasiness which could not yet be suspected by Jane, to whom she had never yet
   had courage to show Mrs. Gardine<span class="pagenum"
-    ><a id="page_410">{410}</a></span
+    >
+    </span
   >r’s letter, or to relate her own change of sentiment towards him. To Jane, he
   could be only a man whose proposals she had refused, and whose merits she had
   undervalued; but to her own more extensive information, he was the person to
@@ -16571,7 +15075,8 @@ const PrideAndPrejudiceHtml = `
   to her work, with an eagerness which it did not often command. She had
   ventured only one glance at Darcy. He looked serious as usual;<span
     class="pagenum"
-    ><a id="page_411">{411}</a></span
+    >
+    </span
   >
   and, she thought, more as he had been used to look in Hertfordshire, than as
   she had seen him at Pemberley. But, perhaps, he could not in her mother’s
@@ -16609,7 +15114,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Could I expect it to be otherwise?” said she. “Yet why did he come?<span
     class="pagenum"
-    ><a id="page_412">{412}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -16649,7 +15155,8 @@ const PrideAndPrejudiceHtml = `
   northward it seems, and there they are to stay, I do not know how long. His
   regiment is there; for I suppose you have heard of his leaving the ——shire,
   and of his being gone into the Regulars. Thank heaven!<span class="pagenum"
-    ><a id="page_413">{413}</a></span
+    >
+    </span
   >
   he has <i>some</i> friends, though, perhaps, not so many as he deserves.”
 </p>
@@ -16691,7 +15198,8 @@ const PrideAndPrejudiceHtml = `
   in, he had spoken to her but little, but every five minutes seemed to be
   giving her more of his attention. He found her as handsome as she had<span
     class="pagenum"
-    ><a id="page_414">{414}</a></span
+    >
+    </span
   >
   been last year; as good-natured, and as unaffected, though not quite so
   chatty. Jane was anxious that no difference should be perceived in her at all,
@@ -16722,7 +15230,8 @@ const PrideAndPrejudiceHtml = `
   day; but, though she always kept a very good table, she did not think anything
   less than two courses could be good enough for a man on whom she had such
   anxious designs, or satisfy the appetite and pride of one who had ten thousand
-  a year.<span class="pagenum"><a id="page_415">{415}</a></span>
+  a year.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -16733,18 +15242,14 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-2015574626461059423"
   />
-  <br /><span class="caption"> “Jane happened to look round.” </span>
-  <br /><br />CHAPTER LIV.
+  <span class="caption"> “Jane happened to look round.” </span>
+  CHAPTER LIV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="A"
-      src="images/i_444_b.png"
-      width="100"
-      id="id-86946719527854135" /></span
-  >S soon as they were gone, Elizabeth walked out to recover her spirits; or, in
+  
+
+  As soon as they were gone, Elizabeth walked out to recover her spirits; or, in
   other words, to dwell without interruption on those subjects which must deaden
   them more. Mr. Darcy’s behaviour astonished and vexed her.
 </p>
@@ -16759,7 +15264,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “He could be still amiable, still pleasing to my uncle and aunt, when he was
   in town; and why not to me?<span class="pagenum"
-    ><a id="page_416">{416}</a></span
+    >
+    </span
   >
   If he fears me, why come hither? If he no longer cares for me, why silent?
   Teasing, teasing man! I will think no more about him.”
@@ -16803,7 +15309,8 @@ const PrideAndPrejudiceHtml = `
   eagerly watched to see whether Bingley would take the place which, in all
   their former parties, had belonged to him, by her sister. Her prudent mother,
   occupied by the same ideas, forbore to invite him to sit by herself. On
-  entering the room, he<span class="pagenum"><a id="page_417">{417}</a></span>
+  entering the room, he<span class="pagenum">
+  </span>
   seemed to hesitate; but Jane happened to look round, and happened to smile: it
   was decided. He placed himself by her.
 </p>
@@ -16836,7 +15343,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   She was in hopes that the evening would afford some opportunity of bringing
   them together; that the whole of the visit would not pass away without
-  enabling them<span class="pagenum"><a id="page_418">{418}</a></span> to enter
+  enabling them<span class="pagenum">
+  </span> to enter
   into something more of conversation, than the mere ceremonious salutation
   attending his entrance. Anxious and uneasy, the period which passed in the
   drawing-room before the gentlemen came, was wearisome and dull to a degree
@@ -16879,7 +15387,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   She was a little revived, however, by his bringing back his coffee-cup
   himself; and she seized the opportunity of saying,<span class="pagenum"
-    ><a id="page_419">{419}</a></span
+    >
+    </span
   >—
 </p>
 
@@ -16925,7 +15434,8 @@ const PrideAndPrejudiceHtml = `
   to a turn—and everybody said, they never saw so fat a haunch. The soup was
   fifty times better than what we had at the Lucases’ last week; and even Mr.
   Darcy acknowledged that the partridges were<span class="pagenum"
-    ><a id="page_420">{420}</a></span
+    >
+    </span
   >
   remarkably well done; and I suppose he has two or three French cooks at least.
   And, my dear Jane, I never saw you look in greater beauty. Mrs. Long said so
@@ -16936,21 +15446,10 @@ const PrideAndPrejudiceHtml = `
   prodigiously.”
 </p>
 
-<div class="figcenter" style="width: 476px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_449.jpg"
-    width="476"
-    id="id-2932186447628157221"
-  />
-  <div class="caption">
-    <p>“M<sup>rs</sup>. Long and her nieces.”</p>
-  </div>
-</div>
 
 <p>
-  <span class="pagenum"><a id="page_421">{421}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -16993,7 +15492,8 @@ const PrideAndPrejudiceHtml = `
   instruct, though we can teach only what is not worth knowing. Forgive me; and
   if you persist in indifference, do not make <i>me</i> your confidante.<span
     class="pagenum"
-    ><a id="page_422">{422}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17005,22 +15505,16 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-2276550261519120340"
   />
-  <br /><span class="caption"> “Lizzy, my dear, I want to speak to you.” </span>
-  <br /><br />CHAPTER LV.
+  <span class="caption"> “Lizzy, my dear, I want to speak to you.” </span>
+  CHAPTER LV.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="A"
-      src="images/i_451_b.png"
-      width="100"
-      id="id-5146862069394318402"
-  /></span>
-  FEW days after this visit, Mr. Bingley called again, and alone. His friend had
+  A few days after this visit, Mr. Bingley called again, and alone. His friend had
   left him that morning for London, but was to return home in ten days’ time. He
   sat with them above an hour, and was<span class="pagenum"
-    ><a id="page_423">{423}</a></span
+    >
+    </span
   >
   in remarkably good spirits. Mrs. Bennet invited him to dine with them; but,
   with many expressions of concern, he confessed himself engaged elsewhere.
@@ -17072,7 +15566,8 @@ const PrideAndPrejudiceHtml = `
   After tea, Mr. Bennet retired to the library, as was his custom, and Mary went
   upstairs to her instrument. Two obstacles of the five being thus removed, Mrs.
   Bennet sat looking and winking at Elizabeth and Catherine for a considerable
-  time, without<span class="pagenum"><a id="page_424">{424}</a></span> making
+  time, without<span class="pagenum">
+  </span> making
   any impression on them. Elizabeth would not observe her; and when at last
   Kitty did, she very innocently said, “What is the matter, mamma? What do you
   keep winking at me for? What am I to do?”
@@ -17120,7 +15615,8 @@ const PrideAndPrejudiceHtml = `
   He scarcely needed an invitation to stay supper; and before he went away an
   engagement was formed, chiefly through his own and Mrs. Bennet’s means, for
   his coming next morning to shoot with her husband.<span class="pagenum"
-    ><a id="page_425">{425}</a></span
+    >
+    </span
   >
 </p>
 
@@ -17156,7 +15652,8 @@ const PrideAndPrejudiceHtml = `
   still worse. Not a syllable was uttered by either; and Elizabeth was on the
   point of going away again, when Bingley, who as well as the other had sat<span
     class="pagenum"
-    ><a id="page_426">{426}</a></span
+    >
+    </span
   >
   down, suddenly rose, and, whispering a few words to her sister, ran out of the
   room.
@@ -17207,7 +15704,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   In a few minutes she was joined by Bingley, whose<span class="pagenum"
-    ><a id="page_427">{427}</a></span
+    >
+    </span
   >
   conference with her father had been short and to the purpose.
 </p>
@@ -17247,7 +15745,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Jane, I congratulate you. You will be a very happy woman.<span
     class="pagenum"
-    ><a id="page_428">{428}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17292,7 +15791,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Bingley, from this time, was of course a daily visitor at Longbourn; coming
   frequently before breakfast, and always remaining till after supper; unless
-  when some<span class="pagenum"><a id="page_429">{429}</a></span> barbarous
+  when some<span class="pagenum">
+  </span> barbarous
   neighbour, who could not be enough detested, had given him an invitation to
   dinner, which he thought himself obliged to accept.
 </p>
@@ -17335,7 +15835,8 @@ const PrideAndPrejudiceHtml = `
   “Would you believe it, Lizzy, that when he went to town last November he
   really loved me, and nothing but a persuasion of <i>my</i> being indifferent
   would have prevented his coming down again?<span class="pagenum"
-    ><a id="page_430">{430}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17378,7 +15879,8 @@ const PrideAndPrejudiceHtml = `
   The Bennets were speedily pronounced to be the luckiest family in the world;
   though only a few weeks before, when Lydia had first run away, they had been
   generally proved to be marked out for misfortune.<span class="pagenum"
-    ><a id="page_431">{431}</a></span
+    >
+    </span
   >
 </p>
 
@@ -17390,24 +15892,19 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-6316645855400025094"
   />
-  <br /><br />CHAPTER LVI.
+  CHAPTER LVI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="O"
-      src="images/i_460_b.png"
-      width="100"
-      id="id-841879130644411800" /></span
-  >NE morning, about a week after Bingley’s engagement with Jane had been
+  One morning, about a week after Bingley’s engagement with Jane had been
   formed, as he and the females of the family were sitting together in the
   dining-room, their attention was suddenly drawn to the window by the sound of
   a carriage; and they perceived a chaise and four driving up the lawn. It was
   too early in the morning for visitors; and besides, the equipage did not
   answer to that of any of their neighbours. The horses were post; and neither
   the carriage, nor the livery of the servant who preceded it, were familiar to
-  them. As<span class="pagenum"><a id="page_432">{432}</a></span> it was
+  them. As<span class="pagenum">
+  </span> it was
   certain, however, that somebody was coming, Bingley instantly prevailed on
   Miss Bennet to avoid the confinement of such an intrusion, and walk away with
   him into the shrubbery. They both set off; and the conjectures of the
@@ -17445,7 +15942,8 @@ const PrideAndPrejudiceHtml = `
   is my youngest girl but one. My youngest of all is lately married, and my
   eldest is somewhere about the ground, walking with a young man, who, I
   believe, will soon become a part of the family.<span class="pagenum"
-    ><a id="page_433">{433}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17505,7 +16003,8 @@ const PrideAndPrejudiceHtml = `
   the doors into the dining-parlour and drawing-room, and pronouncing them,
   after a short survey, to be decent-looking rooms, walked on.<span
     class="pagenum"
-    ><a id="page_434">{434}</a></span
+    >
+    </span
   >
 </p>
 
@@ -17516,23 +16015,9 @@ const PrideAndPrejudiceHtml = `
   woman who was now more than usually insolent and disagreeable.
 </p>
 
-<div class="figcenter" style="width: 332px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_463.jpg"
-    width="332"
-    id="id-3988672359928198253"
-  />
-  <div class="caption">
-    <p>“After a short survey”<br /></p>
-
-    <p>[<i>Copyright 1894 by George Allen.</i>]</p>
-  </div>
-</div>
-
 <p>
-  <span class="pagenum"><a id="page_435">{435}</a></span>
+  <span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -17581,7 +16066,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “At once to insist upon having such a report universally contradicted.<span
     class="pagenum"
-    ><a id="page_436">{436}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17639,7 +16125,8 @@ const PrideAndPrejudiceHtml = `
   “Let me be rightly understood. This match, to which you have the presumption
   to aspire, can never take place. No, never. Mr. Darcy is engaged to
   <i>my daughter</i>. Now, what have you to say?<span class="pagenum"
-    ><a id="page_437">{437}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17680,7 +16167,8 @@ const PrideAndPrejudiceHtml = `
   and despised, by everyone connected with him. Your alliance will be a
   disgrace; your name will never even be mentioned by any of us.<span
     class="pagenum"
-    ><a id="page_438">{438}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17725,7 +16213,8 @@ const PrideAndPrejudiceHtml = `
   “True. You <i>are</i> a gentleman’s daughter. But what was your mother? Who
   are your uncles and aunts? Do not imagine me ignorant of their condition.<span
     class="pagenum"
-    ><a id="page_439">{439}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17770,7 +16259,8 @@ const PrideAndPrejudiceHtml = `
   might approve of your interference in <i>his</i> affairs, I cannot tell; but
   you have certainly no right to concern yourself in mine. I must beg,
   therefore, to be importuned no further on the subject.<span class="pagenum"
-    ><a id="page_440">{440}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -17821,7 +16311,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “Neither duty, nor honour, nor gratitude,” replied Elizabeth, “has any
   possible claim on me, in the present instance. No principle of either would be
-  violated by my<span class="pagenum"><a id="page_441">{441}</a></span> marriage
+  violated by my<span class="pagenum">
+  </span> marriage
   with Mr. Darcy. And with regard to the resentment of his family, or the
   indignation of the world, if the former <i>were</i> excited by his marrying
   me, it would not give me one moment’s concern—and the world in general would
@@ -17866,7 +16357,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   Elizabeth was forced to give in to a little falsehood here; for to acknowledge
   the substance of their conversation was impossible.<span class="pagenum"
-    ><a id="page_442">{442}</a></span
+    >
+    </span
   >
 </p>
 
@@ -17878,18 +16370,12 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-7671943187759549803"
   />
-  <br /><span class="caption"> “But now it comes out.” </span>
-  <br /><br />CHAPTER LVII.
+  <span class="caption"> “But now it comes out.” </span>
+  CHAPTER LVII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="T"
-      src="images/i_471_b.png"
-      width="100"
-      id="id-6935010845470967428" /></span
-  >HE discomposure of spirits which this extraordinary visit threw Elizabeth
+  The discomposure of spirits which this extraordinary visit threw Elizabeth
   into could not be easily overcome; nor could she for many hours learn to think
   of it less than incessantly. Lady Catherine, it appeared, had actually taken
   the trouble of this journey from Rosings for the sole purpose of breaking off
@@ -17901,7 +16387,8 @@ const PrideAndPrejudiceHtml = `
   supply the idea. She had not herself forgotten to feel that the marriage of
   her sister must bring them more frequently together. And her neighbours at
   Lucas Lodge, therefore, (for through their<span class="pagenum"
-    ><a id="page_443">{443}</a></span
+    >
+    </span
   >
   communication with the Collinses, the report, she concluded, had reached Lady
   Catherine,) had only set <i>that</i> down as almost certain and immediate
@@ -17936,7 +16423,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “If, therefore, an excuse for not keeping his promise should come to his
   friend within a few days,” she added, “I shall know how to understand it. I
-  shall then give<span class="pagenum"><a id="page_444">{444}</a></span> over
+  shall then give<span class="pagenum">
+  </span> over
   every expectation, every wish of his constancy. If he is satisfied with only
   regretting me, when he might have obtained my affections and hand, I shall
   soon cease to regret him at all.”
@@ -17980,7 +16468,8 @@ const PrideAndPrejudiceHtml = `
   of its being a letter from the nephew, instead of the aunt; and she was
   undetermined whether most to be pleased that he explained himself at all, or
   offended that his letter was not rather addressed to herself, when her father
-  continued,<span class="pagenum"><a id="page_445">{445}</a></span
+  continued,<span class="pagenum">
+  </span
   >—
 </p>
 
@@ -18014,7 +16503,8 @@ const PrideAndPrejudiceHtml = `
   as follows:—We have reason to imagine that his aunt, Lady Catherine de Bourgh,
   does not look on the match with a friendly eye.’ <i>Mr. Darcy</i>, you see, is
   the man! Now, Lizzy, I think<span class="pagenum"
-    ><a id="page_446">{446}</a></span
+    >
+    </span
   >
   I <i>have</i> surprised you. Could he, or the Lucases, have pitched on any
   man, within the circle of our acquaintance, whose name would have given the
@@ -18050,7 +16540,8 @@ const PrideAndPrejudiceHtml = `
   married. It was an encouragement of vice; and had I been the rector of
   Longbourn, I should very strenuously have opposed it. You ought certainly to
   forgive them as a Christian, but never to admit them<span class="pagenum"
-    ><a id="page_447">{447}</a></span
+    >
+    </span
   >
   in your sight, or allow their names to be mentioned in your hearing.’
   <i>That</i> is his notion of Christian forgiveness! The rest of his letter is
@@ -18083,7 +16574,8 @@ const PrideAndPrejudiceHtml = `
   indifference; and she could do nothing but wonder at such a want of
   penetration, or fear that, perhaps, instead of his seeing too <i>little</i>,
   she might have fancied too <i>much</i>.<span class="pagenum"
-    ><a id="page_448">{448}</a></span
+    >
+    </span
   >
 </p>
 
@@ -18095,21 +16587,16 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3997245293846632032"
   />
-  <br /><span class="caption"> “The efforts of his aunt.” </span>
-  <br /><br />CHAPTER LVIII.
+  <span class="caption"> “The efforts of his aunt.” </span>
+  CHAPTER LVIII.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="I"
-      src="images/i_477_b.png"
-      width="100"
-      id="id-438823893011756899" /></span
-  >NSTEAD of receiving any such letter of excuse from his friend, as Elizabeth
+  Instead of receiving any such letter of excuse from his friend, as Elizabeth
   half expected Mr. Bingley to do, he was able to bring Darcy with him to
   Longbourn before many days had passed after Lady Catherine’s visit. The
-  gentlemen<span class="pagenum"><a id="page_449">{449}</a></span> arrived
+  gentlemen<span class="pagenum">
+  </span> arrived
   early; and, before Mrs. Bennet had time to tell him of their having seen his
   aunt, of which her daughter sat in momentary dread, Bingley, who wanted to be
   alone with Jane, proposed their all walking out. It was agreed to. Mrs. Bennet
@@ -18146,7 +16633,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “You must not blame my aunt. Lydia’s thoughtlessness<span class="pagenum"
-    ><a id="page_450">{450}</a></span
+    >
+    </span
   >
   first betrayed to me that you had been concerned in the matter; and, of
   course, I could not rest till I knew the particulars. Let me thank you again
@@ -18181,7 +16669,8 @@ const PrideAndPrejudiceHtml = `
   can be supposed to do. Had Elizabeth been able to encounter his eyes, she
   might have seen how well the expression of heartfelt delight diffused over his
   face became him: but though she could not look she could listen; and he told
-  her of<span class="pagenum"><a id="page_451">{451}</a></span> feelings which,
+  her of<span class="pagenum">
+  </span> feelings which,
   in proving of what importance she was to him, made his affection every moment
   more valuable.
 </p>
@@ -18224,7 +16713,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “We will not quarrel for the greater share of blame annexed to that evening,”
   said Elizabeth. “The conduct<span class="pagenum"
-    ><a id="page_452">{452}</a></span
+    >
+    </span
   >
   of neither, if strictly examined, will be irreproachable; but since then we
   have both, I hope, improved in civility.”
@@ -18271,7 +16761,8 @@ const PrideAndPrejudiceHtml = `
   “I knew,” said he, “that what I wrote must give you pain, but it was
   necessary. I hope you have destroyed the letter. There was one part,
   especially the opening of it, which I should dread your having the power
-  of<span class="pagenum"><a id="page_453">{453}</a></span> reading again. I can
+  of<span class="pagenum">
+  </span> reading again. I can
   remember some expressions which might justly make you hate me.”
 </p>
 
@@ -18310,7 +16801,8 @@ const PrideAndPrejudiceHtml = `
   by my parents, who, though good themselves, (my father particularly, all that
   was benevolent and amiable,) allowed, encouraged, almost taught me to be
   selfish and overbearing, to care for none beyond my<span class="pagenum"
-    ><a id="page_454">{454}</a></span
+    >
+    </span
   >
   own family circle, to think meanly of all the rest of the world, to
   <i>wish</i> at least to think meanly of their sense and worth compared with my
@@ -18359,7 +16851,8 @@ const PrideAndPrejudiceHtml = `
   your forgiveness, to lessen your ill opinion, by letting you see that your
   reproofs had been attended to. How soon any other wishes introduced
   themselves, I can hardly<span class="pagenum"
-    ><a id="page_455">{455}</a></span
+    >
+    </span
   >
   tell, but I believe in about half an hour after I had seen you.”
 </p>
@@ -18404,7 +16897,8 @@ const PrideAndPrejudiceHtml = `
   him, which I believe I ought to have made long ago. I told him of all that had
   occurred to make my former interference in his affairs absurd and impertinent.
   His surprise was great. He had never had the slightest suspicion. I told him,
-  moreover, that I<span class="pagenum"><a id="page_456">{456}</a></span>
+  moreover, that I<span class="pagenum">
+  </span>
   believed myself mistaken in supposing, as I had done, that your sister was
   indifferent to him; and as I could easily perceive that his attachment to her
   was unabated, I felt no doubt of their happiness together.”
@@ -18446,7 +16940,8 @@ const PrideAndPrejudiceHtml = `
   rather too early to begin. In anticipating the happiness of Bingley, which of
   course was to be inferior only to his own, he continued the conversation till
   they reached the house. In the hall they parted.<span class="pagenum"
-    ><a id="page_457">{457}</a></span
+    >
+    </span
   >
 </p>
 
@@ -18458,22 +16953,17 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3214441443246417115"
   />
-  <br /><span class="caption"> “Unable to utter a syllable.” </span>
-  <br /><br />CHAPTER LIX.
+  <span class="caption"> “Unable to utter a syllable.” </span>
+  CHAPTER LIX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    “<img
-      alt="M"
-      src="images/i_486_b.png"
-      width="100"
-      id="id-4643448311428652701" /></span
-  >Y dear Lizzy, where can you have been walking to?” was a question which
+  My dear Lizzy, where can you have been walking to?” was a question which
   Elizabeth received from Jane as soon as she entered the room, and from all the
   others when they sat down to table. She had only to say in reply, that<span
     class="pagenum"
-    ><a id="page_458">{458}</a></span
+    >
+    </span
   >
   they had wandered about till she was beyond her own knowledge. She coloured as
   she spoke; but neither that, nor anything else, awakened a suspicion of the
@@ -18517,7 +17007,8 @@ const PrideAndPrejudiceHtml = `
   “You know nothing of the matter. <i>That</i> is all to be forgot. Perhaps I
   did not always love him so well as I do now; but in such cases as these a good
   memory is unpardonable. This is the last time I shall ever remember it
-  myself.<span class="pagenum"><a id="page_459">{459}</a></span
+  myself.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -18575,7 +17066,8 @@ const PrideAndPrejudiceHtml = `
   effect; and she soon satisfied Jane by her solemn assurances of attachment.
   When convinced on that article, Miss Bennet had nothing further to wish.<span
     class="pagenum"
-    ><a id="page_460">{460}</a></span
+    >
+    </span
   >
 </p>
 
@@ -18619,7 +17111,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “I advise Mr. Darcy, and Lizzy, and Kitty,” said Mrs.<span class="pagenum"
-    ><a id="page_461">{461}</a></span
+    >
+    </span
   >
   Bennet, “to walk to Oakham Mount this morning. It is a nice long walk, and Mr.
   Darcy has never seen the view.”
@@ -18661,7 +17154,8 @@ const PrideAndPrejudiceHtml = `
   She did not fear her father’s opposition, but he was going to be made unhappy,
   and that it should be through her means; that <i>she</i>, his favourite child,
   should be distressing him by her choice, should be filling him with fears and
-  regrets in<span class="pagenum"><a id="page_462">{462}</a></span> disposing of
+  regrets in<span class="pagenum">
+  </span> disposing of
   her, was a wretched reflection, and she sat in misery till Mr. Darcy appeared
   again, when, looking at him, she was a little relieved by his smile. In a few
   minutes he approached the table where she was sitting with Kitty; and, while
@@ -18707,7 +17201,8 @@ const PrideAndPrejudiceHtml = `
 
 <p>
   “Lizzy,” said her father, “I have given him my consent. He is the kind of man,
-  indeed, to whom I<span class="pagenum"><a id="page_463">{463}</a></span>
+  indeed, to whom I<span class="pagenum">
+  </span>
   should never dare refuse anything, which he condescended to ask. I now give it
   to <i>you</i>, if you are resolved on having him. But let me advise you to
   think better of it. I know your disposition, Lizzy. I know that you could be
@@ -18744,7 +17239,8 @@ const PrideAndPrejudiceHtml = `
   the match, gave the money, paid the fellow’s debts, and got him his
   commission! So much the better. It will save me a world of trouble and
   economy. Had it been your uncle’s doing, I must and <i>would</i> have paid
-  him; but these violent<span class="pagenum"><a id="page_464">{464}</a></span>
+  him; but these violent<span class="pagenum">
+  </span>
   young lovers carry everything their own way. I shall offer to pay him
   to-morrow, he will rant and storm about his love for you, and there will be an
   end of the matter.”
@@ -18782,7 +17278,8 @@ const PrideAndPrejudiceHtml = `
   great you will be! What pin-money, what jewels, what carriages you will have!
   Jane’s is nothing to it—nothing at all. I am so pleased—so happy. Such a
   charming man! so handsome! so tall! Oh, my dear<span class="pagenum"
-    ><a id="page_465">{465}</a></span
+    >
+    </span
   >
   Lizzy! pray apologize for my having disliked him so much before. I hope he
   will overlook it. Dear, dear Lizzy. A house in town! Everything that is
@@ -18823,7 +17320,8 @@ const PrideAndPrejudiceHtml = `
 <p>
   “I admire all my three sons-in-law highly,” said he. “Wickham, perhaps, is my
   favourite; but I think I shall like <i>your</i> husband quite as well as
-  Jane’s.<span class="pagenum"><a id="page_466">{466}</a></span
+  Jane’s.<span class="pagenum">
+  </span
   >”
 </p>
 
@@ -18835,22 +17333,17 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-5544370803343091021"
   />
-  <br /><span class="caption"> “The obsequious civility.” </span>
-  <br /><br />CHAPTER LX.
+  <span class="caption"> “The obsequious civility.” </span>
+  CHAPTER LX.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="E"
-      src="images/i_495_b.png"
-      width="100"
-      id="id-6507080531778192959" /></span
-  >LIZABETH’S spirits soon rising to playfulness again, she wanted Mr. Darcy to
+  Elizabeth's spirits soon rising to playfulness again, she wanted Mr. Darcy to
   account for his having ever fallen in love with her. “How could you begin?”
   said she. “I can comprehend your going on charmingly, when you had once made a
   beginning; but what could set you off in the first place?<span class="pagenum"
-    ><a id="page_467">{467}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -18894,7 +17387,8 @@ const PrideAndPrejudiceHtml = `
   exaggerate them as much as possible; and, in return, it belongs to me to find
   occasions for teasing and quarrelling with you as often as may be; and I shall
   begin directly, by asking you what made you so unwilling to come to the point
-  at last?<span class="pagenum"><a id="page_468">{468}</a></span> What made you
+  at last?<span class="pagenum">
+  </span> What made you
   so shy of me, when you first called, and afterwards dined here? Why,
   especially, when you called, did you look as if you did not care about me?”
 </p>
@@ -18933,7 +17427,8 @@ const PrideAndPrejudiceHtml = `
   she loves to be of use. But tell me, what did you come down to Netherfield
   for? Was it merely to ride to Longbourn and be embarrassed? or had you
   intended any more serious consequences?<span class="pagenum"
-    ><a id="page_469">{469}</a></span
+    >
+    </span
   >”
 </p>
 
@@ -18978,7 +17473,8 @@ const PrideAndPrejudiceHtml = `
   again very soon, and praise him a great deal more than you did in your last. I
   thank you again and again, for not going to the Lakes. How could I be so<span
     class="pagenum"
-    ><a id="page_470">{470}</a></span
+    >
+    </span
   >
   silly as to wish it! Your idea of the ponies is delightful. We will go round
   the park every day. I am the happiest creature in the world. Perhaps other
@@ -19003,7 +17499,7 @@ const PrideAndPrejudiceHtml = `
     were you, I would stand by the nephew. He has more to give.
   </p>
 
-  <p>“Yours sincerely,” etc.<br /></p>
+  <p>“Yours sincerely,” etc.</p>
 </div>
 
 <p>
@@ -19026,7 +17522,8 @@ const PrideAndPrejudiceHtml = `
   Before any answer could arrive from Mr. Collins, or any congratulations to
   Elizabeth from his wife, the Longbourn family heard that the Collinses were
   come themselves to Lucas Lodge. The reason of this sudden<span class="pagenum"
-    ><a id="page_471">{471}</a></span
+    >
+    </span
   >
   removal was soon evident. Lady Catherine had been rendered so exceedingly
   angry by the contents of her nephew’s letter, that Charlotte, really rejoicing
@@ -19054,7 +17551,8 @@ const PrideAndPrejudiceHtml = `
   much of its pleasure, it added to the hope of the future; and she looked
   forward with delight to the time when they should be removed from society so
   little pleasing to either, to all the comfort and elegance of their family
-  party at Pemberley.<span class="pagenum"><a id="page_472">{472}</a></span>
+  party at Pemberley.<span class="pagenum">
+  </span>
 </p>
 
 <h2>
@@ -19065,17 +17563,11 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-3350179692267067105"
   />
-  <br /><br />CHAPTER LXI.
+  CHAPTER LXI.
 </h2>
 
 <p class="nind">
-  <span class="letra">
-    <img
-      alt="H"
-      src="images/i_501_b.png"
-      width="100"
-      id="id-1914149700385586533" /></span
-  >APPY for all her maternal feelings was the day on which Mrs. Bennet got rid
+  Happy for all her maternal feelings was the day on which Mrs. Bennet got rid
   of her two most deserving daughters. With what delighted pride she afterwards
   visited Mrs. Bingley, and talked of Mrs. Darcy, may be guessed. I wish I could
   say, for the sake of her family, that the accomplishment of her earnest desire
@@ -19090,7 +17582,8 @@ const PrideAndPrejudiceHtml = `
   Mr. Bennet missed his second daughter exceedingly; his affection for her drew
   him oftener from home than anything else could do. He delighted in going to
   Pemberley, especially when he was least expected.<span class="pagenum"
-    ><a id="page_473">{473}</a></span
+    >
+    </span
   >
 </p>
 
@@ -19128,7 +17621,8 @@ const PrideAndPrejudiceHtml = `
   marriage of her sisters. He bore with philosophy the conviction that Elizabeth
   must now become acquainted with whatever of his ingratitude and<span
     class="pagenum"
-    ><a id="page_474">{474}</a></span
+    >
+    </span
   >
   falsehood had before been unknown to her; and, in spite of everything, was not
   wholly without hope that Darcy might yet be prevailed on to make his fortune.
@@ -19150,7 +17644,7 @@ const PrideAndPrejudiceHtml = `
     about it, if you had rather not.
   </p>
 
-  <p class="rt">“Yours,” etc.<br /></p>
+  <p class="rt">“Yours,” etc.</p>
 </div>
 
 <p>
@@ -19165,7 +17659,8 @@ const PrideAndPrejudiceHtml = `
   little assistance towards discharging their bills. Their manner of living,
   even when the restoration of peace dismissed them to a home, was unsettled in
   the extreme. They were always moving from place to place<span class="pagenum"
-    ><a id="page_475">{475}</a></span
+    >
+    </span
   >
   in quest of a cheap situation, and always spending more than they ought. His
   affection for her soon sunk into indifference: hers lasted a little longer;
@@ -19196,7 +17691,8 @@ const PrideAndPrejudiceHtml = `
   never before fallen in her way. By Elizabeth’s instructions she began to
   comprehend that a woman may take liberties with her husband, which a brother
   will not always allow in a sister more than ten years younger than
-  himself.<span class="pagenum"><a id="page_476">{476}</a></span>
+  himself.<span class="pagenum">
+  </span>
 </p>
 
 <p>
@@ -19220,19 +17716,9 @@ const PrideAndPrejudiceHtml = `
   had been the means of uniting them.
 </p>
 
-<div class="figcenter" style="width: 345px">
-  <img
-    alt="[Image unavailable.]"
-    height="550"
-    src="images/i_505.jpg"
-    width="345"
-    id="id-335393291316723273"
-  />
-</div>
-
 <p class="fint">
-  CHISWICK PRESS:—CHARLES WHITTINGHAM AND CO.<br />
-  TOOKS COURT, CHANCERY LANE, LONDON.<br />
+  CHISWICK PRESS:—CHARLES WHITTINGHAM AND CO.
+  TOOKS COURT, CHANCERY LANE, LONDON.
 </p>
 
 <hr class="full" />
@@ -19366,7 +17852,8 @@ const PrideAndPrejudiceHtml = `
       other parts of the world at no cost and with almost no restrictions
       whatsoever. You may copy it, give it away or re-use it under the terms of
       the Project Gutenberg License included with this eBook or online at
-      <a href="https://www.gutenberg.org">www.gutenberg.org</a>. If you are not
+      <a href="https://www.gutenberg.org">www.gutenberg.org</a>
+      . If you are not
       located in the United States, you will have to check the laws of the
       country where you are located before using this eBook.
     </div>
@@ -19621,7 +18108,8 @@ const PrideAndPrejudiceHtml = `
     not solicit donations in locations where we have not received written
     confirmation of compliance. To SEND DONATIONS or determine the status of
     compliance for any particular state visit
-    <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>.
+    <a href="https://www.gutenberg.org/donate/">www.gutenberg.org/donate</a>
+    .
   </div>
 
   <div style="display: block; margin: 1em 0">
@@ -19666,7 +18154,8 @@ const PrideAndPrejudiceHtml = `
 
   <div style="display: block; margin: 1em 0">
     Most people start at our website which has the main PG search facility:
-    <a href="https://www.gutenberg.org">www.gutenberg.org</a>.
+    <a href="https://www.gutenberg.org">www.gutenberg.org</a>
+    .
   </div>
 
   <div style="display: block; margin: 1em 0">
