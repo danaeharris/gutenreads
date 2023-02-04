@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 import logo from "@/public/logo.png";
 import Footer from "@/components/AppFooter";
 import { useRouter } from "next/router";
 import bookData from "@/utils/bookData";
+import styles from "./read.module.css";
 
 export default function ReaderView() {
   const router = useRouter();
@@ -61,9 +61,12 @@ export default function ReaderView() {
           </svg>
           <span>by Danae Harris</span>
         </div>
-        <div className="py-4 h-[800px]">
+        <div className="py-4">
           {/* create an iframe */}
-          <div dangerouslySetInnerHTML={{ __html: bookHtml }}></div>
+          <div
+            dangerouslySetInnerHTML={{ __html: bookHtml }}
+            className={styles.reader}
+          ></div>
         </div>
       </div>
     </>
