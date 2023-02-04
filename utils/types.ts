@@ -12,6 +12,7 @@ export type Book = {
     [key: string]: string;
   };
   download_count: number;
+  file: string;
 };
 
 export type Author = {

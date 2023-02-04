@@ -1,5 +1,7 @@
 import { Book } from "./types";
 
+import prideAndPrejudiceHtml from "../components/bookHtml/PrideAndPrejudice";
+
 const bookData: Book[] = [
   {
     id: 1342,
@@ -41,6 +43,7 @@ const bookData: Book[] = [
       "application/rdf+xml": "https://www.gutenberg.org/ebooks/1342.rdf",
     },
     download_count: 57315,
+    file: prideAndPrejudiceHtml,
   },
   {
     id: 64317,
@@ -80,6 +83,7 @@ const bookData: Book[] = [
       "application/rdf+xml": "https://www.gutenberg.org/ebooks/64317.rdf",
     },
     download_count: 20487,
+    file: "https://www.gutenberg.org/ebooks/64317.html.images",
   },
   {
     id: 45,
@@ -122,52 +126,9 @@ const bookData: Book[] = [
       "application/rdf+xml": "https://www.gutenberg.org/ebooks/45.rdf",
     },
     download_count: 9192,
+    file: "https://www.gutenberg.org/ebooks/45.html.images",
   },
-  {
-    id: 2488,
-    title:
-      "Twenty Thousand Leagues Under the Seas: An Underwater Tour of the World",
-    authors: [
-      {
-        name: "Verne, Jules",
-        birth_year: 1828,
-        death_year: 1905,
-      },
-    ],
-    translators: [
-      {
-        name: "Walter, Frederick Paul",
-        birth_year: 1943,
-        death_year: null,
-      },
-    ],
-    subjects: [
-      "Adventure stories",
-      "Science fiction",
-      "Sea stories",
-      "Submarines (Ships) -- Fiction",
-      "Underwater exploration -- Fiction",
-    ],
-    bookshelves: ["Movie Books", "Science Fiction"],
-    languages: ["en"],
-    copyright: true,
-    media_type: "Text",
-    formats: {
-      "application/x-mobipocket-ebook":
-        "https://www.gutenberg.org/ebooks/2488.kf8.images",
-      "application/epub+zip":
-        "https://www.gutenberg.org/ebooks/2488.epub3.images",
-      "text/html; charset=utf-8":
-        "https://www.gutenberg.org/files/2488/2488-h/2488-h.htm",
-      "image/jpeg":
-        "https://www.gutenberg.org/cache/epub/2488/pg2488.cover.medium.jpg",
-      "text/html": "https://www.gutenberg.org/ebooks/2488.html.images",
-      "text/plain; charset=utf-8":
-        "https://www.gutenberg.org/files/2488/2488-0.txt",
-      "application/rdf+xml": "https://www.gutenberg.org/ebooks/2488.rdf",
-    },
-    download_count: 844,
-  },
+
   {
     id: 55,
     title: "The Wonderful Wizard of Oz",
@@ -214,6 +175,7 @@ const bookData: Book[] = [
       "application/rdf+xml": "https://www.gutenberg.org/ebooks/55.rdf",
     },
     download_count: 7558,
+    file: "https://www.gutenberg.org/ebooks/55.html.images",
   },
 ];
 

@@ -9,7 +9,7 @@ import bookData from "@/utils/bookData";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
-import Home from "..";
+import Home from "../..";
 
 export default function BookModal() {
   const router = useRouter();
@@ -47,10 +47,9 @@ export default function BookModal() {
         role="dialog"
         aria-modal="true"
       >
-        <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <button
+            className="fixed z-11 inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
             onClick={() => {
               document
                 .querySelector("body")
@@ -58,18 +57,10 @@ export default function BookModal() {
               document.querySelector("body")?.classList.remove("fixed");
               router.back();
             }}
-            className="flex min-h-full w-full min-w-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
-          >
-            {/* Modal panel, show/hide based on modal state.
-
-        Entering: "ease-out duration-300"
-          From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-          To: "opacity-100 translate-y-0 sm:scale-100"
-        Leaving: "ease-in duration-200"
-          From: "opacity-100 translate-y-0 sm:scale-100"
-          To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" */}
+          ></button>
+          <div className="flex min-h-full w-full min-w-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl md:max-w-4xl 2xl:max-w-5xl">
-              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     {book.formats && book.formats["image/jpeg"] ? (
@@ -118,9 +109,9 @@ export default function BookModal() {
               </div>
               <div className="px-4 py-3 sm:flex sm:flex-row sm:px-6">
                 <Link
-                  href="/"
+                  href={`/book/${book.id}/read`}
                   type="button"
-                  className="inline-flex w-full justify-center rounded-md border-2 border-transparent bg-black px-4 py-2 font-3xl font-medium text-white shadow-sm hover:bg-white  hover:border-black  hover:text-black focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="flex w-full justify-center items-center rounded-md border-2 border-transparent bg-black px-4 py-2 font-3xl font-medium text-white shadow-sm hover:bg-white  hover:border-black hover:text-black focus:outline-none focus:ring-2 focus:ring-black-500 sm:w-auto sm:text-sm"
                 >
                   <svg
                     className="mr-2 stroke-current"
@@ -145,7 +136,7 @@ export default function BookModal() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                  Start Reading
+                  <span className="m-0">Start Reading</span>
                 </Link>
 
                 <Link href="/" type="button" className="m-3 inline-flex">
@@ -153,7 +144,7 @@ export default function BookModal() {
                 </Link>
               </div>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </>
