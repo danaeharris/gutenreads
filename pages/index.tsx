@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 import logo from "../public/logo.png";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [books, setBooks] = useState([
@@ -89,7 +86,6 @@ export default function Home() {
       },
       download_count: 20487,
     },
-
     {
       id: 45,
       title: "Anne of Green Gables",
@@ -280,9 +276,7 @@ export default function Home() {
                 .map((book, index) => (
                   <div
                     key={book.id}
-                    className={`flex flex-col md:flex-row items-start justify-start  ${
-                      index == 0 ? `bg-gray-100 border border-gray-200` : null
-                    } p-4 mb-4`}
+                    className="flex flex-col md:flex-row items-start justify-start hover:border hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
                   >
                     {book.formats && book.formats["image/jpeg"] ? (
                       <Image
@@ -298,11 +292,11 @@ export default function Home() {
                       <p className="text-md ">by {book.authors[0].name}</p>
                       {book.subjects ? (
                         <div className="flex flex-row flex-wrap items-center justify-start mt-4 -mx-2">
-                          {book.subjects.map((subject) => {
+                          {book.subjects.slice(0, 5).map((subject) => {
                             let tag = subject.split(" -- ")[0];
                             return (
                               <p
-                                className="text-sm bg-gray-200 border border-gray-300 pt-1 pb-2 px-4 my-2 mx-2 rounded-lg"
+                                className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-2 mx-2 rounded-lg"
                                 key={tag}
                               >
                                 {tag}
