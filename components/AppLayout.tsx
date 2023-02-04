@@ -29,7 +29,7 @@ export type Author = {
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
+    <div id="app">
       <Head>
         <title>GutenReads</title>
         <meta
@@ -41,7 +41,7 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
       </Head>
       <main className="min-h-screen bg-white scroll-smooth">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 export default AppLayout;
