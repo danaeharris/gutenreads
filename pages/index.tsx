@@ -210,7 +210,7 @@ export default function Home() {
                   // href={`/book/${book.id}`}
                   onClick={() => openModal(book)}
                   key={book.id}
-                  className="flex flex-col md:flex-row items-start justify-start hover:border hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
+                  className="flex flex-col md:flex-row items-start text-left justify-start hover:border hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
                 >
                   {book.formats && book.formats["image/jpeg"] ? (
                     <Image
