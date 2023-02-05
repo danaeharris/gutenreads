@@ -4,7 +4,7 @@ const AnneOfGreenGablesHtml = `
     <div class="line">Made you of spirit and fire and dew.”</div>
     <span>—<em>Browning</em>.</span>
     <br/>
-    <div style="margin: 45px 0px 60px 0px">
+    <div style="margin: 45px 0px">
         <p class="center">To the memory of<br/>my Father and Mother</p>
     </div>
 </div>

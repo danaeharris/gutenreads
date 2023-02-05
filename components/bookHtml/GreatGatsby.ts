@@ -6,7 +6,7 @@ const GreatGatsbyHtml = `
         Zelda
     </p>
 </div>
-<div style="text-align: center; margin-bottom: 40px">
+<div style="text-align: center; margin-bottom: 45px">
     <blockquote class="verse">
         <div>
             <p>
