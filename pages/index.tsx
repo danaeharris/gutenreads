@@ -54,6 +54,26 @@ function BookModal({
             boxShadow: `0px 0px 15px rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.2)`,
           }}
         >
+          <button
+            className="absolute top-2 right-2 sm:hidden cursor-pointer"
+            onClick={() => closeModal()}
+          >
+            <svg
+              className="cursor-pointer"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
           <div className="flex flex-col items-center sm:w-[70%] mx-auto sm:-mt-20">
             {/* <div className="sm:mt-0 flex items-center w-full text-center"> */}
             <Image
@@ -66,10 +86,7 @@ function BookModal({
               width={420}
               height={223}
             />
-            <h3
-              className="text-3xl font-medium leading-6 my-4"
-              id="modal-title"
-            >
+            <h3 className="text-3xl font-bold leading-6 mt-4" id="modal-title">
               {book.title}
             </h3>
             <div className="mt-2">
@@ -139,7 +156,7 @@ function BookModal({
             </Link>
             <div className="flex flex-col sm:flex-row lg:w-1/2 items-center justify-center  sm:justify-between pt-10">
               <p className="m-3x font-medium m-6">
-                Downloads{" "}
+                Downloads:{" "}
                 {book.download_count > 999
                   ? `${Math.ceil(book.download_count / 1000)}k`
                   : book.download_count}
@@ -267,7 +284,7 @@ export default function Home() {
                 // href={`/book/${book.id}`}
                 onClick={() => openModal(book)}
                 key={book.id}
-                className="flex flex-col md:flex-row items-start md:items-center text-left justify-start transition duration-300 border border-transparent hover:bg-gray-100 hover:border-gray-200 p-4 mb-4 w-full"
+                className="flex flex-col md:flex-row items-start md:items-center text-left justify-start transition duration-300 border border-transparent hover:bg-gray-100 hover:border-gray-150 p-4 mb-4 w-full"
               >
                 {book.formats && book.formats["image/jpeg"] ? (
                   <Image

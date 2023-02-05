@@ -37,7 +37,7 @@ export default function ReaderView() {
           ScrollTop = el.scrollTop || document.body.scrollTop,
           ScrollHeight = el.scrollHeight || document.body.scrollHeight;
         let percent = (ScrollTop / (ScrollHeight - el.clientHeight)) * 100;
-        percent = Math.floor(percent);
+        percent = percent;
 
         // Store the new hours left and percentage read.
         setPercentageDone(percent);
@@ -67,7 +67,10 @@ export default function ReaderView() {
           className="fixed top-0 left-0 right-0 bg-white flex flex-row items-stretch justify-between"
           style={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.25)" }}
         >
-          <button onClick={() => router.back()} className="p-4 sm:px-6">
+          <button
+            onClick={() => router.back()}
+            className="p-4 transition duration-300 hover:bg-gray-100 hover:border-gray-200"
+          >
             <svg
               width="24"
               height="24"
@@ -85,7 +88,7 @@ export default function ReaderView() {
               />
             </svg>
           </button>
-          <div className="border-x border-gray-150 py-2 px-6 hidden sm:flex sm:flex-row ">
+          <div className="border-x border-gray-150 py-2 px-3 pr-5 hidden sm:flex sm:flex-row ">
             {book.formats && book.formats["image/jpeg"] ? (
               <Image
                 src={book.formats["image/jpeg"]}
@@ -113,7 +116,7 @@ export default function ReaderView() {
               </p>
             </div>
           </div>
-          <div className="py-2 px-4 sm:px-6 h-full border-x border-gray-150 sm:border-none flex flex-row items-center justify-start self-center flex-1">
+          <div className="py-2 px-4 h-full border-x border-gray-150 sm:border-none flex flex-row items-center justify-start self-center flex-1">
             <svg
               className="mr-4 stroke-current"
               width="24"
@@ -139,8 +142,9 @@ export default function ReaderView() {
               />
             </svg>
             <div className="flex flex-col w-full">
-              <p className="mb-1">
-                Progress {percentageDone}% {hoursLeft} hours left
+              <p className="mb-1 ">
+                Progress {Math.floor(percentageDone)}% ({hoursLeft} hours
+                remaining)
               </p>
               <div className="w-full h-1.5 bg-gray-150 rounded-full">
                 <div
@@ -150,7 +154,7 @@ export default function ReaderView() {
               </div>
             </div>
           </div>
-          {/* <div className="flex flex-col align-center justify-center py-2 px-4 sm:px-6 border-transparent sm:border-l sm:border-gray-150">
+          {/* <div className="flex flex-col align-center justify-center py-2 px-4 border-transparent sm:border-l sm:border-gray-150">
             <p className="font-ppwriter text-2xl">Aa</p>
           </div> */}
         </div>
