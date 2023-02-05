@@ -2,26 +2,57 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import logo from "@/public/logo.png";
-import Footer from "@/components/AppFooter";
 import { useRouter } from "next/router";
 import bookData from "@/utils/bookData";
 import styles from "./read.module.css";
 import { Author } from "@/utils/types";
 
+const getBookFromId = (id: string) => {
+  return bookData.find((book) => book.id === parseInt(id as string));
+};
+
 export default function ReaderView() {
   const router = useRouter();
   const { id } = router.query;
 
-  const book = bookData.find((book) => book.id === parseInt(id as string));
+  const [totalHours, setTotalHours] = useState(0);
+  const [percentageDone, setPercentageDone] = useState(0);
+  const hoursLeft = Math.ceil(totalHours * ((100 - percentageDone ?? 0) / 100));
+
+  const book = getBookFromId(id as string);
   const bookHtml = book?.file;
 
   useEffect(() => {
-    console.log(router.query);
-  }, [router.query]);
+    // Once bookHtml is ready (router.query is ready)
+    if (bookHtml) {
+      console.log("bookHTML is ready");
+      // Initialize totalHours.
+      let numWords = bookHtml?.split(" ").length;
+      const newTotalHours = Math.ceil((numWords ?? 0) / 18000);
+      console.log({ newTotalHours });
+      setTotalHours(newTotalHours);
+
+      // Set up the scroll handler.
+      const onScroll = () => {
+        const el = document.documentElement,
+          ScrollTop = el.scrollTop || document.body.scrollTop,
+          ScrollHeight = el.scrollHeight || document.body.scrollHeight;
+        let percent = (ScrollTop / (ScrollHeight - el.clientHeight)) * 100;
+        percent = Math.floor(percent);
+
+        // Store the new hours left and percentage read.
+        setPercentageDone(percent);
+      };
+
+      window.addEventListener("scroll", onScroll);
+      return () => window.removeEventListener("scroll", onScroll);
+    }
+  }, [!!bookHtml]);
 
   if (!book || !bookHtml) {
     return null;
   }
+
   return (
     <>
       <Head>
@@ -39,6 +70,9 @@ export default function ReaderView() {
           background: `linear-gradient(180deg, ${book.gradientColor} 0%, rgba(255,255,255,1) 350px)`,
         }}
       >
+        <div className="fixed top-0 left-0 right-0 bg-white p-4">
+          Progress {percentageDone}% {hoursLeft} hours left
+        </div>
         <div className="container py-4 md:py-6 lg:py-20 flex flex-col items-center justify-start">
           <Image
             src={`/books/${book.title
