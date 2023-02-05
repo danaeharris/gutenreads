@@ -37,7 +37,8 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
           content="A clean, beautiful interface for reading public-domain Project Gutenberg books."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="jpg" href="/favicon.jpg" />
+        {/* import favicon.jpg as favicon */}
+        <link rel="icon" href="/favicon.jpg" />
       </Head>
       <main className="min-h-screen h-full bg-white scroll-smooth">
         {children}
