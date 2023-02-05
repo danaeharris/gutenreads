@@ -44,6 +44,7 @@ const bookData: Book[] = [
     },
     download_count: 57315,
     file: prideAndPrejudiceHtml,
+    gradientColor: "rgba(54, 61, 20, 0.5)",
   },
   {
     id: 64317,
@@ -84,9 +85,10 @@ const bookData: Book[] = [
     },
     download_count: 20487,
     file: "https://www.gutenberg.org/ebooks/64317.html.images",
+    gradientColor: "rgba(5, 71, 95, 0.5)",
   },
   {
-    id: 45,
+    id: 64365,
     title: "Anne of Green Gables",
     authors: [
       {
@@ -107,75 +109,70 @@ const bookData: Book[] = [
       "Prince Edward Island -- History -- 20th century -- Fiction",
       "Shirley, Anne (Fictitious character) -- Fiction",
     ],
-    bookshelves: ["Canada", "Children's Literature"],
+    bookshelves: [],
     languages: ["en"],
     copyright: false,
     media_type: "Text",
     formats: {
       "application/x-mobipocket-ebook":
-        "https://www.gutenberg.org/ebooks/45.kf8.images",
+        "https://www.gutenberg.org/ebooks/64365.kf8.images",
       "application/epub+zip":
-        "https://www.gutenberg.org/ebooks/45.epub3.images",
-      "text/html": "https://www.gutenberg.org/ebooks/45.html.images",
+        "https://www.gutenberg.org/ebooks/64365.epub3.images",
       "image/jpeg":
-        "https://www.gutenberg.org/cache/epub/45/pg45.cover.medium.jpg",
-      "application/octet-stream": "https://www.gutenberg.org/files/45/45-0.zip",
-      "text/plain": "https://www.gutenberg.org/ebooks/45.txt.utf-8",
-      "text/plain; charset=us-ascii":
-        "https://www.gutenberg.org/files/45/45-0.txt",
-      "application/rdf+xml": "https://www.gutenberg.org/ebooks/45.rdf",
+        "https://www.gutenberg.org/cache/epub/64365/pg64365.cover.medium.jpg",
+      "text/plain; charset=utf-8":
+        "https://www.gutenberg.org/files/64365/64365-0.txt",
+      "text/html; charset=utf-8":
+        "https://www.gutenberg.org/files/64365/64365-h/64365-h.htm",
+      "text/html": "https://www.gutenberg.org/ebooks/64365.html.images",
+      "application/rdf+xml": "https://www.gutenberg.org/ebooks/64365.rdf",
     },
-    download_count: 9192,
-    file: "https://www.gutenberg.org/ebooks/45.html.images",
+    download_count: 290,
+    file: "https://www.gutenberg.org/ebooks/64365.html.images",
+    gradientColor: "rgba(90, 72, 62, 0.5)",
   },
-
   {
-    id: 55,
-    title: "The Wonderful Wizard of Oz",
+    id: 1184,
+    title: "The Count of Monte Cristo",
     authors: [
       {
-        name: "Baum, L. Frank (Lyman Frank)",
-        birth_year: 1856,
-        death_year: 1919,
+        name: "Dumas, Alexandre",
+        birth_year: 1802,
+        death_year: 1870,
       },
     ],
     translators: [],
     subjects: [
-      "Courage -- Juvenile fiction",
-      "Cowardly Lion (Fictitious character) -- Juvenile fiction",
-      "Cyclones -- Juvenile fiction",
-      "Dreams -- Juvenile fiction",
-      "Fantasy literature",
-      "Gale, Dorothy (Fictitious character) -- Juvenile fiction",
-      "Good and evil -- Juvenile fiction",
-      "Home -- Juvenile fiction",
-      "Oz (Imaginary place) -- Juvenile fiction",
-      "Scarecrow (Fictitious character from Baum) -- Juvenile fiction",
-      "Tin Woodman (Fictitious character) -- Juvenile fiction",
-      "Toto (Fictitious character) -- Juvenile fiction",
-      "Witches -- Juvenile fiction",
-      "Wizard of Oz (Fictitious character) -- Juvenile fiction",
+      "Adventure stories",
+      "Dantès, Edmond (Fictitious character) -- Fiction",
+      "France -- History -- 19th century -- Fiction",
+      "Historical fiction",
+      "Pirates -- Fiction",
+      "Prisoners -- Fiction",
+      "Revenge -- Fiction",
     ],
-    bookshelves: ["Children's Literature", "Fantasy"],
+    bookshelves: ["Adventure", "Movie Books"],
     languages: ["en"],
     copyright: false,
     media_type: "Text",
     formats: {
       "application/x-mobipocket-ebook":
-        "https://www.gutenberg.org/ebooks/55.kf8.images",
+        "https://www.gutenberg.org/ebooks/1184.kf8.images",
+      "text/html": "https://www.gutenberg.org/ebooks/1184.html.images",
       "application/epub+zip":
-        "https://www.gutenberg.org/ebooks/55.epub3.images",
+        "https://www.gutenberg.org/ebooks/1184.epub3.images",
+      "application/octet-stream":
+        "https://www.gutenberg.org/files/1184/1184-0.zip",
       "image/jpeg":
-        "https://www.gutenberg.org/cache/epub/55/pg55.cover.medium.jpg",
-      "text/html; charset=utf-8":
-        "https://www.gutenberg.org/files/55/55-h/55-h.htm",
-      "text/html": "https://www.gutenberg.org/ebooks/55.html.images",
-      "text/plain; charset=utf-8":
-        "https://www.gutenberg.org/files/55/55-0.txt",
-      "application/rdf+xml": "https://www.gutenberg.org/ebooks/55.rdf",
+        "https://www.gutenberg.org/cache/epub/1184/pg1184.cover.medium.jpg",
+      "text/plain": "https://www.gutenberg.org/ebooks/1184.txt.utf-8",
+      "text/plain; charset=us-ascii":
+        "https://www.gutenberg.org/files/1184/1184-0.txt",
+      "application/rdf+xml": "https://www.gutenberg.org/ebooks/1184.rdf",
     },
-    download_count: 7558,
-    file: "https://www.gutenberg.org/ebooks/55.html.images",
+    download_count: 12464,
+    file: "https://www.gutenberg.org/ebooks/45.html.images",
+    gradientColor: "rgba(95, 89, 89, 0.5)",
   },
 ];
 

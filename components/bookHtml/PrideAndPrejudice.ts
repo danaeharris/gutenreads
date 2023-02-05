@@ -181,7 +181,7 @@ const PrideAndPrejudiceHtml = `
     width="450"
     id="id-7469236910530212672"
   />
-  <span class="caption"> I hope Mr. Bingley will like it. </span>
+  <span class="caption"> I hope Mr. Bingley will like&nbsp;it. </span>
   CHAPTER II.
 </h2>
 

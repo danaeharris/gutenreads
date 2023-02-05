@@ -13,6 +13,7 @@ export type Book = {
   };
   download_count: number;
   file: string;
+  gradientColor: string;
 };
 
 export type Author = {
