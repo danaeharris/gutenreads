@@ -19,7 +19,7 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
   },
 };
-Modal.defaultStyles.overlay.backgroundColor = "rgba(0, 0, 0, 0.25)";
+Modal.defaultStyles.overlay.backgroundColor = "rgba(0, 0, 0, 0.5)";
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#app");
 
@@ -138,7 +138,6 @@ export default function Home() {
   const [books, setBooks] = useState<Book[]>(bookData);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentBook, setCurrentBook] = useState<any>();
-  let subtitle: any;
 
   function openModal(book: Book) {
     setCurrentBook(book);
@@ -161,7 +160,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="container py-4 md:py-6 lg:py-20">
+      <div className="container mx-auto py-4 md:py-6 lg:py-20">
         {/* Add the Modal and pass the state it needs. */}
         {currentBook ? (
           <BookModal
