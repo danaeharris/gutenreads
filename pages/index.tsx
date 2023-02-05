@@ -31,9 +31,11 @@ function BookModal({
   closeModal: () => void;
   book: Book;
 }) {
-  Modal.defaultStyles.overlay.backgroundColor = `rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.30)`;
+  if (Modal.defaultStyles.overlay) {
+    Modal.defaultStyles.overlay.backgroundColor = `rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.30)`;
 
-  Modal.defaultStyles.overlay.backdropFilter = `blur(3px)`;
+    Modal.defaultStyles.overlay.backdropFilter = `blur(3px)`;
+  }
 
   return (
     <>
