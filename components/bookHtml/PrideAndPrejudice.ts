@@ -1,9 +1,7 @@
 const PrideAndPrejudiceHtml = `
-<h2>
+<h2 style="padding-top: 0px">
   <a id="Chapter_I"></a>
-
   <img alt="" height="550" src="images/i_030.jpg" id="id-2468055542117577475" />
-  
   I.
 </h2>
 
