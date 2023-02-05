@@ -13,14 +13,14 @@ export default function Footer() {
             >
               Next.js
             </a>{" "}
-            and powered by the{" "}
+            and powered by{" "}
             <a
-              href="https://github.com/danaeharris/gutenreads"
+              href="https://www.gutenberg.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="underline"
             >
-              Gutendex API
+              Project Gutenberg
             </a>
             .
           </p>
