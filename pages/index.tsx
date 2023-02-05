@@ -40,8 +40,6 @@ function BookModal({
       className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl md:max-w-4xl 2xl:max-w-5xl"
       contentLabel="Example Modal"
     >
-      {/* <div className="flex min-h-full w-full min-w-full items-end justify-center p-4 text-center sm:items-center sm:p-0"> */}
-      {/* <div className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl md:max-w-4xl 2xl:max-w-5xl"> */}
       <div className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
         <div className="sm:flex sm:items-start">
           <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
@@ -102,6 +100,7 @@ function BookModal({
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
+              <title>Open Book Icon</title>
               <path
                 d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z"
                 stroke=""
