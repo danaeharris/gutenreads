@@ -1,6 +1,7 @@
 .reader {
   font-family: "PP Writer";
   max-width: 565px;
+  width: 100%;
   margin: 0 auto;
 }
 .reader img,
@@ -12,9 +13,9 @@
   line-height: 64px;
 }
 .reader h2 {
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 .reader p {
   margin: 15px 0;
@@ -24,4 +25,23 @@
 }
 .reader .caption {
   display: none;
+}
+
+/* media queries (mobile first, so desktop styles will go here */
+@media (min-width: 768px) {
+  .reader h1 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .reader h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .reader p {
+    margin: 15px 0;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "PP Writer";
+  }
 }
