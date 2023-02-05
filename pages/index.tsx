@@ -135,7 +135,9 @@ function BookModal({
   );
 }
 export default function Home() {
-  const [books, setBooks] = useState<Book[]>(bookData);
+  const [books, setBooks] = useState<Book[]>(
+    bookData.sort((a, b) => (a.title > b.title ? 1 : -1))
+  );
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentBook, setCurrentBook] = useState<any>();
 
@@ -203,53 +205,51 @@ export default function Home() {
             A few recommendations . . .
           </h5>
           <div className="sm:-mx-4">
-            {books
-              .sort((a, b) => (a.title > b.title ? 1 : -1))
-              .map((book, index) => (
-                <button
-                  // href={`/book/${book.id}`}
-                  onClick={() => openModal(book)}
-                  key={book.id}
-                  className="flex flex-col md:flex-row items-start text-left justify-start hover:border hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
-                >
-                  {book.formats && book.formats["image/jpeg"] ? (
-                    <Image
-                      src={book.formats["image/jpeg"]}
-                      alt={`${book.title} cover art`}
-                      width={100}
-                      height={150}
-                      className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
-                    />
+            {books.map((book, index) => (
+              <button
+                // href={`/book/${book.id}`}
+                onClick={() => openModal(book)}
+                key={book.id}
+                className="flex flex-col md:flex-row items-start text-left justify-start hover:border hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
+              >
+                {book.formats && book.formats["image/jpeg"] ? (
+                  <Image
+                    src={book.formats["image/jpeg"]}
+                    alt={`${book.title} cover art`}
+                    width={100}
+                    height={150}
+                    className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
+                  />
+                ) : null}
+                <div className="pt-6 md:px-6 md:pt-0">
+                  <h3 className="text-2xl md:text-3xl">{book.title}</h3>
+                  <p className="text-md">
+                    by{" "}
+                    {book.authors.map((author: Author) => (
+                      <span key={author.name}>
+                        {author.name}
+                        {book.authors.length > 1 ? ", " : ""}
+                      </span>
+                    ))}
+                  </p>
+                  {book.subjects ? (
+                    <div className="flex flex-row flex-wrap items-center justify-start mt-4 -mx-2">
+                      {book.subjects.slice(0, 5).map((subject) => {
+                        let tag = subject.split(" -- ")[0];
+                        return (
+                          <p
+                            className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-2 mx-2 rounded-lg"
+                            key={tag}
+                          >
+                            {tag}
+                          </p>
+                        );
+                      })}
+                    </div>
                   ) : null}
-                  <div className="pt-6 md:px-6 md:pt-0">
-                    <h3 className="text-2xl md:text-3xl">{book.title}</h3>
-                    <p className="text-md">
-                      by{" "}
-                      {book.authors.map((author: Author) => (
-                        <span key={author.name}>
-                          {author.name}
-                          {book.authors.length > 1 ? ", " : ""}
-                        </span>
-                      ))}
-                    </p>
-                    {book.subjects ? (
-                      <div className="flex flex-row flex-wrap items-center justify-start mt-4 -mx-2">
-                        {book.subjects.slice(0, 5).map((subject) => {
-                          let tag = subject.split(" -- ")[0];
-                          return (
-                            <p
-                              className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-2 mx-2 rounded-lg"
-                              key={tag}
-                            >
-                              {tag}
-                            </p>
-                          );
-                        })}
-                      </div>
-                    ) : null}
-                  </div>
-                </button>
-              ))}
+                </div>
+              </button>
+            ))}
           </div>
         </div>
       </div>

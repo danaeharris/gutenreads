@@ -1,5 +1,8 @@
 import { Book } from "./types";
 
+import anneOfGreenGables from "../components/bookHtml/AnneOfGreenGables";
+import countOfMonteCristo from "../components/bookHtml/CountOfMonteCristo";
+import greatGatsby from "../components/bookHtml/GreatGatsby";
 import prideAndPrejudiceHtml from "../components/bookHtml/PrideAndPrejudice";
 
 const bookData: Book[] = [
@@ -47,6 +50,49 @@ const bookData: Book[] = [
     gradientColor: "rgba(54, 61, 20, 0.5)",
   },
   {
+    id: 1184,
+    title: "The Count of Monte Cristo",
+    authors: [
+      {
+        name: "Dumas, Alexandre",
+        birth_year: 1802,
+        death_year: 1870,
+      },
+    ],
+    translators: [],
+    subjects: [
+      "Adventure stories",
+      "Dantès, Edmond (Fictitious character) -- Fiction",
+      "France -- History -- 19th century -- Fiction",
+      "Historical fiction",
+      "Pirates -- Fiction",
+      "Prisoners -- Fiction",
+      "Revenge -- Fiction",
+    ],
+    bookshelves: ["Adventure", "Movie Books"],
+    languages: ["en"],
+    copyright: false,
+    media_type: "Text",
+    formats: {
+      "application/x-mobipocket-ebook":
+        "https://www.gutenberg.org/ebooks/1184.kf8.images",
+      "text/html": "https://www.gutenberg.org/ebooks/1184.html.images",
+      "application/epub+zip":
+        "https://www.gutenberg.org/ebooks/1184.epub3.images",
+      "application/octet-stream":
+        "https://www.gutenberg.org/files/1184/1184-0.zip",
+      "image/jpeg":
+        "https://www.gutenberg.org/cache/epub/1184/pg1184.cover.medium.jpg",
+      "text/plain": "https://www.gutenberg.org/ebooks/1184.txt.utf-8",
+      "text/plain; charset=us-ascii":
+        "https://www.gutenberg.org/files/1184/1184-0.txt",
+      "application/rdf+xml": "https://www.gutenberg.org/ebooks/1184.rdf",
+    },
+    download_count: 12464,
+    file: countOfMonteCristo,
+    gradientColor: "rgba(95, 89, 89, 0.5)",
+  },
+  {
     id: 64317,
     title: "The Great Gatsby",
     authors: [
@@ -84,7 +130,7 @@ const bookData: Book[] = [
       "application/rdf+xml": "https://www.gutenberg.org/ebooks/64317.rdf",
     },
     download_count: 20487,
-    file: "https://www.gutenberg.org/ebooks/64317.html.images",
+    file: greatGatsby,
     gradientColor: "rgba(5, 71, 95, 0.5)",
   },
   {
@@ -128,51 +174,8 @@ const bookData: Book[] = [
       "application/rdf+xml": "https://www.gutenberg.org/ebooks/64365.rdf",
     },
     download_count: 290,
-    file: "https://www.gutenberg.org/ebooks/64365.html.images",
+    file: anneOfGreenGables,
     gradientColor: "rgba(90, 72, 62, 0.5)",
-  },
-  {
-    id: 1184,
-    title: "The Count of Monte Cristo",
-    authors: [
-      {
-        name: "Dumas, Alexandre",
-        birth_year: 1802,
-        death_year: 1870,
-      },
-    ],
-    translators: [],
-    subjects: [
-      "Adventure stories",
-      "Dantès, Edmond (Fictitious character) -- Fiction",
-      "France -- History -- 19th century -- Fiction",
-      "Historical fiction",
-      "Pirates -- Fiction",
-      "Prisoners -- Fiction",
-      "Revenge -- Fiction",
-    ],
-    bookshelves: ["Adventure", "Movie Books"],
-    languages: ["en"],
-    copyright: false,
-    media_type: "Text",
-    formats: {
-      "application/x-mobipocket-ebook":
-        "https://www.gutenberg.org/ebooks/1184.kf8.images",
-      "text/html": "https://www.gutenberg.org/ebooks/1184.html.images",
-      "application/epub+zip":
-        "https://www.gutenberg.org/ebooks/1184.epub3.images",
-      "application/octet-stream":
-        "https://www.gutenberg.org/files/1184/1184-0.zip",
-      "image/jpeg":
-        "https://www.gutenberg.org/cache/epub/1184/pg1184.cover.medium.jpg",
-      "text/plain": "https://www.gutenberg.org/ebooks/1184.txt.utf-8",
-      "text/plain; charset=us-ascii":
-        "https://www.gutenberg.org/files/1184/1184-0.txt",
-      "application/rdf+xml": "https://www.gutenberg.org/ebooks/1184.rdf",
-    },
-    download_count: 12464,
-    file: "https://www.gutenberg.org/ebooks/45.html.images",
-    gradientColor: "rgba(95, 89, 89, 0.5)",
   },
 ];
 

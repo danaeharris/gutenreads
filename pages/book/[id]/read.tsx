@@ -6,6 +6,7 @@ import Footer from "@/components/AppFooter";
 import { useRouter } from "next/router";
 import bookData from "@/utils/bookData";
 import styles from "./read.module.css";
+import { Author } from "@/utils/types";
 
 export default function ReaderView() {
   const router = useRouter();
@@ -48,6 +49,20 @@ export default function ReaderView() {
             width={420}
             height={223}
           />
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-center pb-5">
+              {book.title}
+            </h1>
+            <p className="text-md font-ppwriter pb-16">
+              by{" "}
+              {book.authors.map((author: Author) => (
+                <span key={author.name}>
+                  {author.name}
+                  {book.authors.length > 1 ? ", " : ""}
+                </span>
+              ))}
+            </p>
+          </div>
           {/* Normally we wouldn't do this, but we pulled these books from Project Gutenberg, so we know they're safe */}
           <div
             dangerouslySetInnerHTML={{ __html: bookHtml }}
