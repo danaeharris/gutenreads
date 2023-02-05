@@ -150,9 +150,9 @@ export default function ReaderView() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col align-center justify-center py-2 px-4 sm:px-6 border-transparent sm:border-l sm:border-gray-150">
+          {/* <div className="flex flex-col align-center justify-center py-2 px-4 sm:px-6 border-transparent sm:border-l sm:border-gray-150">
             <p className="font-ppwriter text-2xl">Aa</p>
-          </div>
+          </div> */}
         </div>
         {/* page */}
         <div className="container py-24 md:py-32 lg:py-32 flex flex-col items-center justify-start">
