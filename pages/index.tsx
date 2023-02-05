@@ -109,7 +109,7 @@ function BookModal({
                 closeModal();
               }}
               type="button"
-              className="flex justify-center items-center rounded-md border-2 border-transparent bg-black px-4 py-2 font-3xl font-medium text-white shadow-sm hover:bg-white hover:border-black hover:text-black focus:outline-none focus:ring-2 focus:ring-black-500 w-min sm:text-sm"
+              className="flex justify-center items-center rounded-md border-2 border-transparent bg-black px-4 py-2 font-3xl font-medium text-white shadow-sm transition duration-300 hover:bg-white hover:border-black hover:text-black focus:outline-none focus:ring-2 focus:ring-black-500 w-min sm:text-sm"
             >
               <svg
                 className="mr-2 stroke-current"
@@ -267,7 +267,7 @@ export default function Home() {
                 // href={`/book/${book.id}`}
                 onClick={() => openModal(book)}
                 key={book.id}
-                className="flex flex-col md:flex-row items-start md:items-center text-left justify-start border border-transparent hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
+                className="flex flex-col md:flex-row items-start md:items-center text-left justify-start transition duration-300 border border-transparent hover:bg-gray-100 hover:border-gray-200 p-4 mb-4 w-full"
               >
                 {book.formats && book.formats["image/jpeg"] ? (
                   <Image
