@@ -38,62 +38,60 @@ function BookModal({
       isOpen={isOpen}
       onRequestClose={closeModal}
       style={customStyles}
-      className="relative transform overflow-hidden sm:rounded-lg bg-white text-left shadow-xl transition-all w-full h-full sm:h-auto sm:my-8 sm:max-w-xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl"
-      contentLabel="Example Modal"
+      className="relative transform bg-white sm:rounded-lg text-left shadow-xl transition-all w-full h-full sm:h-auto sm:my-8 sm:max-w-xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl"
+      contentLabel="Book Modal"
     >
       <div
-        className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col items-between justify-between h-full sm:h-auto"
+        className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col items-between justify-between h-full sm:h-auto sm:rounded-lg"
         style={{
           background: `linear-gradient(180deg, rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.5) 0%, rgba(255,255,255,1) 200px)`,
           boxShadow: `0px 0px 15px rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.35)`,
         }}
       >
-        <div className="sm:flex sm:items-start">
-          <div className="sm:mt-0 sm:ml-4 text-left">
-            {book.formats && book.formats["image/jpeg"] ? (
-              <Image
-                src={book.formats["image/jpeg"]}
-                alt={`${book.title} cover art`}
-                width={100}
-                height={150}
-                className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
-              />
-            ) : null}
-            <h3
-              className="text-3xl font-medium leading-6 my-4"
-              id="modal-title"
-            >
-              {book.title}
-            </h3>
-            <div className="mt-2">
-              <p className="text-sm">
-                by{" "}
-                {book.authors.map((author: Author) => (
-                  <span key={author.name}>
-                    {author.name}
-                    {book.authors.length > 1 ? ", " : ""}
-                  </span>
-                ))}
-              </p>
-            </div>
-            {book.subjects ? (
-              <div className="flex flex-row flex-wrap items-center justify-start mt-4 -mx-2">
-                {book.subjects.map((subject) => {
-                  let tag = subject.split(" -- ")[0];
-                  return (
-                    <p
-                      className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-2 mx-2 rounded-lg"
-                      key={tag}
-                    >
-                      {tag}
-                    </p>
-                  );
-                })}
-              </div>
-            ) : null}
+        <div className="flex flex-col items-center sm:w-[70%] mx-auto sm:-mt-20">
+          {/* <div className="sm:mt-0 flex items-center w-full text-center"> */}
+          <Image
+            className=""
+            src={`/books/${book.title
+              .replaceAll(" ", "-")
+              .replaceAll(",", "")
+              .toLowerCase()}.png`}
+            alt={`${book.title} cover art`}
+            width={420}
+            height={223}
+          />
+          <h3 className="text-3xl font-medium leading-6 my-4" id="modal-title">
+            {book.title}
+          </h3>
+          <div className="mt-2">
+            <p className="text-sm">
+              by{" "}
+              {book.authors.map((author: Author) => (
+                <span key={author.name}>
+                  {author.name}
+                  {book.authors.length > 1 ? ", " : ""}
+                </span>
+              ))}
+            </p>
           </div>
+          {book.subjects ? (
+            <div className="flex flex-row flex-wrap items-center justify-center mt-4 -mx-2">
+              {book.subjects.map((subject) => {
+                let tag = subject.split(" -- ")[0];
+                return (
+                  <p
+                    className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-2 mx-2 rounded-lg"
+                    key={tag}
+                  >
+                    {tag}
+                  </p>
+                );
+              })}
+            </div>
+          ) : null}
+          {/* </div> */}
         </div>
-        <div className="py-3 flex flex-row sm:px-4">
+        <div className="py-3 flex flex-col items-center sm:px-4">
           <Link
             href={`/book/${book.id}/read`}
             onClick={() => {
@@ -128,16 +126,54 @@ function BookModal({
             </svg>
             <span className="m-0">Start&nbsp;Reading</span>
           </Link>
-
-          <button
-            onClick={() => {
-              closeModal();
-            }}
-            type="button"
-            className="m-3 inline-flex"
-          >
-            Cancel
-          </button>
+          <div className="flex flex-col sm:flex-row lg:w-1/2 items-center justify-center  sm:justify-between pt-10">
+            <p className="m-3x font-medium m-6">
+              Downloads{" "}
+              {book.download_count > 999
+                ? `${Math.ceil(book.download_count / 1000)}k`
+                : book.download_count}
+            </p>
+            <a
+              href={`https://www.gutenberg.org/ebooks/${book.id}`}
+              type="button"
+              className="m-6 flex flex-row items-center justify-center underline font-medium"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Project Gutenberg
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                className="ml-2 stroke-current"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Open in a new tab icon</title>
+                <path
+                  d="M15 10.8333V15.8333C15 16.2754 14.8244 16.6993 14.5118 17.0118C14.1993 17.3244 13.7754 17.5 13.3333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V6.66667C2.5 6.22464 2.67559 5.80072 2.98816 5.48816C3.30072 5.17559 3.72464 5 4.16667 5H9.16667"
+                  stroke="black"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M12.5 2.5H17.5V7.5"
+                  stroke="black"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M8.33337 11.6667L17.5 2.5"
+                  stroke="black"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </Modal>
