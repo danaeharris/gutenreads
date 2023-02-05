@@ -263,7 +263,7 @@ export default function Home() {
                 // href={`/book/${book.id}`}
                 onClick={() => openModal(book)}
                 key={book.id}
-                className="flex flex-col md:flex-row items-start text-left justify-start border border-transparent hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
+                className="flex flex-col md:flex-row items-start md:items-center text-left justify-start border border-transparent hover:bg-gray-100 hover:border-gray-200 p-4 mb-4"
               >
                 {book.formats && book.formats["image/jpeg"] ? (
                   <Image
@@ -271,7 +271,7 @@ export default function Home() {
                     alt={`${book.title} cover art`}
                     width={100}
                     height={150}
-                    className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
+                    className="fill object-contain w-auto max-w-[133px]"
                   />
                 ) : null}
                 <div className="pt-6 md:px-6 md:pt-0">
@@ -291,7 +291,7 @@ export default function Home() {
                         let tag = subject.split(" -- ")[0];
                         return (
                           <p
-                            className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-2 mx-2 rounded-lg"
+                            className="text-sm bg-gray-200 border border-gray-300 py-1 px-4 my-1 mx-2 rounded-lg"
                             key={tag}
                           >
                             {tag}
