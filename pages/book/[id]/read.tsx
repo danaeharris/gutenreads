@@ -173,7 +173,9 @@ export default function ReaderView() {
               by{" "}
               {book.authors.map((author: Author) => (
                 <span key={author.name}>
-                  {author.name}
+                  {`${author.name.split(",")[1].split("(")[0]} ${
+                    author.name.split(",")[0].split("(")[0]
+                  }`}
                   {book.authors.length > 1 ? ", " : ""}
                 </span>
               ))}
