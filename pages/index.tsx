@@ -37,12 +37,12 @@ function BookModal({
       isOpen={isOpen}
       onRequestClose={closeModal}
       style={customStyles}
-      className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl md:max-w-4xl 2xl:max-w-5xl"
+      className="relative transform overflow-hidden sm:rounded-lg bg-white text-left shadow-xl transition-all w-full h-full sm:h-auto sm:my-8 sm:max-w-xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl"
       contentLabel="Example Modal"
     >
-      <div className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+      <div className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col items-between justify-between h-full sm:h-auto">
         <div className="sm:flex sm:items-start">
-          <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+          <div className="sm:mt-0 sm:ml-4 text-left">
             {book.formats && book.formats["image/jpeg"] ? (
               <Image
                 src={book.formats["image/jpeg"]}
@@ -52,7 +52,10 @@ function BookModal({
                 className="fill object-contain w-auto min-h-[100px] min-w-[150px]"
               />
             ) : null}
-            <h3 className="text-lg font-medium leading-6 my-4" id="modal-title">
+            <h3
+              className="text-3xl font-medium leading-6 my-4"
+              id="modal-title"
+            >
               {book.title}
             </h3>
             <div className="mt-2">
@@ -83,14 +86,14 @@ function BookModal({
             ) : null}
           </div>
         </div>
-        <div className="px-4 py-3 sm:flex sm:flex-row sm:px-6">
+        <div className="py-3 flex flex-row sm:px-4">
           <Link
             href={`/book/${book.id}/read`}
             onClick={() => {
               closeModal();
             }}
             type="button"
-            className="flex w-full justify-center items-center rounded-md border-2 border-transparent bg-black px-4 py-2 font-3xl font-medium text-white shadow-sm hover:bg-white  hover:border-black hover:text-black focus:outline-none focus:ring-2 focus:ring-black-500 sm:w-auto sm:text-sm"
+            className="flex justify-center items-center rounded-md border-2 border-transparent bg-black px-4 py-2 font-3xl font-medium text-white shadow-sm hover:bg-white hover:border-black hover:text-black focus:outline-none focus:ring-2 focus:ring-black-500 w-min sm:text-sm"
           >
             <svg
               className="mr-2 stroke-current"
@@ -116,7 +119,7 @@ function BookModal({
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="m-0">Start Reading</span>
+            <span className="m-0">Start&nbsp;Reading</span>
           </Link>
 
           <button
