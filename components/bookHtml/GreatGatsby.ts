@@ -1,26 +1,26 @@
 const GreatGatsbyHtml = `
-<div class="dedication">
-<p>
-Once again<br>
-to<br>
-Zelda
-</p>
+<div style="text-align: center; margin-bottom: 60px">
+    <p>
+        Once again<br>
+        to<br>
+        Zelda
+    </p>
 </div>
-<div class="epigraph">
-<blockquote class="verse"><div>
-<p>
-<span>Then wear the gold hat, if that will move her;</span>
-<br>
-<span class="i1">If you can bounce high, bounce for her too,</span>
-<br>
-<span>Till she cry “Lover, gold-hatted, high-bouncing lover,</span>
-<br>
-<span class="i1">I must have you!”</span>
-</p>
-<p>
-<cite>Thomas Parke d’Invilliers</cite>
-</p>
-</div></blockquote>
+<div style="text-align: center; margin-bottom: 40px">
+    <blockquote class="verse">
+        <div>
+            <p>
+            <span>Then wear the gold hat, if that will move her;</span>
+            <br>
+            <span class="i1">If you can bounce high, bounce for her too,</span>
+            <br>
+            <span>Till she cry “Lover, gold-hatted, high-bouncing lover,</span>
+            <br>
+            <span class="i1">I must have you!”</span>
+            <br/><cite>Thomas Parke d’Invilliers</cite>
+            </p>
+        </div>
+    </blockquote>
 </div>
 <div id="chapter-1">
 <h2>I</h2>
