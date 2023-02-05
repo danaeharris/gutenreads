@@ -67,7 +67,7 @@ export default function ReaderView() {
       <div
         className="min-h-screen h-full"
         style={{
-          background: `linear-gradient(180deg, ${book.gradientColor} 0%, rgba(255,255,255,1) 350px)`,
+          background: `linear-gradient(180deg, rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.5) 0%, rgba(255,255,255,1) 350px)`,
         }}
       >
         <div

@@ -47,7 +47,7 @@ const bookData: Book[] = [
     },
     download_count: 57315,
     file: prideAndPrejudiceHtml,
-    gradientColor: "rgba(54, 61, 20, 0.5)",
+    gradientColor: { r: 54, g: 61, b: 20 },
   },
   {
     id: 1184,
@@ -90,7 +90,7 @@ const bookData: Book[] = [
     },
     download_count: 12464,
     file: countOfMonteCristo,
-    gradientColor: "rgba(95, 89, 89, 0.5)",
+    gradientColor: { r: 95, g: 89, b: 89 },
   },
   {
     id: 64317,
@@ -131,7 +131,7 @@ const bookData: Book[] = [
     },
     download_count: 20487,
     file: greatGatsby,
-    gradientColor: "rgba(5, 71, 95, 0.5)",
+    gradientColor: { r: 5, g: 71, b: 95 },
   },
   {
     id: 64365,
@@ -175,7 +175,7 @@ const bookData: Book[] = [
     },
     download_count: 290,
     file: anneOfGreenGables,
-    gradientColor: "rgba(90, 72, 62, 0.5)",
+    gradientColor: { r: 90, g: 72, b: 62 },
   },
 ];
 

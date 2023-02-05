@@ -19,7 +19,6 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
   },
 };
-Modal.defaultStyles.overlay.backgroundColor = "rgba(0, 0, 0, 0.5)";
 // Make sure to bind modal to your appElement (https://reactcommunity.org/react-modal/accessibility/)
 Modal.setAppElement("#app");
 
@@ -32,6 +31,8 @@ function BookModal({
   closeModal: () => void;
   book: Book;
 }) {
+  Modal.defaultStyles.overlay.backgroundColor = `rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.75)`;
+
   return (
     <Modal
       isOpen={isOpen}
@@ -40,7 +41,13 @@ function BookModal({
       className="relative transform overflow-hidden sm:rounded-lg bg-white text-left shadow-xl transition-all w-full h-full sm:h-auto sm:my-8 sm:max-w-xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl"
       contentLabel="Example Modal"
     >
-      <div className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col items-between justify-between h-full sm:h-auto">
+      <div
+        className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col items-between justify-between h-full sm:h-auto"
+        style={{
+          background: `linear-gradient(180deg, rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.5) 0%, rgba(255,255,255,1) 200px)`,
+          boxShadow: `0px 0px 15px rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.35)`,
+        }}
+      >
         <div className="sm:flex sm:items-start">
           <div className="sm:mt-0 sm:ml-4 text-left">
             {book.formats && book.formats["image/jpeg"] ? (
