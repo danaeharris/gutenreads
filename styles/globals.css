@@ -83,3 +83,32 @@ p {
   margin: 0;
   padding: 0;
 }
+
+/* React Modal */
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+/* React Modal Content */
+
+.ReactModal__Content > div {
+  transform: translateY(20px);
+  transition: all 400ms ease-in-out;
+}
+.ReactModal__Content--after-open > div {
+  transform: translateY(0px);
+}
+
+.ReactModal__Content--before-close > div {
+  transform: translateY(20px);
+}
