@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import bookData from "@/utils/bookData";
 import styles from "./read.module.css";
-import { Author } from "@/utils/types";
 import BookAuthors from "@/components/BookAuthors";
 
 const getBookFromId = (id: string) => {

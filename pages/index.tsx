@@ -1,11 +1,8 @@
-import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import logo from "../public/logo.png";
-import { Book, Author } from "@/utils/types";
+import { Book } from "@/utils/types";
 import bookData from "@/utils/bookData";
-import Link from "next/link";
 import Modal from "react-modal";
 import BookSubjects from "@/components/BookSubjects";
 import BookModal from "@/components/BookModal";
