@@ -64,6 +64,7 @@ export default function ReaderView() {
           background: `linear-gradient(180deg, rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.5) 0%, rgba(255,255,255,1) 350px)`,
         }}
       >
+        {/* header */}
         <div
           className="fixed top-0 left-0 right-0 bg-white flex flex-row items-stretch justify-between"
           style={{ boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.25)" }}
