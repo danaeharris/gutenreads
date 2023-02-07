@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import bookData from "@/utils/bookData";
 import styles from "./read.module.css";
 import { Author } from "@/utils/types";
+import BookAuthors from "@/components/BookAuthors";
 
 const getBookFromId = (id: string) => {
   return bookData.find((book) => book.id === parseInt(id as string));
@@ -104,15 +105,7 @@ export default function ReaderView() {
             <div className="flex flex-col items-start justify-center">
               <h5 className="text-md font-normal font-inter">{book.title}</h5>
               <p className="text-sm font-inter">
-                by{" "}
-                {book.authors.map((author: Author) => (
-                  <span key={author.name}>
-                    {`${author.name.split(",")[1].split("(")[0]} ${
-                      author.name.split(",")[0].split("(")[0]
-                    }`}
-                    {book.authors.length > 1 ? ", " : ""}
-                  </span>
-                ))}
+                by <BookAuthors authors={book.authors} />
               </p>
             </div>
           </div>
@@ -174,15 +167,7 @@ export default function ReaderView() {
               {book.title}
             </h1>
             <p className="text-md font-ppwriter pb-10 md:pb-16">
-              by{" "}
-              {book.authors.map((author: Author) => (
-                <span key={author.name}>
-                  {`${author.name.split(",")[1].split("(")[0]} ${
-                    author.name.split(",")[0].split("(")[0]
-                  }`}
-                  {book.authors.length > 1 ? ", " : ""}
-                </span>
-              ))}
+              by <BookAuthors authors={book.authors} />
             </p>
           </div>
           {/* Normally we wouldn't do this, but we pulled these books from Project Gutenberg, so we know they're safe */}
