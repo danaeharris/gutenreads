@@ -87,10 +87,7 @@ export default function BookModal({
                 width={420}
                 height={223}
               />
-              <h3
-                className="text-3xl font-bold leading-6 mt-4"
-                id="modal-title"
-              >
+              <h3 className="text-3xl font-bold mt-4" id="modal-title">
                 {book.title}
               </h3>
               <div className="mt-2">
