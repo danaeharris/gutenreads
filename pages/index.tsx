@@ -25,10 +25,8 @@ export default function Home() {
 
   function closeModal() {
     setModalIsOpen(false);
-    setCurrentBook(null);
+    // setCurrentBook(null);
   }
-
-  useHideOverflow(modalIsOpen);
 
   return (
     <>
@@ -37,13 +35,11 @@ export default function Home() {
         id="container"
       >
         {/* Add the Modal and pass the state it needs. */}
-        {currentBook ? (
-          <BookModal
-            isOpen={modalIsOpen}
-            closeModal={closeModal}
-            book={currentBook}
-          />
-        ) : null}
+        <BookModal
+          isOpen={modalIsOpen}
+          closeModal={closeModal}
+          book={currentBook}
+        />
         <Image
           src={logo}
           alt="GutenReads logo"

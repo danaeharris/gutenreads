@@ -4,6 +4,7 @@ import Link from "next/link";
 import Modal from "react-modal";
 import BookSubjects from "@/components/BookSubjects";
 import BookAuthors from "./BookAuthors";
+import useHideOverflow from "@/hooks/useHideOverflow";
 
 export default function BookModal({
   isOpen,
@@ -14,6 +15,12 @@ export default function BookModal({
   closeModal: () => void;
   book: Book;
 }) {
+  useHideOverflow(isOpen);
+
+  if (!book) {
+    return null;
+  }
+
   return (
     <>
       {isOpen && <div className="fixed inset-0 bg-white opacity-75" />}
@@ -128,7 +135,7 @@ export default function BookModal({
                 </svg>
                 <span className="m-0">Start&nbsp;Reading</span>
               </Link>
-              <div className="flex flex-col sm:flex-row lg:w-1/2 items-center justify-center  sm:justify-between pt-10">
+              <div className="flex flex-col sm:flex-row  items-center justify-center  sm:justify-between pt-10">
                 <p className="m-3x font-medium m-6">
                   Downloads:{" "}
                   {book.download_count > 999
