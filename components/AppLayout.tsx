@@ -22,6 +22,12 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
         <meta name="twitter:card" content="summary_large_image" />
         {/* import favicon.jpg as favicon */}
         <link rel="icon" href="/favicon.jpg" />
+        {/* inter google font */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <main className="min-h-screen h-full bg-white scroll-smooth">
         {children}

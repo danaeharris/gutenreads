@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* import inter from Google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-
 @font-face {
   font-family: "PP Writer";
   src: url("/fonts/Writer/PPWriter-Regular.woff2") format("woff2"),
@@ -87,7 +84,8 @@ h4 {
 }
 
 p {
-  font-family: "Inter", serif;
+  /* font-family: "Inter"; */
+  font-family: "Inter", sans-serif;
   font-weight: normal;
   line-height: 1.2;
   margin: 0;
