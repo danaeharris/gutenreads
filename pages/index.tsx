@@ -10,6 +10,7 @@ import Modal from "react-modal";
 import BookSubjects from "@/components/BookSubjects";
 import BookModal from "@/components/BookModal";
 import BookAuthors from "@/components/BookAuthors";
+import useHideOverflow from "@/hooks/useHideOverflow";
 
 Modal.setAppElement("#app");
 
@@ -29,17 +30,8 @@ export default function Home() {
     setModalIsOpen(false);
     setCurrentBook(null);
   }
-  useEffect(() => {
-    if (modalIsOpen) {
-      // document.querySelector("body")?.classList.add("overflow-hidden");
-      document.body.style.overflow = "hidden";
-      // document.querySelector("body")?.classList.add("fixed");
-    } else {
-      document.body.style.overflow = "auto";
-      // document.querySelector("body")?.classList.remove("overflow-hidden");
-      // document.querySelector("body")?.classList.remove("fixed");
-    }
-  }, [modalIsOpen]);
+
+  useHideOverflow(modalIsOpen);
 
   return (
     <>
