@@ -3,26 +3,11 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 import logo from "../public/logo.png";
-import Footer from "@/components/AppFooter";
 import { Book, Author } from "@/utils/types";
 import bookData from "@/utils/bookData";
 import Link from "next/link";
 import Modal from "react-modal";
 
-const customStyles = {
-  content: {
-    top: "50%",
-    left: "50%",
-    right: "auto",
-    bottom: "auto",
-    marginRight: "-50%",
-    transform: "translate(-50%, -50%)",
-    background: "transparent",
-    padding: 0,
-    paddingTop: 30,
-    border: "none",
-  },
-};
 Modal.setAppElement("#app");
 
 function BookModal({
@@ -34,13 +19,6 @@ function BookModal({
   closeModal: () => void;
   book: Book;
 }) {
-  if (Modal.defaultStyles.overlay) {
-    Modal.defaultStyles.overlay.cursor = `pointer`;
-    Modal.defaultStyles.overlay.backgroundColor = `rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.30)`;
-
-    Modal.defaultStyles.overlay.backdropFilter = `blur(3px)`;
-  }
-
   return (
     <>
       {isOpen && <div className="fixed inset-0 bg-white opacity-75" />}
@@ -48,10 +26,28 @@ function BookModal({
         closeTimeoutMS={500}
         isOpen={isOpen}
         onRequestClose={closeModal}
-        style={customStyles}
+        style={{
+          overlay: {
+            cursor: "pointer",
+            backgroundColor: `rgba(${book.gradientColor.r}, ${book.gradientColor.g}, ${book.gradientColor.b}, 0.30)`,
+            backdropFilter: "blur(3px)",
+          },
+          content: {
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            background: "transparent",
+            padding: 0,
+            paddingTop: 30,
+            border: "none",
+          },
+        }}
         contentLabel="Book Modal"
       >
-        <div className="relative transform bg-white sm:rounded-lg text-left shadow-xl transition-all w-full h-full sm:h-auto sm:my-8 sm:max-w-xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl">
+        <div className="relative transform bg-white sm:rounded-lg text-left shadow-xl transition-all w-full h-full sm:h-auto sm:my-8 sm:max-w-xl md:max-w-3xl lg:max-w-4xl 2xl:max-w-5xl cursor-default">
           <div
             className="bg-white relative px-4 pt-5 pb-4 sm:p-6 sm:pb-4 flex flex-col items-between justify-between h-full sm:h-auto sm:rounded-lg"
             style={{
